@@ -39,7 +39,7 @@ function Home() {
     <Banner2 />
     <Gallery />
     <MoreAboutJericho />
-    <Footer />
+
 
 
 

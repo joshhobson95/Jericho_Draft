@@ -46,7 +46,9 @@ function MoreAboutJericho() {
             </div>
 
         </div>
+        <div className='button_container'>
                     <button className='maj_button'>Learn More</button>
+        </div>
 
 
 

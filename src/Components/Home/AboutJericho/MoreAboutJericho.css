@@ -156,6 +156,7 @@ overflow: hidden;
 
 
 
+
 .a_s_1{
     height: 100px;
     width: 20px;
@@ -240,18 +241,6 @@ overflow: hidden;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 2000px){
     .maj_left{
         transform: scale(0.9);
@@ -312,4 +301,8 @@ overflow: hidden;
                 padding-top: 4vh;
                 padding-bottom: 4vh;
             }
+            .button_container {
+                padding-top: 4vh;
+                }
+                
 }
