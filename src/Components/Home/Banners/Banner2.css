@@ -1,0 +1,120 @@
+.banner2{
+    height: 35vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.b2_img{
+    background-image: url('https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80');
+    height: 40vh;
+    width: 100vw;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+}
+.b2_1{
+   margin-top: 2.5vh;
+    background-color: #242424;
+    z-index: 2;
+    height: 30vh;
+    width: 45vw;
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+}
+.b2_2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+.banner2 button{
+    height: 5vh;
+    width: 15vh;
+    background-color: #DBBA4B;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Raleway';
+    font-size: 18pt;
+    font-weight: 600;
+    color: white;
+    align-self: center;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+.banner2 button:hover{
+    height: 5vh;
+    width: 15vh;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Raleway';
+    font-size: 18pt;
+    font-weight: 600;
+    color: #DBBA4B;
+    align-self: center;
+    margin-top: 5vh;
+    transition: 1s;
+}
+.banner2 h1{
+    color: #ACDC95;
+    font-size: 40pt;
+    font-weight: 800;
+  
+}
+.b2_h4{
+    color: #4FA673;
+    font-size: 18pt;
+    padding-bottom: 2vh;
+    font-weight: 600;
+}
+.b2_h4g{
+    color: #4FA673;
+   margin-left: 16vw;
+   font-size: 18pt;
+   font-weight: 600;
+   padding-top: 2vh;
+}
+.van{
+ height: 1px;
+ margin-right: 60vw;
+}
+@media (max-width: 2000px){
+    .banner2 button{
+     margin-left: 20vw;
+     
+    }
+    .banner2 button:hover{
+        margin-left: 20vw;
+    }
+
+}
+@media (max-width: 1212px){
+    .banner2 button{
+     margin-left: 20vw;
+     margin-top: 0;
+    }
+    .banner2 button:hover{
+        margin-left: 20vw;
+        margin-top: 0;
+    }
+    .banner2 svg{
+        width: 200px;
+    }
+    .b2_h4g{
+        color: #4FA673;
+       margin-left: 16vw;
+       font-size: 18pt;
+       font-weight: 600;
+       padding-top: 1vh;
+    }
+    .b2_h4{
+        color: #4FA673;
+        font-size: 18pt;
+        padding-bottom: 0vh;
+        font-weight: 600;
+    }
+
+}
+

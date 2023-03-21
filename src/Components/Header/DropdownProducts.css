@@ -1,0 +1,33 @@
+.menu{
+    height: 30vh;
+    background-color: #242424;
+    border: 5px solid #4FA673;
+    border-radius: 20px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    padding: 2vh;
+    list-style: none;
+    position: absolute;
+    top: 10vh;
+    left: -25px;
+    z-index: 1;
+    opacity: 0;
+}
+.m_top{
+    margin-top: 4vh;
+}
+.menu:hover{
+    animation: dropdown .5s ease-in;
+    opacity: 1;
+}
+@keyframes dropdown {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+

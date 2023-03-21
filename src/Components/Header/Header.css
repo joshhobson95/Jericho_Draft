@@ -1,0 +1,103 @@
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 14vh;
+    width: 100vw;
+    margin-top: 10vh;
+    color: white;
+   font-family: 'Raleway';
+   font-size: 18pt;
+  
+
+}
+.balloons{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  height: 36.7vh;
+  width: auto;
+  overflow: hidden;
+}
+.logo{
+    height: 20vh;
+    width: auto;
+    margin: 5vh;
+}
+
+.navbar img{
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}
+.nav_products{
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #242424;
+  padding: 10px;
+
+}
+.nav_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.nav_item span {
+  background-color: #242424;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+ 
+}
+
+.nav_item:not(:first-child) {
+  margin-left: 20px;
+}
+.contactus svg{
+  height: 10vh;
+  width: auto;
+}
+.contactus svg:hover{
+animation: riseUp 0.5s ease-out forwards;
+}
+@keyframes riseUp {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+  40% {
+    transform: translateY(-8px) rotate(5deg);
+  }
+  60% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+  0% {
+    transform: translateY(-8px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-5deg);
+  }
+}
+
+.navbar svg{
+  height: 10vh;
+  width: auto;
+
+}
+.products_icon{
+padding-bottom: 1vh;
+}

@@ -1,0 +1,38 @@
+
+.carousel{
+margin-bottom: 10vh;
+}
+.gallery_photo{
+    height: 40rem;
+    width: auto;
+    padding: 50px;
+    z-index: 2;
+}
+.gallery_photo_background{
+    height: 50rem;
+    filter: blur(1.5px);
+    position: absolute;
+    z-index: 1;
+   
+}
+.card{
+    height: 75vh;
+    width: 75vw;
+   margin-top: 10vh;
+   margin-bottom:  10vh;
+   display: flex;
+   justify-content: center;
+   background-color: #4FA673;
+   padding-top: 50px;
+
+}
+.card_top{
+    display: flex;
+   justify-content: center;
+}
+.card_bottom{
+    padding-top: 7vh;
+    color: white;
+    font-style: italic;
+    font-size: 16pt;
+}

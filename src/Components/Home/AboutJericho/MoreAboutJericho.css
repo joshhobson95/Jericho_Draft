@@ -1,0 +1,315 @@
+.more_about_jericho{
+    padding-bottom: 10vh;
+}
+.maj_1{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+.maj_header{
+    background-color: #242424;
+    height: auto;
+    width: auto;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  
+}
+.maj_header h1{
+    font-size: 35pt;
+    font-weight: 700;
+    padding: 3rem;
+    background: linear-gradient(90deg, #4FA673 14.46%, #DBBA4B 96.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.maj_2{
+    display: flex;
+    height: 80vh;
+    padding-top: 10vh;
+   
+}
+.maj_left{
+height: auto;
+width: 35vw;
+margin-left: 3vw;
+}
+.maj_right{
+height: auto;
+width: 60vw;
+display: flex;
+flex-direction: column;
+margin-top: 5vh;
+margin-bottom: 5vh;
+}
+.maj_right h3{
+    font-size: 26pt;
+    padding: 2rem;
+    text-align: left;
+}
+.maj_right p{
+    font-size: 14pt;
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 10rem;
+    color: #315E30;
+}
+.r_2{
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+}
+.r_1 h3{
+    animation: ts_yellow 1s linear forwards;
+    animation-fill-mode: forwards;
+   
+}
+.r_2 h3{
+    animation: ts_green 1s linear forwards;
+    animation-fill-mode: forwards;
+}
+.r_3 h3{
+    animation: ts_brown 1s linear forwards;
+    animation-fill-mode: forwards;
+}
+.s_container{
+position: relative;
+height: 80vh;
+overflow: hidden;
+}
+.s_yellow{
+    height: 35vh;
+    width: 25vw;
+    background-color: #DBBA4B;
+    box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    z-index: 3;
+    position: absolute;
+    top: 0vh;
+}
+.s_green{
+    height: 25vh;
+    width: 24vw;
+    background-color: #4FA673;
+    box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    z-index: 1;
+    position: absolute;
+    top: 26vh;
+    left: 10vw;
+
+}
+.s_brown{
+    height: 30vh;
+    width: 30vw;
+    background-color:  #95562E;
+    box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    z-index: 2;
+    position: absolute;
+    top: 45vh;
+
+}
+.dirt_hands{
+    height: 50vh;
+    width:  auto;
+    position: absolute;
+    top: 10vh;
+    right: 12vw;
+    z-index: 5;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 9px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 14px;
+}
+
+
+.maj_button{
+    height: 5vh;
+    width: 15vh;
+    background-color: #4FA673;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Raleway';
+    font-size: 18pt;
+    font-weight: 600;
+    color: white;
+    align-self: center;
+    margin-top: 5vh;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.35);
+   
+}
+.maj_button:hover{
+    height: 5vh;
+    width: 15vh;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Raleway';
+    font-size: 18pt;
+    font-weight: 600;
+    color: #4FA673;
+    align-self: center;
+    margin-top: 5vh;
+    transition: 1s;
+}
+
+
+
+
+.a_s_1{
+    height: 100px;
+    width: 20px;
+    position: absolute;
+    right: 10vw ;
+    background-color: #DBBA4B;
+    opacity: 1;
+    animation: wipe 1s linear forwards;
+    animation-fill-mode: forwards;
+    box-shadow:
+    0 0 60px 30px #DBBA4B,  
+    0 0 100px 60px #DBBA4B, 
+    0 0 140px 90px #DBBA4B; 
+    z-index: 0;
+}
+.a_s_2{
+    height: 100px;
+    width: 20px;
+    position: absolute;
+    right: 10vw ;
+    background-color: #4FA673;
+    opacity: 1;
+    animation: wipe 1s linear forwards;
+    animation-fill-mode: forwards;
+    box-shadow:
+    0 0 60px 30px #4FA673,  
+    0 0 100px 60px #4FA673, 
+    0 0 140px 90px #4FA673; 
+    z-index: 0;
+}
+.a_s_3{
+    height: 100px;
+    width: 20px;
+    position: absolute;
+    right: 10vw ;
+    background-color: #95562E;
+    opacity: 1;
+    animation: wipe 1s linear forwards;
+    animation-fill-mode: forwards;
+    box-shadow:
+    0 0 60px 30px #95562E,  
+    0 0 100px 60px #95562E, 
+    0 0 140px 90px #95562E; 
+    z-index: 0;
+}
+
+@keyframes wipe{
+    from{ 
+        right: 10vw;
+    }
+    to {
+        right: 90vw;
+        opacity: 0;
+    }
+}
+@keyframes ts_yellow{
+   0%{
+    text-shadow: none;
+   }
+   100%{
+    text-shadow: 0px 4px 4px #DBBA4B;
+   }
+}
+@keyframes ts_green{
+    0%{
+     text-shadow: none;
+    }
+    100%{
+        text-shadow: 0px 4px 4px #4FA673;
+    }
+ }
+ @keyframes ts_brown{
+    0%{
+     text-shadow: none;
+    }
+    100%{
+        text-shadow: 0px 4px 4px #95562E;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 2000px){
+    .maj_left{
+        transform: scale(0.9);
+        
+        transform-origin: right;
+        height: auto;
+        width: 50vw;
+        }
+        .s_container{
+            position: relative;
+            overflow: hidden;
+            }
+            .s_yellow{
+                height: 35vh;
+                width: 25vw;
+                background-color: #DBBA4B;
+                box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 14px;
+                z-index: 3;
+                position: absolute;
+                top: 0vh;
+            }
+            .s_green{
+                height: 20vh;
+                width: 30vw;
+                background-color: #4FA673;
+                box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 14px;
+                z-index: 1;
+                position: absolute;
+                top: 26vh;
+                left: 10vw;
+            
+            }
+            .s_brown{
+                height: 20vh;
+                width: 30vw;
+                background-color:  #95562E;
+                box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 14px;
+                z-index: 2;
+                position: absolute;
+                top: 45vh;
+            
+            }
+            .dirt_hands{
+                height: 30vh;
+                width:  auto;
+                position: absolute;
+                top: 10vh;
+                right: 12vw;
+                z-index: 5;
+                box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+                filter: drop-shadow(0px 9px 4px rgba(0, 0, 0, 0.25));
+                border-radius: 14px;
+            }
+            .r_2{
+                padding-top: 4vh;
+                padding-bottom: 4vh;
+            }
+}
