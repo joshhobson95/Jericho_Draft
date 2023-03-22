@@ -1,3 +1,4 @@
+
 .menu{
     height: 30vh;
     background-color: #242424;
@@ -10,12 +11,15 @@
     list-style: none;
     position: absolute;
     top: 10vh;
-    left: -25px;
+    left: -26px;
     z-index: 1;
     opacity: 0;
+    padding: 2vw;
+   
 }
 .m_top{
     margin-top: 4vh;
+    
 }
 .menu:hover{
     animation: dropdown .5s ease-in;

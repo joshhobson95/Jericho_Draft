@@ -2,9 +2,10 @@
     display: flex;
      justify-content: center;
      color: white;
+     font-size: 18pt;
 }
 .ntw h3{
-    font-size: 20pt;
+    font-size: 24pt;
     font-weight: 600;
     padding: 1.5rem;
 }

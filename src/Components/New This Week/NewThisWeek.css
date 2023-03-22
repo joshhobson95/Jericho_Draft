@@ -7,7 +7,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 }
+
 .ntw_welcome{
     margin: 5vh;
     background-color: #242424;
@@ -20,10 +22,9 @@
     flex-direction: column;
     padding-bottom: 2rem;
     align-self: center;
-    padding-bottom: 6vh;
     color: #4FA673;
     font-weight: 500;
-    font-size: 16pt;
+    font-size: 18pt;
     padding: 5vh;
 }
 .ntw_welcome h1{
@@ -35,7 +36,7 @@
     padding: 2vw;
 }
 
-.ntw_body{
+.ntw_body_main{
     background-image: linear-gradient(#978e46, #9a5932 );
     height: auto;
     width: 75vw;
@@ -43,15 +44,22 @@
     box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
    align-self: center;
    color: white;
+
 }
 .ntw_body_imgs{
     display: flex;
-    padding: 2vw;
-    
+    padding: 0 2vh;
+
 }
 .ntw_body_imgs img{
-    padding: 2vw;
+    padding: 0 2vw;
     width: 45%;
+}
+.ntw_img_1{
+    border-radius: 20px;
+}
+.ntw_img_2{
+    border-radius: 20px;
 }
 
 .cold{
@@ -65,21 +73,49 @@ text-decoration-line: underline;
 color: #4FA673;
 font-weight: 700;
 font-size: 96px;
+margin-left: 2vw;
+margin-right: 1vw;
+}
+.bt_header{
+    display: flex;
+    padding: 2vw;
 }
 
+.ntw_body_main p{
+    font-size: 18pt;
+    padding: 0 8vw;
+    padding-bottom: 4vh;
 
+}
 
+.ntw_body_bottom h1{
+    color: #EDB592;
+    font-weight: 700;
+    font-size: 96px;
+    padding: 4vh;
+}
+.seminar_icon{
+padding: 3vw;
+margin: 3vw;
+border-radius: 20px;
+background-color: #242424;
+height: 20vh;
 
+}
+.seminar_icon span{
+    color: #DBBA4B;
+    font-size: 16pt;
+    font-weight: 700;
 
-
-
-
-
-
-
-
-
-
+}
+.bb_column{
+    display: flex;
+}
+.ntw_body_bottom p{
+    margin: 0 4vw;
+    padding-bottom: 6vh;
+    padding-top: 6vh;
+}
 
 
 
@@ -99,9 +135,10 @@ font-size: 96px;
     padding-bottom: 6vh;
     color: #4FA673;
     font-weight: 500;
-    font-size: 16pt;
+    font-size: 18pt;
     padding: 5vh;
 }
+
 .ntw_conclusion p{
     padding: 2vw;
 }
