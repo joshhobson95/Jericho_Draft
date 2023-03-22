@@ -81,3 +81,35 @@
    font-weight: 600;
    padding-top: 2vh;
 }
+@media (max-width: 650px){
+ 
+    .b_1{
+         z-index: 2;
+         height: 30vh;
+         width: 90vw;
+     }
+     .banner h1{
+        font-size: 23pt;
+    }
+     .b_h4{
+        font-size: 11pt;
+    }
+    .b_h4g{
+       font-size: 11pt;
+       font-weight: 600;
+       padding-top: 2vh;
+    }
+    .banner button{
+        font-size: 11pt;
+        padding: 0;
+        margin: 0;
+        margin-top: 2vh;
+    }
+    .banner button:hover{
+        font-size: 11pt;
+        padding: 0;
+        margin: 0;
+        margin-top: 2vh;
+    }
+}
+

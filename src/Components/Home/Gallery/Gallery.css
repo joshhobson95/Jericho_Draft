@@ -1,21 +1,20 @@
-
 .carousel{
 margin-bottom: 10vh;
 }
-.gallery_photo{
+.h_gallery_photo{
     height: 40rem;
     width: auto;
     padding: 50px;
     z-index: 2;
 }
-.gallery_photo_background{
+.h_gallery_photo_background{
     height: 50rem;
     filter: blur(1.5px);
     position: absolute;
     z-index: 1;
    
 }
-.card{
+.h_card{
     height: 75vh;
     width: 75vw;
    margin-top: 10vh;
@@ -26,13 +25,30 @@ margin-bottom: 10vh;
    padding-top: 50px;
 
 }
-.card_top{
+.h_card_top{
     display: flex;
    justify-content: center;
 }
-.card_bottom{
+.h_card_bottom{
     padding-top: 7vh;
     color: white;
     font-style: italic;
     font-size: 16pt;
+}
+@media (max-width: 450px){
+    .h_carousel{
+    -webkit-transform:scale(0.75);
+    -moz-transform:scale(0.75);
+    -ms-transform:scale(0.75);
+    transform:scale(0.75);
+    }
+    .h_gallery_photo{
+     height: 100%;
+     width: 100%;
+    }
+    .h_gallery_photo_background{
+      opacity: 0;
+       
+    }
+
 }

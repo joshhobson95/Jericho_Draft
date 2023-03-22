@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import './Header.css'
 import balloons from '../../Assets/Cropped_balloons.jpg'
 import logo from '../../Assets/Logo.png'
@@ -15,6 +16,12 @@ import DropdownProducts from './DropdownProducts'
 
 function Header() {
 
+
+// const [isOpen, setIsOpen] = useState(false)
+
+// const handleToggle = () => {
+//   setIsOpen(!isOpen);
+// };
 
 
   
@@ -37,8 +44,12 @@ function Header() {
     <div className='products_icon'>
     <ProductsIcon />
     <DropdownProducts />
-    </div>
+ 
+      
     <span>Products</span>
+
+  
+    </div>
   </div>
   <div className='nav_item'>
     <div className='gift_card_icon'>

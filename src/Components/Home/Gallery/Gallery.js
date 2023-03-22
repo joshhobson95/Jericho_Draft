@@ -49,21 +49,21 @@ function Gallery() {
 
     
   return (
-    <div className='carousel'>
+    <div className='h_carousel'>
 
         <Slider {...settings}>
 
 
             {GalleryData.map((item) => (
-                    <div className='card'> 
-                    <div className='card_top'>
+                    <div className='h_card'> 
+                    <div className='h_card_top'>
 
-                     <img src={require('../../../Assets/' + item.img + '.jpg')} alt={item.title} className="gallery_photo" />
+                     <img src={require('../../../Assets/' + item.img + '.jpg')} alt={item.title} className="h_gallery_photo" />
 
-                     <img src={require('../../../Assets/'  + item.img + '.jpg')} alt={item.title} className="gallery_photo_background" />
+                     <img src={require('../../../Assets/'  + item.img + '.jpg')} alt={item.title} className="h_gallery_photo_background" />
 
                     </div>
-                    <div className='card_bottom'>
+                    <div className='h_card_bottom'>
                 
                         <p>{item.captions}</p>
                         <a>{item.links}</a>

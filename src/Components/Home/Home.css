@@ -60,3 +60,36 @@
     margin: 2vw 4vw;
     margin-bottom: -2vh;
 }
+
+/* regular phones */
+@media (max-width: 650px){
+
+    .welcome{
+        width: 90vw;
+    }
+
+    .w_1{
+        font-size: 12pt;
+        position: relative;
+        right: 20vw;
+    }
+    .w_2{
+        font-size: 30pt;
+    }
+    .w_3{
+        font-size: 12pt;
+    }
+    .p_1{
+        font-size: 12pt;  
+    }
+}
+
+/* smaller phones */
+@media (max-width: 450px){
+    .w_3{
+        position: relative;
+        font-size: 12pt;
+        right: 10vw;
+    }
+
+}
