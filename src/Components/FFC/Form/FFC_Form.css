@@ -1,0 +1,59 @@
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 55vh;
+    width: 35vw;
+  }
+  .ffc_form{
+    background-color: #D9D9D9;
+    border-radius: 20px;
+  }
+  .ffc_form button{
+    background: #DBBA4B;
+    border: 3px solid #FFFFFF;
+    border-radius: 20px;
+    color: white;
+    font-size: 18pt;
+    height: 5vh;
+    width: 10vw;
+    font-family: 'Raleway';
+    font-weight: 700;
+  }
+  
+  .form-column1{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: center;
+    padding-left: 2rem;
+
+  }
+  .form-column2{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: center;
+    padding-right: 2rem;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"] {
+    height: 3.5vh;
+    width: 14vw;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  

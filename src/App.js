@@ -2,6 +2,7 @@ import {Routes, Route, Navigate} from 'react-router-dom'
 import Header from './Components/Header/Header'
 import Home from './Components/Home/Home';
 import NewThisWeek from './Components/New This Week/NewThisWeek';
+import FFC from './Components/FFC/FFC';
 import Footer from './Components/Footer/Footer';
 import './App.css';
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
        <Route path='/' element={<Home />}/>
        <Route path='/newthisweek' element={<NewThisWeek />}/>
+        <Route path='/ffc' element={<FFC />}/>
       </Routes>
       <Footer />
     </div>

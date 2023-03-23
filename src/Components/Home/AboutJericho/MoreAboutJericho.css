@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     padding: 5rem;
+
 }
 .maj_header{
     background-color: #242424;
@@ -15,7 +16,7 @@
   
 }
 .maj_header h1{
-    font-size: 35pt;
+    font-size: 56pt;
     font-weight: 700;
     padding: 3rem;
     background: linear-gradient(90deg, #4FA673 14.46%, #DBBA4B 96.51%);
