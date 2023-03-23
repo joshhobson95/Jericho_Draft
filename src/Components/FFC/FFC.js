@@ -54,13 +54,9 @@ customers. It’s free to join.
 
                 <div className='ffc_form_container'>
                     <h3>Fill out all infromation below to join!</h3>
-                <div className='f_f'>
-                    
-                     <FFC_Form />
-
-                    
+                <div className='f_f'>                   
+                     <FFC_Form />                
                 </div>
-
                 </div>
             </div>
 </div>

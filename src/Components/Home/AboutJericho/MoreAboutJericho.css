@@ -13,7 +13,6 @@
     width: auto;
     box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-  
 }
 .maj_header h1{
     font-size: 56pt;
@@ -245,7 +244,6 @@ overflow: hidden;
 @media (max-width: 2000px){
     .maj_left{
         transform: scale(0.9);
-        
         transform-origin: right;
         height: auto;
         width: 50vw;
@@ -306,4 +304,69 @@ overflow: hidden;
                 padding-top: 4vh;
                 }
                 
+}
+
+@media (max-width: 450px){
+
+.maj_header h1{
+    font-size: 20pt;
+    padding: 1rem;
+    word-wrap: none;
+}
+.maj_1{
+    display: flex;
+    justify-content: center;
+    padding: 0rem;
+    margin-top: 5rem;
+
+}
+.maj_header{
+    background-color: #242424;
+    height: auto;
+    width: auto;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.maj_2{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 10vh;
+}
+.maj_left{
+    align-self: center;
+    transform-origin: center;
+    height: auto;
+    width: 100vw;
+        
+}
+.s_yellow{
+    width: 40vw;
+}
+.s_green{
+    width: 90vw;
+}
+.s_brown{
+    width: 60vw;
+}
+.dirt_hands{
+    height: 45vh;
+}
+.maj_right{
+  align-self: center;
+}
+.maj_right h3{
+    font-size: 22pt;
+    position: relative;
+    text-align: center;
+}
+.maj_right p{
+    font-size: 10pt;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    color: #315E30;
+}
+
+
 }
