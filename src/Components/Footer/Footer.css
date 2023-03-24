@@ -73,13 +73,13 @@ transition: 2sec;
         height: auto;
     }
     .f_1{
-        font-size: 4pt;
-
+        font-size: 8pt;
+        font-weight: 600;
     }
     .footer h4{
         font-family: 'Raleway';
         font-weight: 600;
-        font-size: 8pt;
+        font-size: 12pt;
         text-decoration-line: underline;
         color: #85B076;
         padding: 1rem;
@@ -102,15 +102,22 @@ transition: 2sec;
     }
     .social_icons{
         padding: 0rem;
+        padding-bottom: 3rem;
     }
     .social_icons svg{
-        height: 20px;
-        width: 20px;
-        padding: 0 2rem;
+        height: 40px;
+        width: 40px;
+        padding: 0 1rem;
     }
 
     .privacy p{
-        font-size: 5pt;
+        font-size: 4pt;
         margin-bottom: 1rem;
+        padding: 0 4rem;
+    }
+    .privacy{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: -3rem;
     }
 }

@@ -6,8 +6,7 @@
     background-image: linear-gradient(#4FA673, #DBBA4BA8 , #FB492C87 ) ;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 
 .ntw_welcome{
@@ -39,7 +38,7 @@
 .ntw_body_main{
     background-image: linear-gradient(#978e46, #9a5932 );
     height: auto;
-    width: 75vw;
+    width: 80vw;
     border-radius: 20px;
     box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
    align-self: center;
