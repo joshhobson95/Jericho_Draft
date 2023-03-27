@@ -63,3 +63,14 @@
     transform: rotateY(180deg);
   }
   
+  @media (max-width: 2000px){
+    .flip-card{
+      height: 25vh;
+      width: 40vw;
+    }
+    .month-row{
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  
+  }
