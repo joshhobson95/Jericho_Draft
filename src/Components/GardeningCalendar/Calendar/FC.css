@@ -33,6 +33,14 @@
     box-sizing: border-box;
     border: 6px solid rgb(95, 150, 221);
 }
+.jan-shell .flip-card-back{
+  background-image: url(https://images.unsplash.com/photo-1605822725987-e42b1434a974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: center;
+  background-size: contain;
+  box-sizing: border-box;
+  border: 6px solid rgb(95, 150, 221);
+  color: black;
+}
 .feb-shell .flip-card-front{
     background-image: url(https://images.unsplash.com/photo-1515362790300-999394721afc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
     background-position: center;
@@ -46,6 +54,14 @@
     background-size: contain;
     box-sizing: border-box;
     border: 6px solid rgb(223, 87, 132);
+}
+.mar-shell .flip-card-back{
+    background-image: url(https://images.unsplash.com/photo-1617637965333-1be727fe9090?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-size: contain;
+    box-sizing: border-box;
+    border: 6px solid rgb(223, 87, 132);
+    color: black;
 }
 .apr-shell .flip-card-front {
     background-image: url(https://images.unsplash.com/photo-1652124900154-bde755490ae1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
@@ -110,6 +126,15 @@
     box-sizing: border-box;
     border: 6px solid rgb(9, 56, 27);
 }
+.dec-shell .flip-card-back{
+    background-image: url(https://images.unsplash.com/photo-1513297887119-d46091b24bfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-size: contain;
+    box-sizing: border-box;
+    border: 6px solid rgb(9, 56, 27);
+    color: white;
+}
+
 
 @media (max-width: 2000px){
     .month-cell{
