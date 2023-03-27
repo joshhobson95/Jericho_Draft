@@ -261,10 +261,11 @@ const { array } = dataArray.find(({ name: monthName }) => monthName === name) ||
           <p>{name}</p>
         </div>
         <div className="flip-card-back">
-        
+          <div className='flip-card-list'>
         {array.map((item, index) => (
           <li key={index}>{item}</li>
           ))}
+          </div>
          
         </div>
       </div>
