@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Header.css'
 import balloons from '../../Assets/Cropped_balloons.jpg'
@@ -23,7 +23,7 @@ const [showBlog, setShowBlog] = useState(false);
 const [showCommunity, setShowCommunity] = useState(false);
 const [showFrequentFlowerClub, setShowFrequentFlowerClub] = useState(false);
 const [showContact, setShowContact] = useState(false);
-const [animateDrop, setAnimateDrop] = useState(0)
+
 
 function toggleProducts(){
   setShowProducts(!showProducts)
@@ -54,20 +54,10 @@ function closeMenus(){
 }
 
 
-// const menuStyles = {
-//   height: showProducts || showGiftcard|| showBlog|| showCommunity || showFrequentFlowerClub || showContact ? 'auto' : '0',
-//   transition: 'height 0.3s ease-in-out',
-//   overflow: 'hidden',
-//   Animation: ''
-// };
 
   
   return (
     <div className='header'>
-
-
-
-
         <div className='photo_banner'>
         <img className='balloons' src={balloons} alt='ballons'/>
           <NavLink to='/'>
@@ -77,6 +67,9 @@ function closeMenus(){
           </NavLink>
         </div>
 {/* --------------------------------------------------------- */}
+<div className='exit_container'>
+        <img className='exit' alt='' src='https://api.linearity.io/icons/v1/thumbnails/x_Circled_X_66865.png' onClick={closeMenus}/>
+</div>
         <div className='navbar'>
   <div className='nav_item'>
     <div className='nav_products'>
