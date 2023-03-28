@@ -4,6 +4,7 @@ import Home from './Components/Home/Home';
 import NewThisWeek from './Components/New This Week/NewThisWeek';
 import FFC from './Components/FFC/FFC';
 import GardeningCalendar from './Components/GardeningCalendar/GardeningCalendar';
+import FreshIdeas from './Components/FreshIdeas/FreshIdeas';
 import Footer from './Components/Footer/Footer';
 import './App.css';
 
@@ -15,7 +16,8 @@ function App() {
        <Route path='/' element={<Home />}/>
        <Route path='/newthisweek' element={<NewThisWeek />}/>
        <Route path='/ffc' element={<FFC />}/>
-       <Route path='gardeningcalendar' element={<GardeningCalendar/>}/>
+       <Route path='/gardeningcalendar' element={<GardeningCalendar/>}/>
+       <Route path='/freshideas' element={<FreshIdeas/>}/>
       </Routes>
       <Footer />
     </div>

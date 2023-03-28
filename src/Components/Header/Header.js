@@ -82,7 +82,9 @@ function Header() {
         <NavLink to='/gardeningcalendar'>
         <li>Gardening Calendar</li>
         </NavLink>
+        <NavLink to='/freshideas'>
         <li>Fresh Ideas</li>
+        </NavLink>
       </ul>
     <span>Blog and Gallery</span>
       </div>
