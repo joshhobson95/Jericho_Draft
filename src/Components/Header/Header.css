@@ -76,7 +76,6 @@ padding-bottom: 1vh;
 
 /* ----------------------------------------------------------------------------------- */
 .nav_products ul{
-  opacity: 0;
   position: absolute;
   top: 11rem;
   display: flex;
@@ -86,17 +85,14 @@ padding-bottom: 1vh;
   background-color: #242424;
   border-radius: 20px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 .nav_products li{
   padding: 3rem 1rem;
 }
-.nav_products .products_icon:hover ul {
-  opacity: 1;
-  animation: dropdown .5s ease-in;
-}
+
 /* ----------------------------------------------------------------------------------- */
 .nav_giftcard ul{
-  opacity: 0;
   position: absolute;
   top: 11rem;
   display: flex;
@@ -111,13 +107,9 @@ padding-bottom: 1vh;
 .nav_giftcard li{
   padding: 3rem 3rem;
 }
-.nav_giftcard .gift_card_icon:hover ul {
-  opacity: 1;
-  animation: dropdown .5s ease-in;
-}
+
 /* ----------------------------------------------------------------------------------- */
 .nav_blog ul{
-  opacity: 0;
   position: absolute;
   top: 11rem;
   display: flex;
@@ -131,13 +123,9 @@ padding-bottom: 1vh;
 .nav_blog li{
   padding: 3rem 1rem;
 }
-.nav_blog .blog_icon:hover ul {
-  opacity: 1;
-  animation: dropdown .5s ease-in;
-}
+
 /* ----------------------------------------------------------------------------------- */
 .nav_community ul{
-  opacity: 0;
   position: absolute;
   top: 11rem;
   display: flex;
@@ -152,13 +140,9 @@ padding-bottom: 1vh;
 .nav_community li{
   padding: 3rem 1rem;
 }
-.nav_community .community_icon:hover ul {
-  opacity: 1;
-  animation: dropdown .5s ease-in;
-}
+
 /* ----------------------------------------------------------------------------------- */
 .nav_ffc ul{
-  opacity: 0;
   position: absolute;
   top: 11rem;
   display: flex;
@@ -168,18 +152,13 @@ padding-bottom: 1vh;
   background-color: #242424;
   border-radius: 20px;
   cursor: pointer;
-  
 }
 .nav_ffc li{
   padding: 3rem 3rem;
 }
-.nav_ffc .ffc_icon:hover ul {
-  opacity: 1;
-  animation: dropdown .5s ease-in;
-}
+
 /* ----------------------------------------------------------------------------------- */
 .nav_contactus ul{
-  opacity: 0;
   position: absolute;
   top: 11rem;
   display: flex;
@@ -189,15 +168,11 @@ padding-bottom: 1vh;
   background-color: #242424;
   border-radius: 20px;
   cursor: pointer;
-  
 }
 .nav_contactus li{
   padding: 3rem 1rem;
 }
-.nav_contactus .contactus:hover ul {
-  opacity: 1;
-  animation: dropdown .5s ease-in;
-}
+
 /* ----------------------------------------------------------------------------------- */
 
 
