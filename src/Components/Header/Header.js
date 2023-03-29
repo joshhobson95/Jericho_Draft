@@ -100,7 +100,9 @@ function closeMenus(){
 
 {showGiftcard && (
     <ul>
+      <NavLink to='/giftcard'>
         <li>Buy a Card </li>
+      </NavLink>
       </ul>
 )}
 
@@ -140,7 +142,9 @@ function closeMenus(){
 {showCommunity && (
       <ul>
         <li>Partners</li>
+        <NavLink to='/radio'>
         <li>Radio Show</li>
+        </NavLink>
         <li>Seminars</li>
         <li>Clubs around Abq</li>
       </ul>

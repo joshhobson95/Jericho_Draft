@@ -1,0 +1,42 @@
+.GiftCard_Main{
+    height: auto;
+    margin-top: 15vh;
+    padding-top: 5vh;
+    width: 100vw;
+    background-image: linear-gradient(#95562E, #DB4B4Ba8, #15F6C0a8  ) ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+}
+.gc_main_welcome{
+    margin: 5vh;
+    background-color: #242424;
+    height: auto;
+    width: 60vw;
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    align-self: center;
+    color: #95562E;
+    font-weight: 700;
+    font-size: 20pt;
+    padding: 5vh;
+}
+.gc_main_welcome h1{
+    color: #4FA673;
+    font-size: 60pt;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.gc_main_body{
+    background-image: linear-gradient( #9f4a38, #6f5d53, #209276);
+    height: auto;
+    width: 80vw;
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+   align-self: center;
+   color: white;
+}

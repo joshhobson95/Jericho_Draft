@@ -1,0 +1,64 @@
+.Radio{
+    height: auto;
+    margin-top: 11vh;
+    padding-top: 5vh;
+    width: 100vw;
+    background-image: linear-gradient(#95562E, #DB4B4Ba8, #15F6C0a8  ) ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+}
+.radio_welcome{
+    margin: 5vh;
+    background-color: #242424;
+    height: auto;
+    width: 60vw;
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    align-self: center;
+    color: #95562E;
+    font-weight: 500;
+    font-size: 20pt;
+    padding: 5vh;
+}
+.radio_welcome p{
+    padding: 1.5vw;
+}
+.radio_welcome h1{
+    color: #4FA673;
+    font-size: 60pt;
+    font-weight: 700;
+    text-align: left;
+}
+.radio_body_main{
+    background-image: linear-gradient( #9f4a38, #6f5d53, #209276);
+    height: auto;
+    width: 80vw;
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+   align-self: center;
+   color: white;
+}
+.radio_body_main h2{
+   color: #DBBA4B;
+   font-size: 50pt;  
+   font-weight: 700;
+}
+.radio_body_main h3{
+   color: #4FA673;
+   font-size: 40pt;  
+   font-weight: 700;
+}
+.radio_mic{
+    display: flex;
+    align-self: center;
+    height: auto;
+    width: 50vw;
+}
+.radio_clouds{
+    width: 20vw;
+}
