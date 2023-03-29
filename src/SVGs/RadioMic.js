@@ -142,21 +142,16 @@ function RadioMic() {
         strokeWidth="84.294"
         vectornatorLayerName="Layer 1"
       >
-        <path
-          stroke="#dbba4b"
-          d="M2251.76 2180.57c361.65-177.91 608.94-534.46 608.94-946.05 0-589.233-506.16-1066.971-1130.46-1066.971S599.773 645.287 599.773 1234.52c0 411.59 247.289 768.14 609.037 946.14"
-          vectornatorLayerName="path"
-        ></path>
-        <path
-          stroke="#95562e"
-          d="M2253.74 1745.52c141.68-129.29 230.14-310.23 230.14-511 0-392.821-337.44-711.313-753.64-711.313S976.594 841.699 976.594 1234.52c0 200.77 88.456 381.71 230.146 511"
-          vectornatorLayerName="path"
-        ></path>
-        <path
-          stroke="#4fa673"
-          d="M2387.15 1879.56c180.39-162.19 293.01-389.2 293.01-641.08 0-492.829-429.62-892.403-959.5-892.403S761.166 745.651 761.166 1238.48c0 251.88 112.621 478.89 293.004 641.08"
-          vectornatorLayerName="path"
-        ></path>
+
+
+                {/* ======================Waves============================== */}
+                
+        <path id="yellow_wave" stroke-width="40" className="invis"></path>
+        <path id="green_wave" stroke-width="40" className="invis"></path>
+        <path id="brown_wave" stroke-width="40" className="invis"></path>
+
+
+                {/* ======================Waves============================== */}
       </g>
     </svg>
   );
