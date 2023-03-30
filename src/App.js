@@ -7,6 +7,7 @@ import GardeningCalendar from './Components/GardeningCalendar/GardeningCalendar'
 import FreshIdeas from './Components/FreshIdeas/FreshIdeas';
 import GiftCard from './Components/GiftCard/GiftCard';
 import Radio from './Components/Radio/Radio';
+import Blog from './Components/Blog/Blog';
 import Footer from './Components/Footer/Footer';
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
        <Route path='/freshideas' element={<FreshIdeas/>}/>
        <Route path='/giftcard' element={<GiftCard />}/>
        <Route path='/radio' element={<Radio />}/>
+       <Route path='/blog' element={<Blog />}/>
       </Routes>
       <Footer />
     </div>

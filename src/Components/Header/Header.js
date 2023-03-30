@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Header.css'
 import balloons from '../../Assets/Cropped_balloons.jpg'
@@ -118,8 +118,10 @@ function closeMenus(){
 
 {showBlog && (
       <ul>
-        <li>Blogs</li>
-        <li>Galleries</li>
+        <NavLink to='/blog'>
+        <li>Blog and Gallery</li>
+        </NavLink>
+
         <NavLink to='/gardeningcalendar'>
         <li>Gardening Calendar</li>
         </NavLink>
