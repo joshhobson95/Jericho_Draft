@@ -5,6 +5,7 @@ export const BlogData= [
     {
         id: 1,
         title: `Flags 'a Flying - and We Keep on Buying`,
+        date: `March 31st, 2023`,
         img_1_url: 'https://drive.google.com/uc?export=view&id=1RzWZax_MPf3Oqzuxz54nzQ_eZ3t952e7',
         img_2_url: '',
         img_3_url: '',
@@ -23,6 +24,7 @@ export const BlogData= [
     {
         id: 2,
         title: 'April Showers',
+        date: `April 4th, 2023`,
         img_1_url: 'https://drive.google.com/uc?export=view&id=1j7dC0t-qRBLLsE_dMhbBIRq3nVY5ciXv',
         img_2_url: '',
         img_3_url: '',

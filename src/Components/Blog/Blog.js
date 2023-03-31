@@ -35,6 +35,7 @@ function Blog() {
             <h3>{item.title}</h3>
             <p>{item.intro}</p>    
             <button>Read More</button>         
+            <span>{item.date}</span>
         </div>
     </div>
 ))}
@@ -55,11 +56,12 @@ function Blog() {
                     <div className='small_blog_card_bottom'>
 
                     <h3>{item.title}</h3>
-                      
+                    <div className='text_overflow'>
                     <p>{item.intro}</p>
-                
+                     </div>
 
                     <button>Read More</button>
+                    <span>{item.date}</span>
 
 
                     </div>
