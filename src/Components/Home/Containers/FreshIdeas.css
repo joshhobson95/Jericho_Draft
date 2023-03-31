@@ -1,11 +1,11 @@
 .fi_container{
     height: auto;
-    width: 80vw;
+    width: 70vw;
     margin-top: 10vh;
     margin-bottom: 10vh;
     border-radius: 20px;
     box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
-    background-image: linear-gradient(#77985c,  #829254);
+    background-color: #24242433;
 }
 
 .fi_button{
@@ -23,17 +23,8 @@
     cursor: pointer;
 }
 .fi_button:hover{
-    height: 5vh;
-    width: 15vh;
     background-color: #ffffff;
-    border: none;
-    border-radius: 20px;
-    font-family: 'Raleway';
-    font-size: 18pt;
-    font-weight: 600;
     color: #6dc0e0 ;
-    align-self: center;
-    margin-top: 5vh;
     transition: 1s;
 }
 @media (max-width: 650px){

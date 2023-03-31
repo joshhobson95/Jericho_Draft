@@ -4,6 +4,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    margin-top: 4rem;
 }
 
 .b2_img{

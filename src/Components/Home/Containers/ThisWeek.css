@@ -2,37 +2,39 @@
     display: flex;
      justify-content: center;
      color: white;
-     font-size: 18pt;
+     font-size: 16pt;
+     margin: -5rem;
 }
 .home_container_outer h3{
     font-size: 24pt;
     font-weight: 600;
-    padding: 1.5rem;
+   padding-bottom: 1rem;
 }
 .home_container{
     height: auto;
-    width: 80vw;
+    width: 70vw;
     margin-top: 10vh;
     margin-bottom: 10vh;
     border-radius: 20px;
     box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
-    background-image: linear-gradient(#669e66,  #72995e);  
+    background-color: #24242433;
 }
 .c_icon{
-    height: 10vh;
+    height: 8vh;
     width: auto;
 }
 .c_image{
-    height: auto;
-    width: 70vw;
+    height: 32vh;
+    width: 62vw;
     border-radius: 20px;
     filter: drop-shadow(4px 6px 4px rgba(0, 0, 0, 0.4));
+    object-fit: cover;
 }
 .hc_paragraph{
-    margin-left: 12vw;
-    margin-right: 12vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     padding: 2vw;
-    padding-bottom: 4v;
+    padding-bottom: 4vh;
 }
 .hc_button{
     height: 5vh;
@@ -45,23 +47,15 @@
     font-weight: 600;
     color: white;
     align-self: center;
-    margin-top: 5vh;
+    margin-top: 3vh;
     cursor: pointer;
 }
 .hc_button:hover{
-    height: 5vh;
-    width: 15vh;
     background-color: #ffffff;
-    border: none;
-    border-radius: 20px;
-    font-family: 'Raleway';
-    font-size: 18pt;
-    font-weight: 600;
     color: #cca4d3;
-    align-self: center;
-    margin-top: 5vh;
     transition: 1s;
 }
+
 
 
 
@@ -71,6 +65,7 @@
 @media (max-width: 650px){
     .home_container_outer{
          font-size: 10pt;
+         margin: -2rem;
     }
     .home_container{
         width: 90vw;

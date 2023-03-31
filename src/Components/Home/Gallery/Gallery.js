@@ -11,6 +11,7 @@ function Gallery() {
 
   var settings = {
     dots: true,
+    className: "center",
     infinite: false,
     speed: 500,
     slidesToShow: 1,

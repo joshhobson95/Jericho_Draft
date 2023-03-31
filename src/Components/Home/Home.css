@@ -10,18 +10,17 @@
 
 }
 .welcome{
-    margin: 5vh;
-    margin-bottom: 15vh;
-    background-color: #242424;
     height: auto;
     width: 60vw;
-    border-radius: 20px;
     box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
     align-self: center;
+    margin: 5vh;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    background-color: #242424;
     padding-bottom: 6vh;
 }
 .w{
