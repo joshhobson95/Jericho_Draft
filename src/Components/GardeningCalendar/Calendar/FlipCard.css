@@ -54,6 +54,7 @@
   }
   .flip-card-list{
   height: 380px;
+  filter: blur(0px);
   }
 .flip-card-back li{
   position: relative;
