@@ -44,8 +44,8 @@
    color: white;
    margin-bottom: 5rem;
 }
-.aboutus_body_main h1{
-    color: #4FA673;
+.aboutus_body_top h1{
+    color: #DBBA4B;
     font-size: 60pt;
     font-weight: 700;
     padding: 2rem;
@@ -61,23 +61,73 @@
 .aboutus_body_mid p{
     padding: 4rem 10rem;
     font-size: 18pt;
-    line-height: 1.2;
+    line-height: 1.4;
+}
+.aboutus_body_mid h1{
+    font-size: 60pt;
+    font-weight: 700;
+    color: #4FA673;
+    
+}
+.aboutus_body_bottom h1{
+    color: #DBBA4B;
+    font-size: 60pt;
+    font-weight: 700;
+    padding: 2rem;
+    
 }
 .rickandjen{
     height: 35%;
     width: 35%;
     object-fit: cover;
-    padding-left: 5rem;
+    margin-left: 5rem;
+    border: #4FA673 6px solid;
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(112, 122, 66, 0.25);
 }
 
 
 .aboutus_body_bottom h3{
     font-size: 35pt;
     font-weight: 700;
-
+    padding: 4rem;
 }
 .aboutus_body_bottom p{
     padding: 4rem 10rem;
     font-size: 18pt;
     line-height: 1.2;
 }
+.values{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15vh;
+}
+.values_column{
+    height: 25vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.knowledge{
+    width: 50vw !important;
+}
+.aboutus_body_bottom h2{
+    font-size: 30pt;
+}
+.aboutus_body_bottom p{
+    font-size: 18pt;
+    line-height: 1.4;
+}
+.bys{
+    display: flex;
+}
+.bys_pic{
+    height: 70%;
+    object-fit: cover;
+    border: #95562E 6px solid;
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+
+

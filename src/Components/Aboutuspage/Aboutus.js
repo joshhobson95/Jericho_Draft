@@ -1,7 +1,12 @@
 import React from 'react'
 import './Aboutus.css'
 import rickandjen from '../../Assets/rickandjen.png'
+import bys from '../../Assets/BeforeYouSaySomething.jpg'
 import StaffPictures from './StaffPictures'
+import Service from '../../SVGs/Service'
+import Knowledge from '../../SVGs/Knowledge'
+import Quality from '../../SVGs/Quality'
+import Selection from '../../SVGs/Selection'
 
 
 
@@ -60,27 +65,56 @@ function Aboutus() {
 
             <div className='aboutus_body_bottom'>
                 <h1>Where we Shine</h1>
+
+        <div className='values'>
+            <div className='values_column'>
             <h3>Quality</h3>
+            <Quality className='values_svg'/>
+            </div>
+            <div className='values_column'>
             <h3>Selection</h3>
+            <Selection />
+            </div>
+            <div className='values_column'>
             <h3>Service</h3>
+            <Service />
+            </div>
+            <div className='values_column'>
             <h3>Knowledge</h3>
+            <Knowledge className='knowledge'/>
+            </div>
+        </div>
 
-            <h2> Story Time</h2>
 
+
+<div className='bys'>
+
+<div>
+            <h2> This is a story about four people named Everybody, Somebody, Anybody and Nobody. </h2>
             <p>
-            This is a story about four people named Everybody, Somebody, Anybody and Nobody.  There was an important job to be done and Everybody was sure that Somebody would do it.  Anybody could have done it, but Nobody did it.  Somebody got angry about that, because it was Everybody’s job.  Everybody thought Anybody could do it, but Nobody realized that Everybody wouldn’t do it.  It ended up that Everybody blamed Somebody when Nobody did what Anybody could have.
+           There was an important job to be done and Everybody was sure that Somebody would do it.  Anybody could have done it, but Nobody did it.  Somebody got angry about that, because it was Everybody’s job.  Everybody thought Anybody could do it, but Nobody realized that Everybody wouldn’t do it.  It ended up that Everybody blamed Somebody when Nobody did what Anybody could have.
             </p>
+</div>
+<div className='bys_pic_container'>
+        <img src={bys} alt='' className='bys_pic'/>
+</div>
 
+</div>
 
             <h2>Customer Testimonials</h2>
 
-            <p>
-            Let me show you.
-
+<div>
+<p>
+ Let me show you.
 Let me get it for you.  
-
 Where is your car?
+</p>
+</div>
 
+
+<div>
+
+<p>
 I shop at Jericho Nursery for my gardening needs.  I have shopped there since I first arrived in the valley in 2005.  More recently, I also have the occasional opportunity to help a bit with the weekly newsletter, as was the case this week.  And, as usual, I shopped.
 
 Why Jericho?  
@@ -95,9 +129,11 @@ I have also wondered, “How do I treat this bug/fungus/disease?”   Easy fix. 
 
 So, ask me again:  why Jericho?  Answer:  Why would I shop anywhere else?
 
+</p>
+</div>
+<span>
 Sandy Rea, Gardening Angel fan
-
-            </p>
+</span>
    
 
     
