@@ -1,0 +1,22 @@
+.staff_pics_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+  
+.staff_pics{
+    height: 8vw;
+    width: 8vw;
+    object-fit: cover;
+    border-radius: 5vw;
+    margin: 2rem;
+    border: 3px solid yellow;
+}
+
+.staff_pic h6{
+    font-size: 18pt;
+}
+.staff_pic span{
+    color: #4FA673;
+}
+

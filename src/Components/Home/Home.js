@@ -7,7 +7,7 @@ import FreshIdeas from './Containers/FreshIdeas'
 import GardeningCalendar from './Containers/GardeningCalendar'
 import NewintheBlog from './Containers/NewintheBlog'
 import Gallery from './Gallery/Gallery'
-import MoreAboutJericho from './AboutJericho/MoreAboutJericho'
+import MoreAboutJericho from './MoreAboutJericho/MoreAboutJericho'
 import Footer from '../Footer/Footer'
 
 

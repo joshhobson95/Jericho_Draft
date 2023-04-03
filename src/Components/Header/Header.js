@@ -143,7 +143,9 @@ function closeMenus(){
 
 {showCommunity && (
       <ul>
+        <NavLink to='/partners'>
         <li>Partners</li>
+        </NavLink>
         <NavLink to='/radio'>
         <li>Radio Show</li>
         </NavLink>
@@ -181,7 +183,9 @@ function closeMenus(){
       </div>
 {showContact &&(
     <ul>
-        <li>Location info</li>
+      <NavLink to='/aboutus'>
+        <li>About Us</li>
+      </NavLink>
         <li>Contact Info</li>
         <li>Why Work Here</li>
         <li>Phone Number</li>

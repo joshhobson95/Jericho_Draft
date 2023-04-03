@@ -8,6 +8,8 @@ import FreshIdeas from './Components/FreshIdeas/FreshIdeas';
 import GiftCard from './Components/GiftCard/GiftCard';
 import Radio from './Components/Radio/Radio';
 import Blog from './Components/Blog/Blog';
+import Partners from './Components/Partners/Partners';
+import Aboutus from './Components/Aboutuspage/Aboutus';
 import Footer from './Components/Footer/Footer';
 import './App.css';
 
@@ -24,6 +26,8 @@ function App() {
        <Route path='/giftcard' element={<GiftCard />}/>
        <Route path='/radio' element={<Radio />}/>
        <Route path='/blog' element={<Blog />}/>
+       <Route path='/partners' element={<Partners />}/>
+       <Route path='/aboutus' element={<Aboutus />}/>
       </Routes>
       <Footer />
     </div>

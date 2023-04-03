@@ -1,0 +1,83 @@
+.AboutUs{
+    height: auto;
+    margin-top: 11vh;
+    padding-top: 5vh;
+    width: 100vw;
+    background-image: linear-gradient(#95562E, #DB4B4Ba8, #15F6C0a8  ) ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+}
+.aboutus_welcome{
+    margin: 5vh;
+    background-color: #242424;
+    height: auto;
+    width: 60vw;
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    align-self: center;
+    color: #95562E;
+    font-weight: 500;
+    font-size: 20pt;
+    padding: 5vh;
+    padding-top: 7vh ;
+}
+.aboutus_welcome p{
+    padding: 1.5vw;
+}
+.aboutus_welcome h1{
+    color: #4FA673;
+    font-size: 60pt;
+    font-weight: 700;
+}
+.aboutus_body_main{
+    background-image: linear-gradient( #9f4a38, #6f5d53, #209276);
+    height: auto;
+    width: 80vw;
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+   align-self: center;
+   color: white;
+   margin-bottom: 5rem;
+}
+.aboutus_body_main h1{
+    color: #4FA673;
+    font-size: 60pt;
+    font-weight: 700;
+    padding: 2rem;
+}
+.staff_p{
+    padding: 4rem 10rem;
+    font-style: italic;
+}
+
+.about_the_owners{
+    display: flex;
+}
+.aboutus_body_mid p{
+    padding: 4rem 10rem;
+    font-size: 18pt;
+    line-height: 1.2;
+}
+.rickandjen{
+    height: 35%;
+    width: 35%;
+    object-fit: cover;
+    padding-left: 5rem;
+}
+
+
+.aboutus_body_bottom h3{
+    font-size: 35pt;
+    font-weight: 700;
+
+}
+.aboutus_body_bottom p{
+    padding: 4rem 10rem;
+    font-size: 18pt;
+    line-height: 1.2;
+}
