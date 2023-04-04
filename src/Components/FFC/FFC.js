@@ -22,7 +22,9 @@ function FFC() {
                 <h1 className='w_it_is'>What it is</h1>
                 <img alt='' src={ffc3} className='ffc3'/>
                 <p>
-                /* We are asked for our email address hundreds of times for every time we are asked for our mailing address, right? Well, the form you see on this screen really does ask for your mailing address, because several times a year we will be sending cards to members of the Jericho Frequent Flower Club. The cards will contain something of value, and we will be asking for your phone number as you check out in order to have a record of your choice to shop Jericho for all your yard and garden needs. */
+                We are asked for our email address hundreds of times for every time we are asked for our mailing address, right? Well, the form you see on this screen really does ask for your mailing address, because several times a year we will be sending cards to members of the Jericho Frequent Flower Club. The cards will contain something of value, and we will be asking for your phone number as you check out in order to have a record of your choice to shop Jericho for all your yard and garden needs. 
+
+                
                 Honestly? It’s a work in progress, we are trying to find the best solution for rewarding our most loyal
 customers. It’s free to join.
 

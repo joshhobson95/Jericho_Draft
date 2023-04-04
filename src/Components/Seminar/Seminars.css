@@ -1,0 +1,108 @@
+.Seminars{
+    margin-top: 11vh;
+    padding-top: 5vh;
+    width: 100vw;
+    background-image: linear-gradient(#4FA673, #DBBA4BA8 , #FB492C87 ) ;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.seminars_welcome{
+    margin: 5vh;
+    background-color: #242424;
+    height: auto;
+    width: 60vw;
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    align-self: center;
+    color: #4FA673;
+    font-weight: 500;
+    font-size: 18pt;
+    padding: 5vh;
+}
+.seminars_welcome h1{
+    color: #DBBA4B;
+    font-size: 60pt;
+    font-weight: 700;
+}
+.seminars_welcome p{
+    padding: 1.5vw;
+}
+
+.seminars_body_main{
+    background-color: #24242444;
+    height: auto;
+    width: 80vw;
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+   align-self: center;
+   color: white;
+}
+.seminars_body_top h1{
+    color: #DBBA4B;
+    font-size: 60pt;
+    font-weight: 700;
+    padding: 3rem;
+}
+.seminars_body_top p{
+    padding: 3rem;
+    font-size: 18pt;
+    line-height: 1.4;
+}
+
+.seminars_body_mid{
+    display: flex;
+}
+.seminars_body_mid h3{
+    font-size: 22pt;
+    padding: 2rem;
+}
+.seminars_list{
+width: 60%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.seminars_list ul{
+    width: 30%;
+    background-color: #242424;
+    border-radius: 20px;
+   padding-bottom: 5rem;
+   align-self: center;
+   margin: 5rem;
+
+}
+.seminars_list li{
+    font-size: 18pt;
+    padding-top: 2rem;
+}
+.seminars_list span{
+    font-weight: 700;
+    color: #95562E;
+}
+.seminars_icon{
+width: 30%;   
+padding-top: 8rem;
+}
+
+
+
+
+
+
+@media (max-width: 2000px){
+.seminars_body_mid{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.seminars_icon{
+    width: 70%;
+}
+}

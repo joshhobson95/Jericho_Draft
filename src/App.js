@@ -10,6 +10,7 @@ import Radio from './Components/Radio/Radio';
 import Blog from './Components/Blog/Blog';
 import Partners from './Components/Partners/Partners';
 import Aboutus from './Components/Aboutuspage/Aboutus';
+import Seminars from './Components/Seminar/Seminars';
 import Footer from './Components/Footer/Footer';
 import './App.css';
 
@@ -28,6 +29,7 @@ function App() {
        <Route path='/blog' element={<Blog />}/>
        <Route path='/partners' element={<Partners />}/>
        <Route path='/aboutus' element={<Aboutus />}/>
+       <Route path='/seminars' element={<Seminars />}/>
       </Routes>
       <Footer />
     </div>

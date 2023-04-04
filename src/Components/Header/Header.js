@@ -149,7 +149,9 @@ function closeMenus(){
         <NavLink to='/radio'>
         <li>Radio Show</li>
         </NavLink>
+        <NavLink to='/seminars'>
         <li>Seminars</li>
+        </NavLink>
         <li>Clubs around Abq</li>
       </ul>
 )}
