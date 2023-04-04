@@ -20,3 +20,14 @@
     color: #4FA673;
 }
 
+@media (max-width: 650px){
+    .staff_pics_grid{
+        grid-template-columns: repeat(2, 1fr) ;
+       }
+       .staff_pics{
+        height: 25vw;
+        width: 25vw;
+        border-radius: 15vw;
+       }
+       
+}

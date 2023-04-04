@@ -84,6 +84,7 @@
     border: #4FA673 6px solid;
     border-radius: 20px;
     box-shadow: 11px 13px 10px 5px rgba(112, 122, 66, 0.25);
+    margin-top: 3rem;
 }
 
 
@@ -130,4 +131,115 @@
 }
 
 
+/* ///////////////////////halfscreen///////////////////////////////// */
+@media (max-width: 2000px){
 
+    .aboutus_body_mid h1{
+        padding: 4rem;
+    }
+    .aboutus_body_mid p{
+        font-size: 12pt;
+        margin-top: -2rem;
+        padding: 2rem;
+    }
+    .values{
+        flex-wrap: wrap;
+    }
+    .rickandjen{
+        margin-top: 0;
+    }
+    .bys{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+    .bys h2{
+    padding: 1rem;
+    }
+    .bys_pic{
+        height: 35%;
+        object-fit: cover;
+        border: #95562E 6px solid;
+        border-radius: 20px;
+        box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    }
+
+}
+/* LAPTOP? */
+@media screen and (max-width: 1200px),
+screen and (max-height: 650px){
+.aboutus_welcome{
+    margin-top: 8rem;
+}
+.values_column{
+    height: 50vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column-reverse;
+}
+}
+
+
+/* MOBILE */
+@media (max-width: 650px){
+.aboutus_welcome{
+    font-size: 12pt;
+}
+.aboutus_body_main{
+    width: 94%;
+}
+
+.aboutus_welcome h1{
+    font-size: 30pt;
+}
+.aboutus_body_top h1{
+    font-size: 30pt;
+}
+.staff_p{
+    padding: 0;
+    margin: 2rem 1rem;
+}
+.aboutus_body_mid h1{
+    font-size: 30pt;
+}
+.about_the_owners{
+    display: flex;
+    flex-direction: column;
+}
+.rickandjen{
+    height: 75%;
+    width: 75%;
+   margin-bottom: 2rem;
+   margin-left: 0;
+   align-self: center;
+
+
+}
+.aboutus_body_bottom h1{
+    font-size: 30pt;
+}
+.values_column{
+    height: 30vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.values h3{
+font-size: 22pt;
+position: relative;
+padding: 0;
+padding-top: 1rem;
+}
+.bys h2{
+    font-size: 18pt;
+}
+.aboutus_body_bottom p{
+    font-size: 12pt;
+    padding: 1rem;
+}
+.bys_pic{
+    height: 75%;
+    width: 75%;
+}
+}
