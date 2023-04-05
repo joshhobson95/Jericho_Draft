@@ -1,6 +1,9 @@
 import React from 'react'
 import './Seminars.css'
 import SeminarIcon from '../../SVGs/SeminarIcon';
+import SeminarForm from './SeminarForm';
+import seminar_pic from '../../Assets/seminar_pic.jpg'
+
 
 
 function Seminars() {
@@ -54,12 +57,28 @@ function Seminars() {
                             <SeminarIcon />
             </div>
 
+
             </div>
+
+  <div className='seminar_pic_section'>
+            <img alt='' src={seminar_pic} className='seminar_pic'/>
+            <span>possible carousell?</span>
+  </div>
+      
+
 
 </div>
 
 
             <div className='seminars_body_bottom'>
+
+                <h1> Sign Up For the Next Seminar Here</h1>
+<div className='seminar_form'>
+    <SeminarForm />
+         
+</div>
+
+
 
             </div>
 

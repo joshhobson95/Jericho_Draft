@@ -2,7 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Header.css'
-import balloons from '../../Assets/Cropped_balloons.jpg'
+// import balloons from '../../Assets/Cropped_balloons.jpg'
+import succulents from '../../Assets/succulent_banner.jpg'
 import logo from '../../Assets/Logo.png'
 import ContactUsIcon from '../../SVGs/ContactUsIcon'
 import ProductsIcon from '../../SVGs/ProductsIcon'
@@ -59,7 +60,7 @@ function closeMenus(){
   return (
     <div className='header'>
         <div className='photo_banner'>
-        <img className='balloons' src={balloons} alt='ballons'/>
+        <img className='balloons' src={succulents} alt='ballons'/>
           <NavLink to='/'>
             <div className='logo_div'>
                 <img className='logo' src={logo} alt='logo'/>
@@ -152,7 +153,9 @@ function closeMenus(){
         <NavLink to='/seminars'>
         <li>Seminars</li>
         </NavLink>
+        <NavLink to='/clubs'>
         <li>Clubs around Abq</li>
+        </NavLink>
       </ul>
 )}
     </div>

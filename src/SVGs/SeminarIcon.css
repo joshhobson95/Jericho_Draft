@@ -54,26 +54,21 @@
 #background_si{
     d: path('M1664.09 66.495c-615.5 0-1114.466 507.62-1114.467 1133.805 0 626.18 498.967 1133.8 1114.467 1133.8 615.51 0 1114.47-507.62 1114.47-1133.8 0-626.185-498.96-1133.805-1114.47-1133.805z');
     fill: #95562E;
-    animation: wave11 5s  ;
+    animation: wave6 2s  ;
     
 }
 
 
-  @keyframes wave11 {
-    2% {
-        transform: translateX(1);
-    }
-
+  @keyframes wave6 {
+0%{
+  transform: translateX(-100%);
+}
     25% {
         transform: translateX(-25%);
     }
 
     50% {
         transform: translateX(-50%);
-    }
-
-    75% {
-        transform: translateX(-25%);
     }
 
     100% {

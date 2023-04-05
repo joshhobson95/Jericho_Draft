@@ -11,6 +11,7 @@ import Blog from './Components/Blog/Blog';
 import Partners from './Components/Partners/Partners';
 import Aboutus from './Components/Aboutuspage/Aboutus';
 import Seminars from './Components/Seminar/Seminars';
+import Clubs from './Components/Clubs/Clubs';
 import Footer from './Components/Footer/Footer';
 import './App.css';
 
@@ -30,6 +31,7 @@ function App() {
        <Route path='/partners' element={<Partners />}/>
        <Route path='/aboutus' element={<Aboutus />}/>
        <Route path='/seminars' element={<Seminars />}/>
+       <Route path='clubs' element={<Clubs />}/>
       </Routes>
       <Footer />
     </div>
