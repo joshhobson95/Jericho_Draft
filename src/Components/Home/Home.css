@@ -22,6 +22,9 @@
     background-color: #242424;
     padding-bottom: 6vh;
 }
+.welcome p{
+    line-height: 1.4;
+}
 .w{
     display: flex;
     flex-direction: column;

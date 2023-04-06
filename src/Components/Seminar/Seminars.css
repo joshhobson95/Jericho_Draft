@@ -96,13 +96,14 @@ padding-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 8rem;
 }
 .seminars_body_bottom h1{
 
-    font-size: 60pt;
+    font-size: 40pt;
     font-weight: 700;
     padding: 3rem;
-    
+    padding-bottom: 0rem;
 }
 .seminar_form{
     align-self: center;
