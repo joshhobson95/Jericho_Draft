@@ -8,7 +8,7 @@ export const BlogData= [
         title2: '',
         date: `March 31st, 2023`,
         img_1_url: 'https://drive.google.com/uc?export=view&id=1RzWZax_MPf3Oqzuxz54nzQ_eZ3t952e7',
-        img_2_url: '',
+        img_2_url: null,
         img_3_url: '',
         img_4_url: '',
         img_5_url: '',
@@ -55,7 +55,7 @@ export const BlogData= [
         img_1_url: 'https://drive.google.com/uc?export=view&id=10VbS4TwSJ5wwnss4duIhdjX2hZbYCmmu',
         img_2_url: 'https://drive.google.com/uc?export=view&id=1SXaZZ6az09tlJmZrTJfzs3uAbGRcJWmM',
         img_3_url: 'https://drive.google.com/uc?export=view&id=1Tibo5o6eYSi700NaMGYSXAzlefD8jjQ9',
-        img_4_url: 'https://drive.google.com/uc?export=view&id=1jRKwSEJqO1wyX-jIvY11my2vqmaUFLRA',
+        img_4_url: '',
         img_5_url: 'https://drive.google.com/uc?export=view&id=1zi-OU-mFZsUIi0pnDmbLXv9Ipnedr8jq',
         img_6_url: 'https://drive.google.com/uc?export=view&id=1SxFPygg4vJK1Ho4rSNfP2PCw5x6Mz96K',
         img_7_url: '',
@@ -63,7 +63,7 @@ export const BlogData= [
         img_9_url: '',
         img_10_url: 'https://drive.google.com/uc?export=view&id=1qunr0U8nllBJfMYkaYWeN5Ci2S3k1yjQ',
         img_1_captions: 'We decided to do some product testing yesterday... in 35 mph winds. The kite passed... dare we say it... with flying colors, but the trellised golden euonymus shrubs needed some assistance.',
-        img_2_captions: '',
+        img_2_captions: ``,
         img_3_captions: ``,
         img_4_captions: ``,
         img_5_captions: ``,
@@ -73,23 +73,34 @@ export const BlogData= [
         img_9_captions: ``,
         img_10_captions: ``,
         link: 'Kites AND Euanomys are on sale this week. Visit our SPECIALS page to see what else.',
-        link2: '',
-        icon: '',
-        icon2: ``,
+        button1_name: 'Shop Sales',
+        a_tag_1: '/',
+        link2: `Sign Up for this Season's Last Seminar`,
+        button2_name: 'Seminar Sign Up',
+        a_tag_2: '/seminars',
+        link3: '',
+        button3_name: 'Shop Sales',
+        a_tag_3: '/',
+        icon: ``,
+        icon2: `https://static.thenounproject.com/png/691419-200.png?api_key=MarvelWeb1`,
         icon3: ``,
+        icon4: ``,
         intro: 'There was an accidental duplication on our order of oodles this week, so we actually got oodles AND oodles of the most glorious color and the most luscious fresh green we have ever seen, and with more truckloads already on the way, we had to do some rack stacking. Help us make some room, will ya?',
         body_1:'If you want to try a new variety of tomatoes or peppers or make sure you get your FAVORITE, you will likely not find a better selection anywhere the entire season. Your Gardening Angels will give you the Secret Sauce for taking care of these plants early in the season and making sure they thrive, and also explain which herbs and veggies can be planted immediately with no concerns about frost.',
         body_2: 'Did you know we have a DELIVERY and PLANTING team? The Gardening Angels refer to them as the "ground crew" but they are experts in getting your trees and shrubs off to a great start. We have a fantastic selection, including wisteria, honeysuckle, flowering quince, evergreens, Indian Hawthorne shrubs and trees, and a forest of New Mexico grown PINIONS!!',
         body_3: 'Our final Gardening Seminar of the season is tomorrow, with beekeeper Justin Armstrong. Even if you never thought you would be keeping bees, Justin can show you how to keep bees without being a beekeeper. Keep that in mind and join us for this informative presentation. Or just say it 3 times fast.',
         body_4: '',
         conclusion: `Have a beeutiful day, and we'll see you again soon! -Richard, Jennifer, and Your Gardening Angels`,
-        span_green: 'sahelllllo?',
-        span_yellow: 'hello',
+        span_yellow: 'Lots of New Product',
+        span_green: 'Our Wide Selection of Shrubs',
         span_brown: 'hello'
     },
 
 
+//links may have to be used as url- as links through A tags to external sites will be different than Navlink redirects.
 
+//icons as SVGs or imgs.............1.1.1?!??!?!??!
+//booooo poo poo on icons
    
     ]
     
