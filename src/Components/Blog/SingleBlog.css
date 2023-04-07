@@ -1,12 +1,15 @@
 .Single_Blog_Post{
     margin-top: 11vh;
     padding-top: 5vh;
-    width: 100vw;
     background-image: linear-gradient(#4FA673, #DBBA4BA8 , #FB492C87 ) ;
     height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    line-height: 1.4;
+}
+.Single_Blog_Post p{
+    margin: 2rem 10rem;
 }
 
 .blog_welcome{
@@ -38,7 +41,6 @@
    margin-bottom: 15rem;
 }
 .blog_body_main p{
-    line-height: 1.4;
     font-size: 18pt;
     padding: 2rem 4rem;
 }
@@ -48,8 +50,12 @@
     padding: 2rem;
     color: #DBBA4B;
 }
-
-
+.blog_body_mid h1{
+    font-size: 32pt;
+    font-weight: 700;
+    padding: 2rem;
+    color: #95562E;
+}
 
 
 
@@ -62,13 +68,42 @@
     object-fit: cover;
 }
 
-/* .body_img_1
-.body_img_2
-.body_img_3
-.body_img_4
- */
-
-
+.body_img_1{
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    height: 35vw;
+    width: 65vw;
+    align-self: center;
+    object-fit: cover;
+    margin: 6rem;
+}
+.body_img_2{
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    height: 35vw;
+    width: 65vw;
+    align-self: center;
+    object-fit: cover;
+    margin: 6rem;
+}
+.body_img_3{
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    height: 35vw;
+    width: 65vw;
+    align-self: center;
+    object-fit: cover;
+    margin: 6rem;
+}
+.body_img_4{
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    height: 35vw;
+    width: 65vw;
+    align-self: center;
+    object-fit: cover;
+    margin: 6rem;
+}
 
 
 .blog_body_top button{
@@ -107,7 +142,6 @@
     margin-top: 1rem;
     margin-bottom: 3vh;
     cursor: pointer;
-
 }
 
 .blog_body_mid button:hover{
@@ -115,6 +149,9 @@
     color: #4FA673;
     transition: 1s;
 }
+
+
+
 .blog_paragraph_top{
     display: flex;
     flex-direction: column;
@@ -123,27 +160,24 @@
     display: flex;
     flex-direction: column;
 }
+
 .blog_paragraph_bottom{
     display: flex;
     flex-direction: column;
 }
 
-
-
 .blog_body_bottom{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 5rem;
 }
-
-
-
 
 .span_green{
     color: #4FA673;
     font-size: 30pt;
     font-weight: 700;
-
+    padding: 4rem;
 }
 .span_yellow{
     color: #DBBA4B;
@@ -156,5 +190,81 @@
     color: #95562E !important;
     font-size: 30pt;
     font-weight: 700;
+    padding: 4rem;
+}
+
+
+
+@media (max-width: 650px){
+    .blog_body_main{
+        background-color: #24242444;
+        height: auto;
+        width: 90vw;
+        border-radius: 20px;
+        box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+       align-self: center;
+       color: white;
+       margin-bottom: 15rem;
+    }
+    .Single_Blog_Post p{
+        font-size: 12pt;
+        margin: 0;
+    }
+    .Single_Blog_Post button{
+        font-size: 12pt;
+        border-radius: 12px;
+    }
+    .Single_Blog_Post span{
+        font-size: 22pt;
+    }
+
+    .blog_img{
+        border-radius: 20px;
+        box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+        height: 40vh;
+        width: 80vw;
+        align-self: center;
+        object-fit: cover;
+    }
+
+    .body_img_1{
+        border-radius: 20px;
+        box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+        height: auto;
+        width: 85vw;
+        align-self: center;
+
+        margin: 2rem;
+    }
+    .body_img_2{
+        border-radius: 20px;
+        box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+        height: auto;
+        width: 85vw;
+        align-self: center;
+
+        margin: 2rem;
+    }
+    .body_img_3{
+        border-radius: 20px;
+        box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+        height: auto;
+        width: 85vw;
+        align-self: center;
+     
+        margin: 2rem;
+    }
+    .body_img_4{
+        border-radius: 20px;
+        box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+        height: auto;
+        width: 85vw;
+        align-self: center;
+    
+        margin: 2rem;
+    }
+    
+
+
 
 }
