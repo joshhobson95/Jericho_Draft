@@ -195,6 +195,21 @@
 
 
 
+
+@media screen and (max-width: 1200px),
+screen and (max-height: 650px){
+    .Single_Blog_Post button{
+        height: auto;
+        width: auto;
+        padding: 1rem;
+    }
+
+
+
+}
+
+
+
 @media (max-width: 650px){
     .blog_body_main{
         background-color: #24242444;
@@ -263,6 +278,8 @@
     
         margin: 2rem;
     }
+
+
     
 
 
