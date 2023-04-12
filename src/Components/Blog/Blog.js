@@ -34,8 +34,12 @@ function Blog() {
         <div className='big_blog_card_bottom'>
             <h3>{item.title}</h3>
             <p>{item.intro}</p>    
+            <div className='big_blog_button'>
             <button>Read More</button>         
+            </div>
+            <div className='big_blog_span'>
             <span>{item.date}</span>
+            </div>
         </div>
     </div>
 ))}
