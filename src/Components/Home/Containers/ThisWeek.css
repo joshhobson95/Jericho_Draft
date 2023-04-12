@@ -2,17 +2,17 @@
     display: flex;
      justify-content: center;
      color: white;
-     font-size: 16pt;
-     margin: -5rem;
+     font-size: 12pt;
+     margin: -2rem;
 }
 .home_container_outer h3{
-    font-size: 24pt;
+    font-size: 22pt;
+    padding: 1rem;
     font-weight: 600;
-   padding-bottom: 1rem;
 }
 .home_container{
     height: auto;
-    width: 70vw;
+    width: 90vw;
     margin-top: 10vh;
     margin-bottom: 10vh;
     border-radius: 20px;
@@ -24,73 +24,63 @@
     width: auto;
 }
 .c_image{
-    height: 32vh;
-    width: 62vw;
+    height: 40vh;
+    width: 80vw;
     border-radius: 20px;
-    filter: drop-shadow(4px 6px 4px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
     object-fit: cover;
 }
 .hc_paragraph{
     margin-left: 5vw;
     margin-right: 5vw;
-    padding: 2vw;
-    padding-bottom: 4vh;
+    padding: 2rem 1rem;
+    line-height: 1.4;
 }
 .hc_button{
-    height: 5vh;
-    width: 15vh;
-    background-color: #cca4d3 ;
+    height: auto;
+    width: auto;
+    background-color: #DBBA4B;
     border: none;
-    border-radius: 20px;
+    border-radius: 12px;
     font-family: 'Raleway';
-    font-size: 18pt;
+    font-size: 12pt;
     font-weight: 600;
     color: white;
     align-self: center;
     margin-top: 3vh;
     cursor: pointer;
+    padding: 1rem;
 }
 .hc_button:hover{
     background-color: #ffffff;
-    color: #cca4d3;
+    color: #DBBA4B ;
     transition: 1s;
 }
 
 
-
-
-
-
-
-@media (max-width: 650px){
-    .home_container_outer{
-         font-size: 10pt;
-         margin: -2rem;
-    }
-    .home_container{
-        width: 90vw;
-    }
-    .home_container_outer h3{
-        font-size: 18pt;
-        padding: 1rem;
-    }
-    .c_icon{
-        height: 8vh;
-        width: auto;
-    }
-    .c_image{
-        height: 30vh;
-        width: 80vw;
-        border-radius: 20px;
-        filter: drop-shadow(4px 6px 4px rgba(0, 0, 0, 0.4));
-        object-fit: cover;
-    }
-    .hc_button{
-        font-size: 11pt;
-    }
-    .hc_button:hover{
-        font-size: 11pt;
-    }
-
-
+@media (min-width:1025px) { 
+.home_container{
+    width: 70vw;
+    font-size: 18pt;
 }
+.home_container_outer h3{
+    font-size: 26pt;
+    padding: 1rem;
+    font-weight: 600;
+}
+.c_image{
+    width: 60vw;
+}
+.hc_button{
+    font-size: 18pt;
+    border-radius: 20px;
+    white-space: nowrap;
+    width: auto;
+ padding: 1.25rem 1.5rem;
+}
+ }
+
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+

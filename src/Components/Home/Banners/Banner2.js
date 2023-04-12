@@ -11,12 +11,12 @@ function Banner2() {
             <div className='b2_2'>
             <h4 className='b2_h4'>Need help getting your goods to your yard?</h4>
             <h1>Delivery and Planting</h1>
-            <div className='van'>
-            <DeliveryVan />
-            </div>
             <h4 className='b2_h4g'> For as low as $75 for select areas</h4>
             </div>
+            <div className='van'>
+            <DeliveryVan />
             <button>Learn More</button>
+            </div>
         </div>
         </div>
     </div>

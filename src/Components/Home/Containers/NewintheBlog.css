@@ -1,59 +1,63 @@
+
 .nb_container{
     height: auto;
-    width: 70vw;
+    width: 90vw;
     margin-top: 10vh;
     margin-bottom: 10vh;
     border-radius: 20px;
     box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
     background-color: #24242433;
 }
+
+.nb_paragraph{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 2rem 1rem;
+    line-height: 1.4;
+}
 .nb_button{
-    height: 5vh;
-    width: 15vh;
-    background-color: #85d4a9 ;
+    height: auto;
+    width: auto;
+    background-color: #4FA673;
     border: none;
-    border-radius: 20px;
+    border-radius: 12px;
     font-family: 'Raleway';
-    font-size: 18pt;
+    font-size: 12pt;
     font-weight: 600;
     color: white;
     align-self: center;
-    margin-top: 5vh;
+    margin-top: 3vh;
     cursor: pointer;
+    padding: 1rem;
 }
 .nb_button:hover{
     background-color: #ffffff;
-    color: #85d4a9;
+    color: #4FA673 ;
     transition: 1s;
 }
-@media (max-width: 650px){
-    .ntw{
-         font-size: 10pt;
-    }
+
+
+@media (min-width:1025px) { 
     .nb_container{
-        width: 90vw;
-    }
-    .ntw h3{
+        width: 70vw;
         font-size: 18pt;
+    }
+    
+    .nb_container_outer h3{
+        font-size: 26pt;
         padding: 1rem;
+        font-weight: 600;
     }
-    .c_icon{
-        height: 8vh;
-        width: auto;
-    }
-    .c_image{
-        height: 30vh;
-        width: 80vw;
-        border-radius: 20px;
-        filter: drop-shadow(4px 6px 4px rgba(0, 0, 0, 0.4));
-        object-fit: cover;
-    }
-    .nb_button{
-        font-size: 11pt;
-    }
-    .nb_button:hover{
-        font-size: 11pt;
-    }
-
-
+.nb_button{
+    font-size: 18pt;
+    border-radius: 20px;
+    white-space: nowrap;
+    width: auto;
+ padding: 1.25rem 1.5rem;
 }
+ }
+
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
