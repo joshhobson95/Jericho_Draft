@@ -53,24 +53,20 @@ function Blog() {
             {BlogData.map((item) => (
                     <div className='small_blog_card'> 
                     <div className='small_blog_card_top'>
-                    
                     <img src={item.img_1_url} className='small_blog_photo'/>
                     </div>
-
                     <div className='small_blog_card_bottom'>
-
                     <h3>{item.title}</h3>
                     <div className='text_overflow'>
                     <p>{item.intro}</p>
                      </div>
-
+                     <div className='small_blog_card_button'>
                     <button>Read More</button>
-                    <span>{item.date}</span>
-
-
                     </div>
-
-
+                    <div className='small_blog_card_span'>
+                    <span>{item.date}</span>
+                    </div>
+                    </div>
                     </div>
             ))}
 
