@@ -1,59 +1,79 @@
 .more_about_jericho{
+    margin-top: 10rem;
     padding-bottom: 10vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .maj_1{
     display: flex;
     justify-content: center;
-    padding: 5rem;
-
 }
 .maj_header{
     background-color: #242424;
     height: auto;
-    width: auto;
+    width: 20rem;
     box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-radius: 12px;
 }
 .maj_header h1{
-    font-size: 56pt;
+    font-size: 26pt;
     font-weight: 700;
-    padding: 3rem;
+    padding: 1rem 0;
     background: linear-gradient(90deg, #4FA673 14.46%, #DBBA4B 96.51%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.maj_2{
-    display: flex;
-    height: 80vh;
-    padding-top: 10vh;
-   
-}
-.maj_left{
-height: auto;
-width: 35vw;
-margin-left: 3vw;
-}
+
 .maj_right{
-height: auto;
-width: 60vw;
-display: flex;
-flex-direction: column;
-margin-top: 5vh;
-margin-bottom: 5vh;
-}
+    height: auto;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    }
+
+    .maj_right h3{
+        font-size: 20pt;
+    }
+    .maj_right p{
+        font-size: 12pt;
+        color: #315E30;
+        line-height: 1.4;
+    }
+   .r_1{
+    padding: 2rem 1rem;
+   } 
+   .r_2{
+    padding: 2rem 1rem;
+   } 
+   .r_3{
+    padding: 2rem 1rem;
+   } 
 .maj_right h3{
-    font-size: 26pt;
-    padding: 2rem;
-    text-align: left;
+    padding-bottom: 2rem;
 }
-.maj_right p{
-    font-size: 14pt;
-    text-align: left;
-    padding-left: 2rem;
-    padding-right: 10rem;
-    color: #315E30;
+   .maj_button{
+  height: auto;
+  width: auto;
+  padding: 1.25rem 1.5rem;
+    background-color: #4FA673;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Raleway';
+    font-size: 12pt;
+    font-weight: 600;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.35);
 }
+.maj_button:hover{
+color: #4FA673;
+background-color: white;
+}
+
 .r_2{
     padding-top: 12vh;
     padding-bottom: 12vh;
@@ -71,91 +91,6 @@ margin-bottom: 5vh;
     animation: ts_brown 1s linear forwards;
     animation-fill-mode: forwards;
 }
-.s_container{
-position: relative;
-height: 80vh;
-overflow: hidden;
-}
-.s_yellow{
-    height: 35vh;
-    width: 25vw;
-    background-color: #DBBA4B;
-    box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 14px;
-    z-index: 3;
-    position: absolute;
-    top: 0vh;
-}
-.s_green{
-    height: 25vh;
-    width: 24vw;
-    background-color: #4FA673;
-    box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 14px;
-    z-index: 1;
-    position: absolute;
-    top: 26vh;
-    left: 10vw;
-
-}
-.s_brown{
-    height: 30vh;
-    width: 30vw;
-    background-color:  #95562E;
-    box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 14px;
-    z-index: 2;
-    position: absolute;
-    top: 45vh;
-
-}
-.dirt_hands{
-    height: 50vh;
-    width:  auto;
-    position: absolute;
-    top: 10vh;
-    right: 12vw;
-    z-index: 5;
-    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-    filter: drop-shadow(0px 9px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 14px;
-}
-
-
-.maj_button{
-    height: 5vh;
-    width: 15vh;
-    background-color: #4FA673;
-    border: none;
-    border-radius: 20px;
-    font-family: 'Raleway';
-    font-size: 18pt;
-    font-weight: 600;
-    color: white;
-    align-self: center;
-    margin-top: 5vh;
-    cursor: pointer;
-    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.35);
-   
-}
-.maj_button:hover{
-    height: 5vh;
-    width: 15vh;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 20px;
-    font-family: 'Raleway';
-    font-size: 18pt;
-    font-weight: 600;
-    color: #4FA673;
-    align-self: center;
-    margin-top: 5vh;
-    transition: 1s;
-}
-
-
-
-
 
 .a_s_1{
     height: 100px;
@@ -203,173 +138,175 @@ overflow: hidden;
     z-index: 0;
 }
 
-@keyframes wipe{
-    from{ 
-        right: 10vw;
-    }
-    to {
-        right: 90vw;
-        opacity: 0;
-    }
-}
-@keyframes ts_yellow{
-   0%{
-    text-shadow: none;
-   }
-   100%{
-    text-shadow: 0px 4px 4px #DBBA4B;
-   }
-}
-@keyframes ts_green{
-    0%{
-     text-shadow: none;
-    }
-    100%{
-        text-shadow: 0px 4px 4px #4FA673;
-    }
- }
- @keyframes ts_brown{
-    0%{
-     text-shadow: none;
-    }
-    100%{
-        text-shadow: 0px 4px 4px #95562E;
-    }
- }
 
-
-
-
-
-@media (max-width: 2000px){
-    .maj_left{
-        transform: scale(0.9);
-        transform-origin: right;
-        height: auto;
-        width: 50vw;
-        }
-        .s_container{
-            position: relative;
-            overflow: hidden;
-            }
-            .s_yellow{
-                height: 35vh;
-                width: 25vw;
-                background-color: #DBBA4B;
-                box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 14px;
-                z-index: 3;
-                position: absolute;
-                top: 0vh;
-            }
-            .s_green{
-                height: 20vh;
-                width: 30vw;
-                background-color: #4FA673;
-                box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 14px;
-                z-index: 1;
-                position: absolute;
-                top: 26vh;
-                left: 10vw;
-            
-            }
-            .s_brown{
-                height: 20vh;
-                width: 30vw;
-                background-color:  #95562E;
-                box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 14px;
-                z-index: 2;
-                position: absolute;
-                top: 45vh;
-            
-            }
-            .dirt_hands{
-                height: 30vh;
-                width:  auto;
-                position: absolute;
-                top: 10vh;
-                right: 12vw;
-                z-index: 5;
-                box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-                filter: drop-shadow(0px 9px 4px rgba(0, 0, 0, 0.25));
-                border-radius: 14px;
-            }
-            .r_2{
-                padding-top: 4vh;
-                padding-bottom: 4vh;
-            }
-            .button_container {
-                padding-top: 4vh;
-                }
-                
-}
-
-@media (max-width: 450px){
-
-.maj_header h1{
-    font-size: 20pt;
-    padding: 1rem;
-    word-wrap: none;
-}
-.maj_1{
-    display: flex;
-    justify-content: center;
-    padding: 0rem;
-    margin-top: 5rem;
-
-}
-.maj_header{
-    background-color: #242424;
-    height: auto;
-    width: auto;
-    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-}
 .maj_2{
     display: flex;
-    flex-direction: column;
-    height: auto;
-    padding-top: 10vh;
-}
-.maj_left{
-    align-self: center;
-    transform-origin: center;
-    height: auto;
-    width: 100vw;
-        
-}
-.s_yellow{
-    width: 40vw;
-}
-.s_green{
-    width: 90vw;
-}
-.s_brown{
-    width: 60vw;
-}
-.dirt_hands{
-    height: 45vh;
-}
-.maj_right{
-  align-self: center;
-}
-.maj_right h3{
-    font-size: 22pt;
+    justify-content: center;
     position: relative;
-    text-align: center;
-}
-.maj_right p{
-    font-size: 10pt;
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-    color: #315E30;
-}
-.maj_button{
-    font-size: 10pt;
 }
 
-
+.s_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; /* Adjust the gap between squares as needed */
+    width: 200px; /* Set the desired width of the stack */
+    height: 40rem;
 }
+
+    .s_yellow{
+        height: 15rem;
+        width: 20rem;
+        background-color: #DBBA4B;
+        box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 14px;
+        transform: translate(4%, -40%);
+    }
+    .s_green{
+        height: 25rem;
+        width: 14rem;
+        background-color: #4FA673;
+        box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 14px;
+        z-index: 1;
+        transform: translate(-130%, 5%);
+
+    }
+    .s_brown{
+        height: 12rem;
+        width: 14rem;
+        background-color:  #95562E;
+        box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 14px;
+        z-index: 2;
+        transform: translate(-80%, -50%);
+    }
+    .dirt_hands{
+        height: 40vh;
+        width:  auto;
+        box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+        filter: drop-shadow(0px 9px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 14px;
+        z-index: 5;
+        transform: translate(55%, 20%);
+    }
+
+    @keyframes wipe{
+        from{ 
+            right: 10vw;
+        }
+        to {
+            right: 90vw;
+            opacity: 0;
+        }
+    }
+    @keyframes ts_yellow{
+       0%{
+        text-shadow: none;
+       }
+       100%{
+        text-shadow: 0px 4px 4px #DBBA4B;
+       }
+    }
+    @keyframes ts_green{
+        0%{
+         text-shadow: none;
+        }
+        100%{
+            text-shadow: 0px 4px 4px #4FA673;
+        }
+     }
+     @keyframes ts_brown{
+        0%{
+         text-shadow: none;
+        }
+        100%{
+            text-shadow: 0px 4px 4px #95562E;
+        }
+     }
+
+     @media (min-width:1024px) { 
+
+        .maj_header{
+            width: auto;
+        }
+        .maj_header h1{
+            font-size: 50pt;
+            padding: 2.25rem 2.5rem;
+        }
+ 
+        .maj_right h3{
+   
+            font-size: 32pt;
+        }
+        .maj_right p{
+
+            font-size: 18pt;
+            color: #315E30;
+            line-height: 1.4;
+        }
+        .maj_button{
+            font-size: 22pt;
+        }
+     }
+
+
+
+@media (min-width:2050px) { 
+    .exclude_header{
+      display: grid;
+      grid-template-columns: 40% 60%;
+      gap: 0px;
+    }
+    .maj_header{
+        width: auto;
+    }
+    .maj_header h1{
+        font-size: 50pt;
+        padding: 2.25rem 2.5rem;
+    }
+    .maj_right{
+        margin-top: 0rem;
+       padding-right: 4rem ;
+    }
+    .maj_left{
+        transform: translate(0%, 15%);
+    }
+    .maj_right h3{
+        text-align: left;
+        font-size: 32pt;
+    }
+    .maj_right p{
+        text-align: left;
+        font-size: 18pt;
+        color: #315E30;
+        line-height: 1.4;
+    }
+    .s_container{
+        height: auto;
+    }
+    .s_yellow{
+        height: 60rem;
+        width: 30rem;
+        transform: translate(10%, -110%);
+    }
+    .s_green{
+        height: 40rem;
+        width: 25rem;
+        transform: translate(-10%, 45%);
+    }
+    .s_brown{
+        height: 30rem;
+        width: 25rem;
+        transform: translate(-35%, -70%);
+    }
+    .dirt_hands{
+        height: 40rem;
+    }
+    .maj_button{
+        font-size: 22pt;
+    }
+
+
+
+     }

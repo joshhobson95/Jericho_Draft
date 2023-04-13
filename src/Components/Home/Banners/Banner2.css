@@ -134,6 +134,7 @@ margin-top: 1rem;
         padding: 1.25rem 1.5rem;
         font-size: 18pt;
         border-radius: 20px;
+        margin-top: 4rem;
     }
     .van{
         display: flex;
@@ -149,7 +150,7 @@ margin-top: 1rem;
 
 @media (min-width:2000px) { 
     .b2_1{
-        width: 45vw;
+        width: 40vw;
         border-radius: 20px;
     }
     .b2_h4{
@@ -172,7 +173,7 @@ margin-top: 1rem;
     .van{
         display: flex;
         height: 20vh;
-        margin-top: -3rem;
+        margin-top: -5rem;
     }
     .van svg{
         width: 35%;

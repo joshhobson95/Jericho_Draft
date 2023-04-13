@@ -6,13 +6,15 @@ import dirt from '../../../Assets/dirt_hands.jpg'
 function MoreAboutJericho() {
   return (
     <div className='more_about_jericho'>
+
          <div className='maj_1'>
             <div className='maj_header'>
                 <h1>More About Jericho</h1>
             </div>
         </div>
+        <div className='exclude_header'>
 
-        <div className='maj_2'>
+     
             <div className='maj_left'>
                 <div className='s_container'>
                     <img src={dirt} alt='' className='dirt_hands'/>
@@ -20,10 +22,9 @@ function MoreAboutJericho() {
                     <div className='s_yellow'></div>
                     <div className='s_brown'></div>
                 </div>
-              
-             
-                    
             </div>
+
+
             <div className='maj_right'>
                 <div className='r_1'>
                     <div className='a_s_1'></div>
@@ -45,11 +46,11 @@ function MoreAboutJericho() {
                 </div>
             </div>
 
+    
         </div>
         <div className='button_container'>
                     <button className='maj_button'>Learn More</button>
         </div>
-
 
 
 
