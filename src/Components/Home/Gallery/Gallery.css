@@ -1,49 +1,30 @@
-.carousel{
-margin-bottom: 10vh;
+.h_carousel{
+    height: auto;
+    background-color: #242424;
 }
-.h_gallery_photo{
-    height: 65rem;
-    width: auto;
-    padding: 50px;
-    z-index: 2;
-}
-.h_gallery_photo_background{
-    height: 70rem;
-    filter: blur(1.5px);
-    position: absolute;
-    z-index: 1;
-}
-.h_card{
-    height: 75vh;
-    width: 75vw;
-   margin-top: 10vh;
-   margin-bottom:  10vh;
-   display: flex;
-   justify-content: center;
-   padding-top: 50px;
-}
-.h_card_top{
+.home_gallery_card{
+    margin-top: 10rem;
     display: flex;
-   justify-content: center;
 }
-.h_card_bottom{
-    padding-top: 7vh;
-    color: white;
-    font-style: italic;
-    font-size: 16pt;
+.home_photo_gallery_container{
+    height: 35rem;
+    width: auto;
+    
 }
-@media (max-width: 450px){
-    
-    .h_gallery_photo{
-     height: 100%;
-     width: 100%;
-    }
-    .h_gallery_photo_background{
-      opacity: 0;
-    }
-    .h_card{
-        height: 60vh;
-    }
-    
+.home_gallery_photo{
+    height: 31rem;
+    width: 40rem;
+    padding: 1rem;
+    object-fit: cover;
+}
+.slick-list img{
+    box-shadow: 2px 20px 6px rgba(247, 243, 243, 0.1);
+    border-radius: 200px;
 
 }
+
+.slick-list img:hover{
+position: relative;
+top: -10px;
+
+  }

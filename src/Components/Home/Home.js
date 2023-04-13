@@ -8,7 +8,7 @@ import GardeningCalendar from './Containers/GardeningCalendar'
 import NewintheBlog from './Containers/NewintheBlog'
 import Gallery from './Gallery/Gallery'
 import MoreAboutJericho from './MoreAboutJericho/MoreAboutJericho'
-import Footer from '../Footer/Footer'
+
 
 
 
@@ -37,6 +37,7 @@ function Home() {
     <GardeningCalendar />
     <NewintheBlog />
     <Banner2 />
+    <Gallery />
     <Gallery />
     <MoreAboutJericho />
 

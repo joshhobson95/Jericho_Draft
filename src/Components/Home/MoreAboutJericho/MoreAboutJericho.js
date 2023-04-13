@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 import './MoreAboutJericho.css'
 import dirt from '../../../Assets/dirt_hands.jpg'
 
 
 function MoreAboutJericho() {
+
   return (
     <div className='more_about_jericho'>
 

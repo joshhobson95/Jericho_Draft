@@ -1,63 +1,44 @@
 import React from 'react'
 import './Clubs.css'
+import { listData } from './listData'
 
 function Clubs() {
   return (
     <div className='Clubs'>
 
 <div className='clubs_welcome'>
-    <h1>Clubs Around Albuquerque</h1>
-    <p>
-    Welcome Statement:  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    </p>
-
+    <h1>Garden Clubs Around Albuquerque</h1>
 </div>
 
 
 
         <div className='clubs_body_main'>
 
-            <h1>Consider joining...</h1>
-
-            <div className='clubs_body_top'>
-
-
-                <p>So should we list every club or just show the page that ABQ Garden Center has already built
-                </p>
-
-                <h2>Albuquerque Garden Center</h2>
-                <p> Manages 15 gardening clubs throughout the city</p>
-                <p>https://www.albuquerquegardencenter.org/wp-content/uploads/2023/03/Garden-Clubs-and-Plant-Societies-2023-1.pdf (List of all clubs)</p>
-                <img />
-
-                <h2>Xeric Garden Club of Albuquerque</h2>
-                <p>https://xericgardenclub.org/</p>
-                <img />
-
-
-                <h2>New Mexico Orchid Guild</h2>
-                <p>https://www.nmorchidguild.org/</p>
-                <img />
-
-                <h2>ABQ African Violet Club</h2>
-                <p>http://albuquerqueafricanvioletclub.org/</p>
-                <img />
+            <h1>Consider Joining!</h1>
 
 
 
 
 
-            </div>
+            <div className="garden_club_list">
+      {listData.map((item, index) => (
+        <div key={index} className="list-item">
+          <h3 className="club_item_title">{item.title}</h3>
+          <p className="club_item_paragraph">{item.paragraph}</p>
+          <div className="club_item_contact">{item.contactInfo}</div>
+        </div>
+      ))}
+    </div>
 
 
-
-            <div className='clubs_body_bottom'>
-
+    <div className='club_statement'>
+      <p>For more information, visit the Albuqueruq Garden Center website. They have tons of information on joining clubs, syndication, and much more. Click the button below to visit their website</p>
+      <a href='https://www.albuquerquegardencenter.org/' target="_blank" rel="noreferrer">
+      <button>ABQGardenCenter.org</button>
+      </a>
             </div>
 
         </div>
-
-
     </div>
   )
 }

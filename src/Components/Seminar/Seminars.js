@@ -17,16 +17,10 @@ function Seminars() {
         <div className='seminars_welcome'>
             <h1>Seminars</h1>
         <p>
-        Welcome Statement:  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Welcome Statement:  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </p>
         </div>
-
-
-
         <div className='seminars_body_main'>
-
-
-
             <div className='seminars_body_top'>
                 <h1>This Year's Seminars</h1>
                 <p>
@@ -34,7 +28,9 @@ function Seminars() {
                 </p>
 
 <div className='seminars_body_mid'>
-
+            <div className='seminars_icon'>
+                            <SeminarIcon />
+            </div>
             <div className='seminars_list'>
                 <ul>
                 <h3>Upcoming Seminars for 2023</h3>
@@ -53,16 +49,12 @@ function Seminars() {
                 </ul>
             </div>
 
-            <div className='seminars_icon'>
-                            <SeminarIcon />
-            </div>
 
 
             </div>
 
   <div className='seminar_pic_section'>
             <img alt='' src={seminar_pic} className='seminar_pic'/>
-            <span>possible carousell?</span>
   </div>
       
 

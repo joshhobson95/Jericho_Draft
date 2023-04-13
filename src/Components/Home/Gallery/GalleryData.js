@@ -1,55 +1,38 @@
 
 
-export const GalleryData= [
 
-    {
-        id: 1,
-        img: 'cf1',
-        captions: "Gerber Daisies",
-        links: "",
-    },
-    {
-        id: 2,
-        img: 'cf2',
-        captions: "Big Poppies",
-        links: "",
-    },
-    {
-        id: 3,
-        img: 'cf3',
-        captions: "Ranunculus",
-        links: "",
-    },
-    {
-        id: 4,
-        img: 'cf4',
-        captions: "Big ol Flow",
-        links: "",
-    }, 
-    {
-        id: 5,
-        img: 'cf5',
-        captions: "Succulents",
-        links: "",
-    },
-    {
-        id: 6,
-        img: 'cf6',
-        captions: "Ferns",
-        links: "",
-    },
-    {
-        id: 7,
-        img: 'cf7',
-        captions: "Multi-Colored Clover",
-        links: "",
-    },
-    {
-        id: 8,
-        img: 'cf8',
-        captions: "More Beautiful Clover",
-        links: "",
-    }
-    ]
-    
-    
+export const GalleryData = [
+{
+id: 1,
+img: 'https://drive.google.com/uc?export=view&id=1C9sfOKpra9mWGLiuUmUhjoloSyH_mpEP',
+text: '',
+link: '',    
+},
+{
+id: 2,
+img: 'https://drive.google.com/uc?export=view&id=183siRvyFsBNfURaGhlp8is72EUXbAiiU',
+text: '',
+link: '',    
+},
+{
+id: 3,
+img: 'https://drive.google.com/uc?export=view&id=1hChMoiIwOnz2CWOaKpxBZu7w9a5EptBO',
+text: '',
+link: '',    
+},
+{
+id: 4,
+img: 'https://drive.google.com/uc?export=view&id=1X5QaJpsWKVv8QLnD7ud68g-_iYLaqQXX',
+text: '',
+link: '',    
+},
+{
+id: 5,
+img: 'https://drive.google.com/uc?export=view&id=1h7kh7R-7LqMIMEZalLktoJn2gID0psnC',
+text: '',
+link: '',    
+}
+
+
+]
+
