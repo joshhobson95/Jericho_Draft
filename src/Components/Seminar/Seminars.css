@@ -93,7 +93,6 @@ flex-direction: column;
 .seminars_icon{
 width: 100%;   
 }
-
 .seminar_pic{
     height: 30vh;
     width: 80vw;
@@ -107,6 +106,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 4rem;
 }
 
 .seminars_body_bottom{
@@ -128,14 +128,9 @@ width: 100%;
     width: auto;
 }    
 
-
-
-
 @media (min-width:1025px) { 
     .seminars_welcome{
-
         font-size: 18pt;
-    
     }
     .seminars_welcome h1{
         color: #DBBA4B;
@@ -174,7 +169,38 @@ width: 100%;
     width: 65vw;
 }
 
-
 }
 
 
+
+.reveal-container {
+    height: 70%; /* Set the height of the reveal container */
+    position: relative; /* Set position to relative so child element can be positioned absolute */
+  }
+  .reveal-content {
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    display: none; 
+    transition: transform 5s ease-in-out; 
+    transform: translateY(20px);
+    animation: fadeIn;
+    transition: 1s;
+  }
+  .visible {
+    display: block; /* Set display to block to reveal the content on scroll */
+    /* Additional styling for the revealed content */
+    transform: translateY(0);
+    animation: fadeIn;
+    transition: 1s;
+  }
+  
+
+  @keyframes fadeIn{
+    from {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 1; /* End with opacity 1 */
+    }
+  }

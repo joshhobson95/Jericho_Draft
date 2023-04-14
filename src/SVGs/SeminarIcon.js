@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react'
 import './SeminarIcon.css'
 
 function SeminarIcon() {
+
+
+
+
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,6 +16,7 @@ function SeminarIcon() {
       strokeMiterlimit="10"
       clipRule="evenodd"
       viewBox="0 0 3370.82 2384.24"
+      id='seminar_icon'
     >
       <g vectornatorLayerName="Layer 1">
       
