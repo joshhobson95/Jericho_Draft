@@ -67,9 +67,7 @@ setIsVisible(false)
     </div>
     <button onClick={clickHandler}>wipe</button>
 <div className='seminars_body_mid'>
-
-      
-            <div className='seminars_list'>
+           <div className='seminars_list'>
                 <ul>
                     <h3>No Seminars Scheduled Currently</h3>
                     <p>They will resume after Spring</p>
@@ -98,33 +96,14 @@ setIsVisible(false)
             <img alt='' src={seminar_pic} className='seminar_pic'/>
   </div>
 </div>
-
-
-
             <div className='seminars_body_bottom'>
-
                 <h1> Sign Up For the Next Seminar Here</h1>
-
-
-
-<div className='seminar_form'>
-    <SeminarForm />
-</div>
+        <div className='seminar_form'>
+        <SeminarForm />
+        </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
+</div>
   )
 }
 

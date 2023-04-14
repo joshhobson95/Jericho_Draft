@@ -82,11 +82,11 @@ function closeMenus(){
       {showProducts && (
         <ul>
           <NavLink to='/newthisweek'>
-            <li>New This Week</li>
+            <li>This Week's Specials</li>
           </NavLink>
-            <li>Sales</li>
+            <li>Promotions</li>
             <li>Brands we Carry</li>
-            <li>Southwest Plants</li>
+            <li>Delivery and Planting</li>
           </ul>
         )}
         </div>
@@ -129,6 +129,7 @@ function closeMenus(){
         <NavLink to='/freshideas'>
         <li>Fresh Ideas</li>
         </NavLink>
+        <li>Gardening Resources</li>
       </ul>
 )}
     </div>
@@ -156,6 +157,7 @@ function closeMenus(){
         <NavLink to='/clubs'>
         <li>Clubs around Abq</li>
         </NavLink>
+        <li>The Birds!</li>
       </ul>
 )}
     </div>
@@ -184,7 +186,7 @@ function closeMenus(){
     <div className='nav_contactus'>
     <div className='contactus' onClick={toggleContact}>
     <ContactUsIcon />
-    <span>Contact Us</span>
+    <span>About Jericho</span>
       </div>
 {showContact &&(
     <ul>
@@ -194,6 +196,7 @@ function closeMenus(){
         <li>Contact Info</li>
         <li>Why Work Here</li>
         <li>Phone Number</li>
+        <li>Nursery Map</li>
       </ul>
 )}
 

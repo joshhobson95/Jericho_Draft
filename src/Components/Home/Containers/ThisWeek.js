@@ -15,7 +15,7 @@ function NewThisWeek() {
                     <img  src={icon1} className="c_icon"/>
                 </div>
                 <div className='home_container_header_text'>
-                    <h3>New This Week</h3>
+                    <h3>This Week's Specials</h3>
                 </div>
         </div>
 
@@ -26,7 +26,7 @@ function NewThisWeek() {
                 </div>
                 <div className='hc_paragraph'>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Ready to sprout your garden dreams? See what's on sale this week for unbeatable nursery promotions on a wide variety of plants, flowers, hardgoods and more. Get your green thumb on!
                     </p>
 
                             <button className='hc_button'>Learn More</button>

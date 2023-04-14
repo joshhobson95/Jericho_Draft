@@ -91,13 +91,16 @@
     line-height: 1.4;
 }
  }
-
  @media (min-width:1281px) { 
     .w_1{
-        margin-left: -40rem;
         padding-left: 2rem;
     }
     .w_3{
         margin-left: 15vw;
     }
   }
+  @media (min-width: 2200px) {
+    .w_1{
+        margin-left: -40rem;
+    }
+  } 

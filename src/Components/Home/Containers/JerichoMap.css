@@ -1,4 +1,5 @@
-.gc_container{
+
+.jm_container{
     height: auto;
     width: 90vw;
     margin-top: 10vh;
@@ -7,16 +8,17 @@
     box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
     background-color: #24242433;
 }
-.gc_paragraph{
+
+.jm_paragraph{
     margin-left: 5vw;
     margin-right: 5vw;
     padding: 2rem 1rem;
     line-height: 1.4;
 }
-.gc_button{
+.jm_button{
     height: auto;
     width: auto;
-    background-color: #4FA673;
+    background-color: #DBBA4B;
     border: none;
     border-radius: 12px;
     font-family: 'Raleway';
@@ -28,30 +30,34 @@
     cursor: pointer;
     padding: 1rem;
 }
-.gc_button:hover{
+.jm_button:hover{
     background-color: #ffffff;
-    color: #4FA673;
+  color: #DBBA4B;
     transition: 1s;
+}
+.map_icon{
+    padding-top: 0.75rem ;
 }
 
 
+
 @media (min-width:1025px) { 
-    .gc_container{
+    .jm_container{
         width: 70vw;
         font-size: 18pt;
     }
     
-    .gc_container_outer h3{
+    .jm_container_outer h3{
         font-size: 26pt;
         padding: 1rem;
         font-weight: 600;
     }
-.gc_button{
+.jm_button{
     font-size: 18pt;
     border-radius: 20px;
     white-space: nowrap;
     width: auto;
- padding: 1.25rem 1.5rem;
+    padding: 1.25rem 1.5rem;
 }
  }
 

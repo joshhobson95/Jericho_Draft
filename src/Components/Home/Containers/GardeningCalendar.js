@@ -52,7 +52,7 @@ function GardeningCalendar() {
                     </div>
                     <div className='hc_paragraph'>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Did you know Jericho offers a Gardening Calendar? Click below to get advice from the Gardening Angels on exactly what you should be doing this month to keep up with your garden's wants and needs.
                         </p>
                         <button className='gc_button'>Learn More</button>
                     </div>

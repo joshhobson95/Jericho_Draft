@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Home.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'; 
 import Banner from './Banners/Banner'
 import Banner2 from './Banners/Banner2'
 import NewThisWeek from '../Home/Containers/ThisWeek'
-import FreshIdeas from './Containers/FreshIdeas'
+import JerichoMap from './Containers/JerichoMap'
 import GardeningCalendar from './Containers/GardeningCalendar'
 import NewintheBlog from './Containers/NewintheBlog'
 import Gallery from './Gallery/Gallery'
@@ -13,6 +15,14 @@ import MoreAboutJericho from './MoreAboutJericho/MoreAboutJericho'
 
 
 function Home() {
+
+
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+
   return (
     <div className='home'>
 
@@ -32,10 +42,55 @@ function Home() {
 
 
     <Banner />
+    <div 
+        data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+    
+    >
+          <NewintheBlog/>
+    </div>
+    <div 
+        data-aos="fade-up"
+        data-aos-offset="50"
+
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+    >
     <NewThisWeek />
-    <FreshIdeas />
-    <GardeningCalendar />
-    <NewintheBlog />
+    </div>
+    <div 
+        data-aos="fade-up"
+        data-aos-offset="50"
+
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+    >
+          <GardeningCalendar />
+    </div>
+    <div 
+        data-aos="fade-up"
+        data-aos-offset="50"
+
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+    >
+          <JerichoMap />
+    </div>
+
     <Banner2 />
     <Gallery />
     <Gallery />
