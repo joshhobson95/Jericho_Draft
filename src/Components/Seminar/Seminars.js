@@ -33,7 +33,10 @@ function Seminars() {
             </div>
             <div className='seminars_list'>
                 <ul>
-                <h3>Upcoming Seminars for 2023</h3>
+                    <h3>No Seminars Scheduled Currently</h3>
+                    <p>They will resume after Spring</p>
+                    <p>Logo</p>
+                {/* <h3>Upcoming Seminars for 2023</h3>
                    <li>Bee's Knees I</li>
                    <span>Justin ArmStrong</span>
                    <li>Bee's Knees II</li>
@@ -45,7 +48,7 @@ function Seminars() {
                    <li>Xeriscape Rocks</li>
                    <span>Rick Hobson</span>
                    <li>Gardening Madness</li>
-                   <span>Rick Hobson</span>
+                   <span>Rick Hobson</span> */}
                 </ul>
             </div>
 
