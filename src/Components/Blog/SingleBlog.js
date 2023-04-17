@@ -1,16 +1,30 @@
 import React, {useState} from 'react'
 import './SingleBlog.css'
 import {BlogData} from './BlogData.js'
-import { useParams } from 'react-router-dom'
-import { NavLink, Link } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 
 function SingleBlog() {
 
 
+  const navigate = useNavigate()
   const { blogid } = useParams();
   const [blogIdNum, setBlogIdNum] = useState(+blogid)
+
+
+  const handlePrevious = () => {
+    const previousBlogId = blogIdNum - 1;
+    setBlogIdNum((prevBlogId) => prevBlogId - 1);
+    navigate(`/singleblog/${previousBlogId}`);
+  };
+
+  const handleNext = () => {
+    const nextBlogId = blogIdNum + 1;
+    setBlogIdNum((prevBlogId) => prevBlogId + 1);
+    navigate(`/singleblog/${nextBlogId}`);
+  };
 
 
 
@@ -22,8 +36,12 @@ function SingleBlog() {
             <div>
               <h1>Blog Post:</h1>
               <h2> Selected: {item.title}</h2>
-        
               
+              <button onClick={handlePrevious}>previous</button>
+
+           
+              <button onClick={handleNext}>next</button>
+    
             </div>
           ))}
       </div>
@@ -163,12 +181,7 @@ function SingleBlog() {
     </div>
 ))}
 
-     
-
-
-
-
-
+  
         </div>
 
   )
