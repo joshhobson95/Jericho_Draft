@@ -29,7 +29,7 @@ function App() {
        <Route path='/giftcard' element={<GiftCard />}/>
        <Route path='/radio' element={<Radio />}/>
        <Route path='/blog' element={<Blog />}/>
-       <Route path='/singleblog' element={<SingleBlog />}/>
+       <Route path='/singleblog/:blogid' element={<SingleBlog />}/>
        <Route path='/partners' element={<Partners />}/>
        <Route path='/aboutus' element={<Aboutus />}/>
        <Route path='/seminars' element={<Seminars />}/>

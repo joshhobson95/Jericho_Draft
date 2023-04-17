@@ -48,10 +48,7 @@ function Partners() {
 
                 </div>
 
-                {/* <div className='gts_names'>
-
-                </div>
-     */}
+ 
 
 
 
@@ -59,11 +56,8 @@ function Partners() {
             </div>
 
             <div className='partners_body_bottom'>
-                    <h1>More of Jericho's Partners</h1>
                 <p>
-                /* We are asked for our email address hundreds of times for every time we are asked for our mailing address, right? Well, the form you see on this screen really does ask for your mailing address, because several times a year we will be sending cards to members of 
-                Honestly? It’s a work in progress, we are trying to find the best solution for rewarding our most loyal
-                customers. It’s free to join.
+                  If you havene't checked these guys out, you should! Support the proud sponsor's of Jericho Nursery's Garden Talk Radio Show.
                 </p>      
                 </div>
 

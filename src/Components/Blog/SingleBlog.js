@@ -1,39 +1,35 @@
 import React, {useState} from 'react'
 import './SingleBlog.css'
 import {BlogData} from './BlogData.js'
-import { NavLink } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 
 
 function SingleBlog() {
 
 
-  const [numberId, setNumberId] = useState(2)
+  const { blogid } = useParams();
+  const [blogIdNum, setBlogIdNum] = useState(+blogid)
 
 
-function clickHandler()  {
-  setNumberId(2)
-}
-function clickHandler2()  {
-  setNumberId(3)
-}
 
   return (
     <div className='Single_Blog_Post'>
 
       <div className='blog_welcome'>
-          {BlogData.filter(item => item.id === numberId).map((item) =>(
+          {BlogData.filter(item => item.id === blogIdNum).map((item) =>(
             <div>
               <h1>Blog Post:</h1>
               <h2> Selected: {item.title}</h2>
-              <button onClick={clickHandler}> Prev</button>
-              <button onClick={clickHandler2}> Next</button>
+        
+              
             </div>
           ))}
       </div>
-      
 
-      {BlogData.filter(item => item.id === numberId).map((item) => (
+
+      {BlogData.filter(item => item.id === blogIdNum).map((item) => (
 <div key={item.id} className='blog_body_main'> 
     <div className='blog_body_top'>
             <h1 className='blog_title'>{item.title}</h1>

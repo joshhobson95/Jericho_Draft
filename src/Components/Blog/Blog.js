@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Blog.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import {BlogData} from './BlogData.js'
 
 
@@ -9,7 +10,25 @@ import {BlogData} from './BlogData.js'
 
 function Blog() {
 
+    const { id } = useParams()
+
+    const [blogsToShow, setBlogsToShow] = useState(3);
+
+
+    const blogsToMap = BlogData.slice(0, blogsToShow);
+
+
+    const hanldeScrollTop = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    const handleSeeMore = () => {
+      setBlogsToShow(blogsToShow + 3);
+    };
     
+
+
+
   return (
     <div className='Blog'>
 
@@ -24,7 +43,7 @@ function Blog() {
  
 
 
-{BlogData.filter(item => item.id === 1).map((item) => (
+{blogsToMap.filter(item => item.id === 1).map((item) => (
     <div className='big_blog_card'> 
         <div className='big_blog_card_top'>
             <h1>Latest Post</h1>
@@ -35,7 +54,9 @@ function Blog() {
             <h3>{item.title}</h3>
             <p>{item.intro}</p>    
             <div className='big_blog_button'>
+            <Link to={`/singleblog/${item.id}`}>
             <button>Read More</button>         
+              </Link>
             </div>
             <div className='big_blog_span'>
             <span>{item.date}</span>
@@ -50,7 +71,7 @@ function Blog() {
 
 
 
-            {BlogData.map((item) => (
+            {blogsToMap.map((item) => (
                     <div className='small_blog_card'> 
                     <div className='small_blog_card_top'>
                     <img src={item.img_1_url} className='small_blog_photo'/>
@@ -61,7 +82,13 @@ function Blog() {
                     <p>{item.intro}</p>
                      </div>
                      <div className='small_blog_card_button'>
+
+
+               <Link to={`/singleblog/${item.id}`}>
                     <button>Read More</button>
+               </Link>
+       
+                    <p>{item.id}</p>
                     </div>
                     <div className='small_blog_card_span'>
                     <span>{item.date}</span>
@@ -73,9 +100,8 @@ function Blog() {
 
 <div className='blog_snav_buttons'>
   
-              <button> Back to Top</button>
-
-              <button> See More </button>
+              <button onClick={hanldeScrollTop}> Back to Top</button>
+              <button onClick={handleSeeMore}> See More </button>
 </div>
 
 

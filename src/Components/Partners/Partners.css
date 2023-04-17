@@ -1,6 +1,6 @@
 .Partners{
     height: auto;
-    margin-top: 11vh;
+    margin-top: 15vh;
     padding-top: 5vh;
     width: 100vw;
     background-image: linear-gradient(#DBBA4BCF 40%, #4BA7DBCF , #DB4BD5CF) ;
@@ -21,14 +21,14 @@
     flex-direction: column;
     padding-bottom: 2rem;
     align-self: center;
-    color:  #DBBA4B;;
+    color: white;
     font-weight: 500;
-    font-size: 18pt;
+    font-size: 12pt;
     padding: 5vh;
 }
 .partners_welcome h1{
     color: #4FA673;
-    font-size: 60pt;
+    font-size: 30pt;
     font-weight: 700;
 
 }
@@ -38,7 +38,7 @@
 .partners_body{
     background-image: linear-gradient(#b19c4a, #7271b7) ;
     height: auto;
-    width: 80vw;
+    width: 90vw;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -49,30 +49,37 @@
 .partners_body_top p{
     color: white;
     padding: 0 10vw;
-    font-size: 18pt;
+    font-size: 12pt;
     position: relative;
     z-index: 2;
     text-align: center;
     line-height: 30px;
 }
 .partners_body_top h1{
-    color: #0c4223;
-    font-size: 40pt;
+    color:  #DBBA4B;
+    font-size: 30pt;
     font-weight: 700;
     padding: 2rem;
 }
 .gts_pics{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .partner_logos{
     height: auto;
-    width: 9vw;
+    width: 50vw;
     padding: 1rem;
     border-radius: 20px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.partners_body_bottom{
+    color: white;
+    font-size: 12pt;
+    padding: 1rem 2rem;
+    line-height: 1.4;
 }
 
 .partner_logos:hover{
@@ -92,6 +99,29 @@
     align-self: center;
     color:  #DBBA4B;;
     font-weight: 600;
-    font-size: 40pt;
+    font-size: 30pt;
     padding: 5vh;
+}
+
+@media (min-width:1025px) { 
+.partners_welcome{
+    font-size: 18pt;
+}
+.partners_welcome h1{
+    font-size: 50pt;
+}
+.partners_body p{
+    font-size: 18pt;
+}
+.partners_body_top h1{
+    font-size: 50pt;
+}
+.gts_pics{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.partner_logos{
+    width: 12vw;
+}
+
 }
