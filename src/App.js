@@ -1,19 +1,19 @@
 import {Routes, Route, Navigate} from 'react-router-dom'
-import Header from './Components/Header/Header'
-import Home from './Components/Home/Home';
-import NewThisWeek from './Components/New This Week/NewThisWeek';
-import FFC from './Components/FFC/FFC';
-import GardeningCalendar from './Components/GardeningCalendar/GardeningCalendar';
-import FreshIdeas from './Components/FreshIdeas/FreshIdeas';
-import GiftCard from './Components/GiftCard/GiftCard';
-import Radio from './Components/Radio/Radio';
-import Blog from './Components/Blog/Blog';
-import SingleBlog from './Components/Blog/SingleBlog';
-import Partners from './Components/Partners/Partners';
-import Aboutus from './Components/Aboutuspage/Aboutus';
-import Seminars from './Components/Seminar/Seminars';
-import Clubs from './Components/Clubs/Clubs';
-import Footer from './Components/Footer/Footer';
+import Header from './components/Header/Header'
+import Home from './components/Home/Home';
+import NewThisWeek from './components/New This Week/NewThisWeek';
+import FFC from './components/FFC/FFC';
+import GardeningCalendar from './components/GardeningCalendar/GardeningCalendar';
+import FreshIdeas from './components/FreshIdeas/FreshIdeas';
+import GiftCard from './components/GiftCard/GiftCard';
+import Radio from './components/Radio/Radio';
+import Blog from './components/Blog/Blog';
+import SingleBlog from './components/Blog/SingleBlog';
+import Partners from './components/Partners/Partners';
+import Aboutus from './components/Aboutuspage/Aboutus';
+import Seminars from './components/Seminar/Seminars';
+import Clubs from './components/Clubs/Clubs';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {

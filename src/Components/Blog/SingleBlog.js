@@ -1,12 +1,32 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './SingleBlog.css'
 import {BlogData} from './BlogData.js'
 import { useParams, useNavigate } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
+import axios from 'axios'
 
 
 
 function SingleBlog() {
+
+
+  const [blogData, setBlogData] = useState([])
+
+
+  useEffect(() => {
+    axios
+      .get("/blog")
+      .then((res) => {
+        setBlogData(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+
+
+
 
 
   const navigate = useNavigate()
@@ -32,7 +52,7 @@ function SingleBlog() {
     <div className='Single_Blog_Post'>
 
       <div className='blog_welcome'>
-          {BlogData.filter(item => item.id === blogIdNum).map((item) =>(
+          {blogData.filter(item => item.blogtableid === blogIdNum).map((item) =>(
             <div>
               <h1>Blog Post:</h1>
               <h2> Selected: {item.title}</h2>
@@ -47,7 +67,7 @@ function SingleBlog() {
       </div>
 
 
-      {BlogData.filter(item => item.id === blogIdNum).map((item) => (
+      {blogData.filter(item => item.blogtableid === blogIdNum).map((item) => (
 <div key={item.id} className='blog_body_main'> 
     <div className='blog_body_top'>
             <h1 className='blog_title'>{item.title}</h1>

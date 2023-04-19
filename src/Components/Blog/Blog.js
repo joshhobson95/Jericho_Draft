@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Blog.css'
 import { NavLink, Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import {BlogData} from './BlogData.js'
+import axios from "axios";
 
 
 // Public Photos on Drive
@@ -10,12 +11,28 @@ import {BlogData} from './BlogData.js'
 
 function Blog() {
 
+  const [blogData, setBlogData] = useState([])
+
+
+  useEffect(() => {
+    axios
+      .get("/blog")
+      .then((res) => {
+        setBlogData(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+
     const { id } = useParams()
 
     const [blogsToShow, setBlogsToShow] = useState(3);
 
 
-    const blogsToMap = BlogData.slice(0, blogsToShow);
+    // const blogsToMap = BlogData.slice(0, blogsToShow);
+    const blogsToMap = blogData.slice(0, blogsToShow);
 
 
     const hanldeScrollTop = () => {
@@ -54,7 +71,7 @@ function Blog() {
             <h3>{item.title}</h3>
             <p>{item.intro}</p>    
             <div className='big_blog_button'>
-            <Link to={`/singleblog/${item.id}`}>
+            <Link to={`/singleblog/${item.blogtableid}`}>
             <button>Read More</button>         
               </Link>
             </div>
@@ -84,7 +101,7 @@ function Blog() {
                      <div className='small_blog_card_button'>
 
 
-               <Link to={`/singleblog/${item.id}`}>
+               <Link to={`/singleblog/${item.blogtableid}`}>
                     <button>Read More</button>
                </Link>
        
