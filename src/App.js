@@ -1,4 +1,4 @@
-import {Routes, Route, Navigate} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import Header from './components/Header/Header'
 import Home from './components/Home/Home';
 import NewThisWeek from './components/New This Week/NewThisWeek';
@@ -13,6 +13,7 @@ import Partners from './components/Partners/Partners';
 import Aboutus from './components/Aboutuspage/Aboutus';
 import Seminars from './components/Seminar/Seminars';
 import Clubs from './components/Clubs/Clubs';
+import NewBlogPost from './components/AdminLogin/NewBlogPost';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
@@ -33,7 +34,8 @@ function App() {
        <Route path='/partners' element={<Partners />}/>
        <Route path='/aboutus' element={<Aboutus />}/>
        <Route path='/seminars' element={<Seminars />}/>
-       <Route path='clubs' element={<Clubs />}/>
+       <Route path='/clubs' element={<Clubs />}/>
+        <Route path='/newblogpost' element={<NewBlogPost/>}/>
       </Routes>
       <Footer />
     </div>
