@@ -130,6 +130,9 @@ function closeMenus(){
         <li>Fresh Ideas</li>
         </NavLink>
         <li>Gardening Resources</li>
+        <NavLink to='/login'>
+        <li>Admin Login</li>
+        </NavLink>
       </ul>
 )}
     </div>

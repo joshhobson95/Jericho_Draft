@@ -1,4 +1,6 @@
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, Navigate} from 'react-router-dom'
+import { useContext } from 'react';
+import AuthContext from './store/authContext';
 import Header from './components/Header/Header'
 import Home from './components/Home/Home';
 import NewThisWeek from './components/New This Week/NewThisWeek';
@@ -14,10 +16,14 @@ import Aboutus from './components/Aboutuspage/Aboutus';
 import Seminars from './components/Seminar/Seminars';
 import Clubs from './components/Clubs/Clubs';
 import NewBlogPost from './components/AdminLogin/NewBlogPost';
+import LoginPage from './components/AdminLogin/LoginPage/LoginPage';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {
+
+  const authCtx = useContext(AuthContext);
+
   return (
     <div className="App">
       <Header />
@@ -35,7 +41,9 @@ function App() {
        <Route path='/aboutus' element={<Aboutus />}/>
        <Route path='/seminars' element={<Seminars />}/>
        <Route path='/clubs' element={<Clubs />}/>
-        <Route path='/newblogpost' element={<NewBlogPost/>}/>
+        <Route path='/newblogpost' element={authCtx.token ? <NewBlogPost /> : <Navigate to='/login'/>}/>
+        <Route path='/login' element={!authCtx.token ? <LoginPage /> : <Navigate to='/newblogpost'/>} />
+
       </Routes>
       <Footer />
     </div>

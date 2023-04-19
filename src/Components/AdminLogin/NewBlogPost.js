@@ -1,13 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import axios from "axios";
 import './NewBlogPost.css'
+import Swal from "sweetalert2";
+import AuthContext from "../../store/authContext";
+
+
+
+
 
 const NewBlogPost = () => {
+
+  const authCtx = useContext(AuthContext)
+
+const logout = () => {
+  Swal.fire({
+    title: "You have been logged out",
+    confirmButtonColor: "rgb(210, 161, 12)",
+    customClass: "buttonalert",
+    confirmButtonText: "Ok"
+  })
+authCtx.logout()
+}
+
+
+
+
+
+
   const [formData, setFormData] = useState({
     title: ``,
     title2: ``,
     date: ``,
-    img_3_url: ``,
+    img_1_url: ``,
     img_2_url: ``,
     img_3_url: ``,
     img_4_url: ``,
@@ -315,6 +339,12 @@ const NewBlogPost = () => {
 
       <button type="submit">Send</button>
     </form>
+
+
+
+    <div className="logout">
+    <button className='logout_btn' onClick={() => logout()} >Logout</button>
+    </div>
           </div>
   );
 };
