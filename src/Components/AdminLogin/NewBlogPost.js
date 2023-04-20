@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { NavLink } from "react-router-dom";
 import axios from "axios";
 import './NewBlogPost.css'
 import Swal from "sweetalert2";
@@ -92,6 +93,24 @@ authCtx.logout()
   return (
     <div className="newBlog">
 
+
+      <div className="admin_header">
+      <h1>Welcome to the Admin Portal - New Blog Post Section</h1>
+
+      <span>Navigate</span>
+      <NavLink to='/editpost'>
+      <button>Edit/Delete a Post</button>
+      </NavLink>
+      <button>Create a New Promotion Post</button>
+      </div>
+
+
+      <div className="logout">
+    <button className='logout_btn' onClick={() => logout()} >Logout</button>
+    </div>
+
+
+<div>
     <form onSubmit={handleSubmit}>
       <label>
         Title
@@ -339,12 +358,10 @@ authCtx.logout()
 
       <button type="submit">Send</button>
     </form>
+</div>
 
 
 
-    <div className="logout">
-    <button className='logout_btn' onClick={() => logout()} >Logout</button>
-    </div>
           </div>
   );
 };

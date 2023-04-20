@@ -16,6 +16,7 @@ import Aboutus from './components/Aboutuspage/Aboutus';
 import Seminars from './components/Seminar/Seminars';
 import Clubs from './components/Clubs/Clubs';
 import NewBlogPost from './components/AdminLogin/NewBlogPost';
+import EditPost from './components/AdminLogin/EditPost';
 import LoginPage from './components/AdminLogin/LoginPage/LoginPage';
 import Footer from './components/Footer/Footer';
 import New from './components/Header/New'
@@ -44,6 +45,7 @@ function App() {
        <Route path='/seminars' element={<Seminars />}/>
        <Route path='/clubs' element={<Clubs />}/>
         <Route path='/newblogpost' element={authCtx.token ? <NewBlogPost /> : <Navigate to='/login'/>}/>
+        <Route path='/editpost' element={authCtx.token ? <EditPost /> : <Navigate to='/login'/>}/>
         <Route path='/login' element={!authCtx.token ? <LoginPage /> : <Navigate to='/newblogpost'/>} />
 
       </Routes>
