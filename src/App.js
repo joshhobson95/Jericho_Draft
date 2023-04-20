@@ -18,6 +18,7 @@ import Clubs from './components/Clubs/Clubs';
 import NewBlogPost from './components/AdminLogin/NewBlogPost';
 import LoginPage from './components/AdminLogin/LoginPage/LoginPage';
 import Footer from './components/Footer/Footer';
+import New from './components/Header/New'
 import './App.css';
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
+      <New />
       <Routes>
        <Route path='/' element={<Home />}/>
        <Route path='/newthisweek' element={<NewThisWeek />}/>
