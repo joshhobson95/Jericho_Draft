@@ -9,7 +9,7 @@ module.exports = {
             const blogtable = await BlogTable.findAll({             
         limit: 50,
         order: [
-            ["blogtableid", "ASC"]
+            ["blogtableid", "DESC"]
            ],                      
             })
             res.status(200).send(blogtable)
@@ -108,4 +108,15 @@ module.exports = {
           res.sendStatus(400);
         }
       }, 
+      deleteBlogPost: async (req, res) => {
+        try {
+            const {blogtableid} = req.params
+            await BlogTable.destroy({where: {blogtableid: +blogtableid}})
+            res.sendStatus(200)
+        } catch (error) {
+            console.log('ERROR IN DELETE')
+            console.log(error)
+            res.sendStatus(400)
+        }
+    }
 }
