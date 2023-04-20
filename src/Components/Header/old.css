@@ -1,0 +1,241 @@
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 14vh;
+    width: 100vw;
+    margin-top: 10vh;
+    color: white;
+   font-family: 'Raleway';
+   font-size: 18pt;
+    position: relative;
+    z-index: 20;
+}
+.balloons{
+  position: absolute;
+  right: 0;
+  top: 2;
+  z-index: -1;
+  height: 36.7vh;
+  width: 100%;
+  overflow: hidden;
+}
+.logo{
+    height: 20vh;
+    width: auto;
+    margin: 5vh;
+    padding-top: 3rem;
+}
+
+.navbar img{
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}
+.nav_products{
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #242424;
+  padding: 10px;
+}
+.nav_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.nav_item span {
+  background-color: #242424;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+ 
+}
+.nav_item:not(:first-child) {
+  margin-left: 20px;
+}
+.navbar svg{
+  height: 10vh;
+  width: auto;
+}
+.products_icon{
+padding-bottom: 1vh;
+}
+.exit_container{
+  background-color: #242424;
+}
+.exit{
+  height: 3rem;
+  width: 3rem;
+  background-color: #242424;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------------------------------------- */
+.nav_products ul{
+  position: absolute;
+  top: 11rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 6px solid #4FA673;
+  background-color: #242424;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.nav_products li{
+  padding: 3rem 1rem;
+}
+
+/* ----------------------------------------------------------------------------------- */
+.nav_giftcard ul{
+  position: absolute;
+  top: 11rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 6px solid #95562E; 
+  background-color: #242424;
+  border-radius: 20px;
+  cursor: pointer;
+  
+}
+.nav_giftcard li{
+  padding: 3rem 3rem;
+}
+
+/* ----------------------------------------------------------------------------------- */
+.nav_blog ul{
+  position: absolute;
+  top: 11rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 6px solid #DBBA4B; 
+  background-color: #242424;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.nav_blog li{
+  padding: 3rem 1rem;
+}
+
+/* ----------------------------------------------------------------------------------- */
+.nav_community ul{
+  position: absolute;
+  top: 11rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 6px solid #4FA673;
+  background-color: #242424;
+  border-radius: 20px;
+  cursor: pointer;
+  
+}
+.nav_community li{
+  padding: 3rem 1rem;
+}
+
+/* ----------------------------------------------------------------------------------- */
+.nav_ffc ul{
+  position: absolute;
+  top: 11rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 6px solid #95562E; 
+  background-color: #242424;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.nav_ffc li{
+  padding: 3rem 3rem;
+}
+
+/* ----------------------------------------------------------------------------------- */
+.nav_contactus ul{
+  position: absolute;
+  top: 11rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 6px solid #DBBA4B; 
+  background-color: #242424;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.nav_contactus li{
+  padding: 3rem 1rem;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes dropdown {
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+
+.contactus svg{
+  height: 10vh;
+  width: auto;
+}
+.contactus svg:hover{
+animation: riseUp 0.5s ease-out forwards;
+}
+@keyframes riseUp {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+  40% {
+    transform: translateY(-8px) rotate(5deg);
+  }
+  60% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+  0% {
+    transform: translateY(-8px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-5deg);
+  }
+}
+
+
+
+
+
+

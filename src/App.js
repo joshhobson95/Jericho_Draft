@@ -1,7 +1,7 @@
 import {Routes, Route, Navigate} from 'react-router-dom'
 import { useContext } from 'react';
 import AuthContext from './store/authContext';
-import Header from './components/Header/Header'
+import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import NewThisWeek from './components/New This Week/NewThisWeek';
 import FFC from './components/FFC/FFC';
@@ -20,7 +20,7 @@ import NewBlogPost from './components/AdminPortal/BlogPosts/NewBlogPost/NewBlogP
 import EditBlogPost from './components/AdminPortal/BlogPosts/EditBlogPost/EditBlogPost'
 import LoginPage from './components/AdminPortal/LoginPage/LoginPage'
 import Footer from './components/Footer/Footer';
-import New from './components/Header/New'
+
 import './App.css';
 
 function App() {
@@ -29,8 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Header /> */}
-      <New />
+      <Header />   
       <Routes>
        <Route path='/' element={<Home />}/>
        <Route path='/newthisweek' element={<NewThisWeek />}/>
