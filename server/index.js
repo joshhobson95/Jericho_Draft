@@ -15,7 +15,7 @@ const cors = require('cors')
 
 const {register, login} = require('./controllers/auth')
 const {isAuthenticated} = require('./middleware/isAuthenticated')
-const {getBlogTable, addNewBlogPost, deleteBlogPost} = require('./controllers/blogtable')
+const {getBlogTable, addNewBlogPost, deleteBlogPost, editBlogPost} = require('./controllers/blogtable')
 
 
 const app = express();
@@ -34,6 +34,7 @@ app.post('/register', register)
 app.get('/blog', getBlogTable)
 app.post('/newblogpost', addNewBlogPost)
 app.delete('/newblogpost/:blogtableid', deleteBlogPost)
+app.put('/editblogpost/:blogtableid', editBlogPost)
 
 
 
