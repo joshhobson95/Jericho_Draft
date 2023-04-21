@@ -22,7 +22,7 @@ function Seminars() {
             setTimeout(() => {
             setIsVisible(true);
 
-            }, 500)
+            }, 1000)
         }
       }
     };

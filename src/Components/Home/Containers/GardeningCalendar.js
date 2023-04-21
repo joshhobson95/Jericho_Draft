@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './GardeningCalendar.css'
 import icon2 from '../../../Assets/transparent.png'
 import banner from '../../../Assets/garden_banner.jpg'
@@ -54,7 +55,9 @@ function GardeningCalendar() {
                         <p>
                         Did you know Jericho offers a Gardening Calendar? Click below to get advice from the Gardening Angels on exactly what you should be doing this month to keep up with your garden's wants and needs.
                         </p>
+                        <NavLink to='/gardeningcalendar'>
                         <button className='gc_button'>Learn More</button>
+                        </NavLink>
                     </div>
                     </div>
             </div>

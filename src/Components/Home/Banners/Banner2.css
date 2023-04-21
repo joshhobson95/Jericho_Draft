@@ -70,16 +70,41 @@
    font-weight: 600;
    padding-top: 2vh;
 }
-.van{
-display: flex;
-height: 8rem;
-margin-right: 8vw;
-margin-top: 1rem;
 
-}
-.van button{
-    white-space: nowrap;
-}
+
+.reveal-container {
+    height: 70%; 
+    position: relative; 
+    height: 200px;
+  }
+  .reveal-content {
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    display: none; 
+    transform: translateY(20px);
+    
+  }
+  .visible {
+    display: block;
+    transform: translateY(0);
+    transition: 1s;
+    height: 200px;
+
+  }
+
+  .decoy{
+   height: 200px;
+
+   
+  }
+  .inner_decoy{
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+
 
 @media (min-width:800px) { 
     .b2_1{
@@ -145,7 +170,6 @@ margin-top: 1rem;
         width: 55%;
         margin-right: 10%;
     }
-
 }
 
 @media (min-width:2000px) { 

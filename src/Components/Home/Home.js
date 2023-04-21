@@ -57,7 +57,6 @@ function Home() {
     <div 
         data-aos="fade-up"
         data-aos-offset="50"
-
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
@@ -69,7 +68,6 @@ function Home() {
     <div 
         data-aos="fade-up"
         data-aos-offset="50"
-
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
@@ -81,7 +79,6 @@ function Home() {
     <div 
         data-aos="fade-up"
         data-aos-offset="50"
-
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"

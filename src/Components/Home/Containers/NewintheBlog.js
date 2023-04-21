@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './NewintheBlog.css'
 import icon1 from '../../../Assets/Flower.png'
 import banner from '../../../Assets/stone_banner.jpg'
@@ -29,7 +30,9 @@ function NewintheBlog() {
                      Read this Week's newest Blog Post..
                         </p>
                         <p>Dynamically output the first lines of post here</p>
+                        <NavLink to='/blog'>
                         <button className='nb_button'>Learn More</button>
+                        </NavLink>
                     </div>
                     </div>
             </div>
