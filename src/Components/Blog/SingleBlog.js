@@ -26,9 +26,6 @@ function SingleBlog() {
 
 
 
-
-
-
   const navigate = useNavigate()
   const { blogid } = useParams();
   const [blogIdNum, setBlogIdNum] = useState(+blogid)

@@ -1,6 +1,6 @@
 import React from 'react';
 import './StaffPictures.css'
-import staffpics from '../../Assets/cf3.jpg'
+
 
 
 
@@ -36,6 +36,7 @@ function StaffPictures() {
             src: "https://drive.google.com/uc?export=view&id=1Bw3MGJ2hUnZ-7S_eHnoVlzfuqOBXEnA9",
             name: 'Alfredo',
             position: 'Gardening Angel'
+            
         },
         {
             src: "https://drive.google.com/uc?export=view&id=1Bw3MGJ2hUnZ-7S_eHnoVlzfuqOBXEnA9",

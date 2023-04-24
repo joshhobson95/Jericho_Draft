@@ -78,10 +78,9 @@ function New() {
         <NavLink to='/gardeningcalendar'>
          <li className="navbar__dropdownItem">Gardening Calendar</li>
         </NavLink>
-        <NavLink to='/freshideas'>
-        <li className="navbar__dropdownItem">Fresh Ideas</li>
+        <NavLink to='/gardenresources'>
+        <li className="navbar__dropdownItem">Garden Resrouces </li>
         </NavLink>
-        <li className="navbar__dropdownItem">Gardening Resources</li>
         <NavLink to='/login'>
         <li className="navbar__dropdownItem">Admin Login</li>
         </NavLink>

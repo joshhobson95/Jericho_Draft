@@ -7,6 +7,8 @@ import Service from '../../SVGs/Service'
 import Knowledge from '../../SVGs/Knowledge'
 import Quality from '../../SVGs/Quality'
 import Selection from '../../SVGs/Selection'
+import Quote from '../../SVGs/Quote'
+import Quote2 from '../../SVGs/Quote2'
 
 
 
@@ -88,7 +90,6 @@ function Aboutus() {
 
 
 <div className='bys'>
-
 <div>
             <h2> This is a story about four people named Everybody, Somebody, Anybody and Nobody. </h2>
             <p>
@@ -101,7 +102,7 @@ function Aboutus() {
 
 </div>
 
-            <h2>Customer Testimonials</h2>
+            <h2 className='ct_h2'>Customer Testimonials</h2>
 
 <div>
 <p>
@@ -112,10 +113,13 @@ Where is your car?
 </div>
 
 
-<div>
+<div className='ct_border'>
+  <div className='quote_svg'>
+  <Quote/>
+  </div>
 
 <p>
-I shop at Jericho Nursery for my gardening needs.  I have shopped there since I first arrived in the valley in 2005.  More recently, I also have the occasional opportunity to help a bit with the weekly newsletter, as was the case this week.  And, as usual, I shopped.
+"I shop at Jericho Nursery for my gardening needs.  I have shopped there since I first arrived in the valley in 2005.  More recently, I also have the occasional opportunity to help a bit with the weekly newsletter, as was the case this week.  And, as usual, I shopped.
 
 Why Jericho?  
 
@@ -127,13 +131,48 @@ On at least one occasion, I have visited without any specific need beyond a stro
 
 I have also wondered, “How do I treat this bug/fungus/disease?”   Easy fix.  Snip a sample, put it in a plastic bag, and bring it in for inspection and diagnosis.  This has NEVER failed!  I get a great product recommendation, advice about its application, and I depart with hope in my heart and a keen sense of relief.    
 
-So, ask me again:  why Jericho?  Answer:  Why would I shop anywhere else?
+So, ask me again:  why Jericho?  Answer:  Why would I shop anywhere else?"
 
 </p>
+<div className='ct_border_bottom'>
+<div className='quote2_svg'>
+<Quote2/>
+</div>
 </div>
 <span>
 Sandy Rea, Gardening Angel fan
 </span>
+</div>
+<div className='ct_border'>
+  <div className='quote_svg'>
+  <Quote/>
+  </div>
+
+<p>
+"I shop at Jericho Nursery for my gardening needs.  I have shopped there since I first arrived in the valley in 2005.  More recently, I also have the occasional opportunity to help a bit with the weekly newsletter, as was the case this week.  And, as usual, I shopped.
+
+Why Jericho?  
+
+I like it here!  The product selection is robust, the nursery is aesthetically pleasant AND artfully organized, which means that I can find what I need.  On the rare occasion that I don’t find what I need, I ask someone.  Anyone.  The answer?  “Let me get it for you.”
+
+Sometimes, I know what I want and don’t know the common name.  “I bought it here last year.  It’s a really pretty hanging basket thing with pink flowers and round leaves.”  Not terribly specific, or scientific. Again, I ask someone.  The answer?  “Let me show you.”
+
+On at least one occasion, I have visited without any specific need beyond a stroll through the current selection.  On one such visit, I found more than was likely to fit in my vehicle.  As I scratched my head over this predicament, I heard a voice.  “Where is your car?”  (Seriously?  Help to my CAR?!!)  So rare, and so appreciated.  
+
+I have also wondered, “How do I treat this bug/fungus/disease?”   Easy fix.  Snip a sample, put it in a plastic bag, and bring it in for inspection and diagnosis.  This has NEVER failed!  I get a great product recommendation, advice about its application, and I depart with hope in my heart and a keen sense of relief.    
+
+So, ask me again:  why Jericho?  Answer:  Why would I shop anywhere else?"
+
+</p>
+<div className='ct_border_bottom'>
+<div className='quote2_svg'>
+<Quote2/>
+</div>
+</div>
+<span>
+New Customer, Gardening Angel fan
+</span>
+</div>
    
 
     

@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 import NewThisWeek from './components/New This Week/NewThisWeek';
 import FFC from './components/FFC/FFC';
 import GardeningCalendar from './components/GardeningCalendar/GardeningCalendar';
-import FreshIdeas from './components/FreshIdeas/FreshIdeas';
+import GardenResources from './components/GardenResources/GardenResources';
 import GiftCard from './components/GiftCard/GiftCard';
 import Radio from './components/Radio/Radio';
 import Blog from './components/Blog/Blog';
@@ -36,7 +36,7 @@ function App() {
        <Route path='/newthisweek' element={<NewThisWeek />}/>
        <Route path='/ffc' element={<FFC />}/>
        <Route path='/gardeningcalendar' element={<GardeningCalendar/>}/>
-       <Route path='/freshideas' element={<FreshIdeas/>}/>
+       <Route path='/gardenresources' element={<GardenResources/>}/>
        <Route path='/giftcard' element={<GiftCard />}/>
        <Route path='/radio' element={<Radio />}/>
        <Route path='/blog' element={<Blog />}/>

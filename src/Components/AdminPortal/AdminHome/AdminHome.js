@@ -30,10 +30,10 @@ function AdminHome() {
       <div className='admin_options'>
 
       <NavLink to='/editpost'>
-      <button>Edit/Delete a Post</button>
+      <button>Edit/Delete  a Blog Post</button>
       </NavLink>
       <NavLink to='/newblogpost'>
-      <button>Create a New Promotion Post</button>
+      <button>Create a New Blog Post</button>
       </NavLink>
 
       </div>

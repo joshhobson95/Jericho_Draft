@@ -2,6 +2,7 @@
     stroke: #DBBA4B;
     fill: #DBBA4B;
     transition: 1s;
+    cursor: pointer;
 }
 .knowledge_svg:hover .knowledge_path2{
     stroke: #95562E;

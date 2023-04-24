@@ -74,12 +74,21 @@ authCtx.logout()
     axios
       .post("/newblogpost", formData)
       .then((response) => {
-        console.log(response);
-        alert("Your message has been sent.");
+        Swal.fire({
+          title: "Blog Posted",
+          confirmButtonColor: "rgb(210, 161, 12)",
+          customClass: "buttonalert",
+          confirmButtonText: "Ok"
+        })
       })
       .catch((error) => {
         console.log(error);
-        alert("An error occurred. Please try again later.");
+        Swal.fire({
+          title: "Error creating post",
+          confirmButtonColor: "orange",
+          customClass: "buttonalert",
+          confirmButtonText: "Ok"
+        })
       });
   };
 
@@ -226,6 +235,96 @@ authCtx.logout()
           type="text"
           name="img_10_url"
           value={formData.img_10_url}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 1 Caption
+        <input
+          type="text"
+          name="img_1_captions"
+          value={formData.img_1_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 2 Caption
+        <input
+          type="text"
+          name="img_2_captions"
+          value={formData.img_2_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 3 Caption
+        <input
+          type="text"
+          name="img_3_captions"
+          value={formData.img_3_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 4 Caption
+        <input
+          type="text"
+          name="img_4_captions"
+          value={formData.img_4_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 5 Caption
+        <input
+          type="text"
+          name="img_5_captions"
+          value={formData.img_5_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 6 Caption
+        <input
+          type="text"
+          name="img_6_captions"
+          value={formData.img_6_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 7 Caption
+        <input
+          type="text"
+          name="img_7_captions"
+          value={formData.img_7_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 8 Caption
+        <input
+          type="text"
+          name="img_8_captions"
+          value={formData.img_8_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 9 Caption
+        <input
+          type="text"
+          name="img_9_captions"
+          value={formData.img_9_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 10 Caption
+        <input
+          type="text"
+          name="img_10_captions"
+          value={formData.img_10_captions}
           onChange={handleChange}
           />
       </label>

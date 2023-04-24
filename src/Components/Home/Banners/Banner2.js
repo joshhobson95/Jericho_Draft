@@ -24,7 +24,7 @@ function Banner2() {
       if (revealTop < windowHeight) {
           setTimeout(() => {
           setIsAnimated(true);
-          }, 2000)
+          }, 1000)
       }
     }
   };

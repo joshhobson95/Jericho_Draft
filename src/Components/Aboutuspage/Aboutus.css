@@ -1,12 +1,15 @@
 .AboutUs{
     height: auto;
-    margin-top: 11vh;
+
     padding-top: 5vh;
     width: 100vw;
     background-image: linear-gradient(#95562E, #DB4B4Ba8, #15F6C0a8  ) ;
     display: flex;
     justify-content: center;
     flex-direction: column;   
+}
+.AboutUs p{
+    line-height: 1.4;
 }
 .aboutus_welcome{
     margin: 5vh;
@@ -88,16 +91,44 @@
 }
 
 
+.aboutus_body_bottom{
+    padding: 4rem;
+}
 .aboutus_body_bottom h3{
     font-size: 35pt;
     font-weight: 700;
     padding: 4rem;
 }
 .aboutus_body_bottom p{
-    padding: 4rem 10rem;
-    font-size: 18pt;
-    line-height: 1.2;
+    padding: 0rem 10rem;
 }
+.ct_h2{
+    color: #95562E;
+    font-weight: 700;
+    font-size: 60pt;
+}
+.ct_border{
+    border: #4FA673 solid 4px;
+    border-radius: 20px;
+    margin: 2rem;
+}
+.ct_border_bottom{
+    display: flex;
+    justify-content: flex-end;
+}
+.quote_svg{
+    display: flex;
+    width: 15vw;
+    padding: 2rem;
+}
+.quote2_svg{
+    display: flex;
+    justify-self: flex-end;
+    transform: scaleX(-1);
+    width: 15vw;
+    padding: 2rem;
+}
+
 .values{
     display: flex;
     justify-content: space-evenly;
@@ -112,15 +143,13 @@
 .knowledge{
     width: 50vw !important;
 }
-.aboutus_body_bottom h2{
-    font-size: 30pt;
-}
 .aboutus_body_bottom p{
     font-size: 18pt;
     line-height: 1.4;
 }
 .bys{
     display: flex;
+    margin: 0 4rem;
 }
 .bys_pic{
     height: 70%;
@@ -129,6 +158,7 @@
     border-radius: 20px;
     box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
 }
+
 
 
 /* ///////////////////////halfscreen///////////////////////////////// */
@@ -169,7 +199,7 @@
 @media screen and (max-width: 1200px),
 screen and (max-height: 650px){
 .aboutus_welcome{
-    margin-top: 8rem;
+    margin-top: 3rem;
 }
 .values_column{
     height: 50vh;

@@ -2,6 +2,7 @@
     stroke: #4FA673;
     fill: #4FA673;
     transition: 1s;
+    cursor: pointer;
 }
 .service_svg:hover .service_path2{
 
