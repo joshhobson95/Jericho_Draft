@@ -1,6 +1,5 @@
 .AboutUs{
     height: auto;
-
     padding-top: 5vh;
     width: 100vw;
     background-image: linear-gradient(#95562E, #DB4B4Ba8, #15F6C0a8  ) ;
@@ -25,7 +24,7 @@
     align-self: center;
     color: #95562E;
     font-weight: 500;
-    font-size: 20pt;
+    font-size: 12pt;
     padding: 5vh;
     padding-top: 7vh ;
 }
@@ -34,13 +33,13 @@
 }
 .aboutus_welcome h1{
     color: #4FA673;
-    font-size: 60pt;
+    font-size: 26pt;
     font-weight: 700;
 }
 .aboutus_body_main{
     background-image: linear-gradient( #9f4a38, #6f5d53, #209276);
     height: auto;
-    width: 80vw;
+    width: 90vw;
     border-radius: 20px;
     box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
    align-self: center;
@@ -49,68 +48,73 @@
 }
 .aboutus_body_top h1{
     color: #DBBA4B;
-    font-size: 60pt;
+    font-size: 26pt;
     font-weight: 700;
     padding: 2rem;
 }
 .staff_p{
-    padding: 4rem 10rem;
+    padding: 2rem;
     font-style: italic;
+    font-size: 10pt;
 }
 
 .about_the_owners{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .aboutus_body_mid p{
-    padding: 4rem 10rem;
-    font-size: 18pt;
-    line-height: 1.4;
+    padding: 1rem;
+    font-size: 12pt;
+
 }
 .aboutus_body_mid h1{
-    font-size: 60pt;
+    font-size: 26pt;
     font-weight: 700;
     color: #4FA673;
     
 }
 .aboutus_body_bottom h1{
     color: #DBBA4B;
-    font-size: 60pt;
+    font-size: 26pt;
     font-weight: 700;
     padding: 2rem;
     
 }
 .rickandjen{
-    height: 35%;
-    width: 35%;
+    align-self: center;
+    height: 75%;
+    width: 75%;
     object-fit: cover;
-    margin-left: 5rem;
     border: #4FA673 6px solid;
     border-radius: 20px;
     box-shadow: 11px 13px 10px 5px rgba(112, 122, 66, 0.25);
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 
 .aboutus_body_bottom{
-    padding: 4rem;
+    padding: 1rem;
 }
 .aboutus_body_bottom h3{
-    font-size: 35pt;
+    font-size: 22pt;
     font-weight: 700;
-    padding: 4rem;
+    padding: 1rem;
 }
 .aboutus_body_bottom p{
-    padding: 0rem 10rem;
+    padding: 1rem;
 }
 .ct_h2{
     color: #95562E;
     font-weight: 700;
-    font-size: 60pt;
+    font-size: 26pt;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 .ct_border{
     border: #4FA673 solid 4px;
     border-radius: 20px;
-    margin: 2rem;
+    margin-bottom: 2rem;
 }
 .ct_border_bottom{
     display: flex;
@@ -131,7 +135,8 @@
 
 .values{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 15vh;
 }
 .values_column{
@@ -139,137 +144,227 @@
     width: 40vw;
     display: flex;
     flex-direction: column-reverse;
+  align-self: center;
 }
 .knowledge{
     width: 50vw !important;
 }
 .aboutus_body_bottom p{
-    font-size: 18pt;
+    font-size: 12pt;
     line-height: 1.4;
 }
 .bys{
     display: flex;
-    margin: 0 4rem;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0rem;
 }
 .bys_pic{
-    height: 70%;
-    object-fit: cover;
+    height: auto;
+    width: 85%;
     border: #95562E 6px solid;
     border-radius: 20px;
     box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+.bys_header{
+    font-size: 14pt;
+    font-style: italic;
+    padding-bottom: 2rem ;
 }
 
+@media (orientation: landscape) {
+.values_column{
+    height: 60vh;
+    width: 60vw;
+}
+  }
+  @media (min-width:1025px) { 
+    .aboutus_welcome{
+        font-size: 18pt;
+    }
+    .aboutus_welcome p{
+        padding: 1.5vw;
+    }
+    .aboutus_welcome h1{
+        font-size: 60pt;
+    }
 
-
-/* ///////////////////////halfscreen///////////////////////////////// */
-@media (max-width: 2000px){
-
-    .aboutus_body_mid h1{
-        padding: 4rem;
+    .aboutus_body_top h1{
+        font-size: 60pt;
+    }
+    .staff_p{
+        padding: 4rem 10rem;
+        font-style: italic;
+        font-size: 18pt;
+    }
+    .about_the_owners{
+        flex-direction: column;
+        margin: 2rem;
     }
     .aboutus_body_mid p{
-        font-size: 12pt;
-        margin-top: -2rem;
-        padding: 2rem;
+        font-size: 18pt;
+        margin: 0 2rem;
     }
-    .values{
-        flex-wrap: wrap;
+    .aboutus_body_mid h1{
+        font-size: 60pt;
+        
+    }
+    .aboutus_body_bottom h1{
+        font-size: 60pt; 
     }
     .rickandjen{
-        margin-top: 0;
+        height: 45%;
+        width: 45%;
+        margin: 2rem;
     }
-    .bys{
-        display: flex;
+    .values{
         flex-direction: column;
-        padding-bottom: 4rem;
+        justify-content: space-around;
+      
     }
-    .bys h2{
-    padding: 1rem;
+    .values_column{
+        height: 25vh;
+        margin: 4rem;
+        align-self: center;
     }
+    
+    .aboutus_body_bottom h3{
+        font-size: 45pt;
+    }
+    .aboutus_body_bottom p{
+        padding: 1rem;
+    }
+    .ct_border p{
+        font-size: 18pt;
+    }
+    .ct_h2{
+        font-size: 60pt;
+    }
+
+    .quote_svg{
+        display: flex;
+        width: 15vw;
+        padding: 2rem;
+    }
+    .quote2_svg{
+        display: flex;
+        justify-self: flex-end;
+        transform: scaleX(-1);
+        width: 15vw;
+        padding: 2rem;
+    }
+
+    .knowledge{
+        width: 50vw !important;
+    }
+    .aboutus_body_bottom p{
+        font-size: 18pt;
+        line-height: 1.4;
+        padding: 4rem 6rem;
+    }
+ 
     .bys_pic{
-        height: 35%;
-        object-fit: cover;
-        border: #95562E 6px solid;
-        border-radius: 20px;
-        box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+        width: 45%;
+    }
+    .bys_header{
+        font-size: 26pt;
+        font-style: italic;
+        padding-bottom: 2rem;
+    }
+  }
+
+  @media (min-width:2025px) { 
+    .aboutus_welcome{
+        font-size: 18pt;
+    }
+    .aboutus_welcome p{
+        padding: 1.5vw;
+    }
+    .aboutus_welcome h1{
+        font-size: 60pt;
     }
 
-}
-/* LAPTOP? */
-@media screen and (max-width: 1200px),
-screen and (max-height: 650px){
-.aboutus_welcome{
-    margin-top: 3rem;
-}
-.values_column{
-    height: 50vh;
-    width: 40vw;
-    display: flex;
-    flex-direction: column-reverse;
-}
-}
+    .aboutus_body_top h1{
+        font-size: 60pt;
+    }
+    .staff_p{
+        padding: 4rem 10rem;
+        font-style: italic;
+        font-size: 18pt;
+    }
+    .about_the_owners{
+        flex-direction: row;
+        margin: 4rem;
+    }
+    .aboutus_body_mid p{
+    
+        padding: 4rem 10rem;
+        font-size: 18pt;
+    }
+    .aboutus_body_mid h1{
+        font-size: 60pt;
+        
+    }
+    .aboutus_body_bottom h1{
+        font-size: 60pt; 
+    }
+    .rickandjen{
+        height: 45%;
+        width: 45%;
+        margin-left: 6rem;
+    }
+    .values{
+        flex-direction: row;
+    }
+    .values_column{
+        height: 20vh;
+    }
+    
+    .aboutus_body_bottom h3{
+        font-size: 60pt;
+    }
+    .aboutus_body_bottom p{
+        padding: 1rem;
+    }
+    .ct_border p{
+        font-size: 18pt;
+    }
+    .ct_h2{
+        font-size: 60pt;
+    }
+
+    .quote_svg{
+        display: flex;
+        width: 15vw;
+        padding: 2rem;
+    }
+    .quote2_svg{
+        display: flex;
+        justify-self: flex-end;
+        transform: scaleX(-1);
+        width: 15vw;
+        padding: 2rem;
+    }
+
+    .knowledge{
+        width: 50vw !important;
+    }
+    .aboutus_body_bottom p{
+        font-size: 18pt;
+        line-height: 1.4;
+        padding: 4rem 6rem;
+    }
+ 
+    .bys_pic{
+        width: 45%;
+    }
+    .bys_header{
+        font-size: 26pt;
+        font-style: italic;
+        padding-bottom: 2rem;
+    }
+  }
 
 
-/* MOBILE */
-@media (max-width: 650px){
-.aboutus_welcome{
-    font-size: 12pt;
-}
-.aboutus_body_main{
-    width: 94%;
-}
-
-.aboutus_welcome h1{
-    font-size: 30pt;
-}
-.aboutus_body_top h1{
-    font-size: 30pt;
-}
-.staff_p{
-    padding: 0;
-    margin: 2rem 1rem;
-}
-.aboutus_body_mid h1{
-    font-size: 30pt;
-}
-.about_the_owners{
-    display: flex;
-    flex-direction: column;
-}
-.rickandjen{
-    height: 75%;
-    width: 75%;
-   margin-bottom: 2rem;
-   margin-left: 0;
-   align-self: center;
-
-
-}
-.aboutus_body_bottom h1{
-    font-size: 30pt;
-}
-.values_column{
-    height: 30vh;
-    width: 40vw;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-}
-.values h3{
-font-size: 22pt;
-position: relative;
-padding: 0;
-padding-top: 1rem;
-}
-.bys h2{
-    font-size: 18pt;
-}
-.aboutus_body_bottom p{
-    font-size: 12pt;
-    padding: 1rem;
-}
-.bys_pic{
-    height: 75%;
-    width: 75%;
-}
-}

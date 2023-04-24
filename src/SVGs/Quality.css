@@ -5,6 +5,7 @@
   cursor: pointer;
 }
 .quality_svg:hover .ribbon_bottom{
+  stroke: #dbba4b;
   fill: #dbba4b;
   stroke: #95562E;
   transition: 1s;

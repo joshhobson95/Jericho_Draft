@@ -90,14 +90,14 @@ function Aboutus() {
 
 
 <div className='bys'>
+            <h2 className='bys_header'> This is a story about four people named Everybody, Somebody, Anybody and Nobody. </h2>
+<div className='bys_pic_container'>
+        <img src={bys} alt='' className='bys_pic'/>
+</div>
 <div>
-            <h2> This is a story about four people named Everybody, Somebody, Anybody and Nobody. </h2>
             <p>
            There was an important job to be done and Everybody was sure that Somebody would do it.  Anybody could have done it, but Nobody did it.  Somebody got angry about that, because it was Everybody’s job.  Everybody thought Anybody could do it, but Nobody realized that Everybody wouldn’t do it.  It ended up that Everybody blamed Somebody when Nobody did what Anybody could have.
             </p>
-</div>
-<div className='bys_pic_container'>
-        <img src={bys} alt='' className='bys_pic'/>
 </div>
 
 </div>
