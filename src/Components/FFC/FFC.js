@@ -12,7 +12,7 @@ function FFC() {
 
         <div className='ffc_welcome'>
             <h1>Frequent Flower Club</h1>
-                <p>Welcome Statement:  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                <p>Welcome Statement:  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
         </div>
 
@@ -24,7 +24,8 @@ function FFC() {
                 <p>
                 We are asked for our email address hundreds of times for every time we are asked for our mailing address, right? Well, the form you see on this screen really does ask for your mailing address, because several times a year we will be sending cards to members of the Jericho Frequent Flower Club. The cards will contain something of value, and we will be asking for your phone number as you check out in order to have a record of your choice to shop Jericho for all your yard and garden needs. 
 
-                
+                <br></br>
+                <br></br>
                 Honestly? It’s a work in progress, we are trying to find the best solution for rewarding our most loyal
 customers. It’s free to join.
 
@@ -36,31 +37,29 @@ customers. It’s free to join.
             <div className='ffc_body_bottom'>
                 <h1 className='w_you_get'>What you Get</h1>
                 <div className='b_h'>
-                <p>
-                /* We are asked for our email address hundreds of times for every time we are asked for our mailing address, right? Well, the form you see on this screen really does ask for your mailing address, because several times a year we will be sending cards to members of 
-                Honestly? It’s a work in progress, we are trying to find the best solution for rewarding our most loyal
-customers. It’s free to join.
-                        <li>postcard</li>
-                        <li>seminars</li>
-                        <li>seminars</li>
-                        <li>seminars</li>
-                        <li>specials</li>
-                </p>
+               
+               <div className='b_h_list'>
+                   <h2> These are the things we gurantee: </h2>
+                        <li>One Postcard Quarterly</li>
+                        <li>That Postcard will have one discount</li>
+                        <li>Enrollment to our email Newsletter</li>
+                <img alt='' src={ffc3} className='ffc3_s'/>
+               </div>
+                
              
                 <img alt='' src={arches} className='ffc_arches'/>
                 </div>
 
-                <img alt='' src={ffc3} className='ffc3_s'/>
 
                 <h1 className='h_to_join'>How to Join</h1>
 
-                <div className='ffc_form_container'>
+                <div className='ffc_form_container_2'>
                     <h3>Fill out all infromation below to join!</h3>
+                </div>
+            </div>
                 <div className='f_f'>                   
                      <FFC_Form />                
                 </div>
-                </div>
-            </div>
 </div>
     </div>
   )

@@ -71,8 +71,8 @@ function SingleBlog() {
 
             {item.img_1_url && <img alt=''  src={item.img_1_url} className='blog_img'/>}
             {item.img_1_captions && <p>{item.img_1_captions}</p>}
-            {item.img_2_url && <img alt='' src={item.img_2_url} className='blog_img'/>}
-            {item.img_2_captions && <p>{item.img_2_captions}</p>}
+
+
 
 
             <div className='blog_icon_1'>
@@ -80,6 +80,8 @@ function SingleBlog() {
             </div>   
             {item.intro && <p>{item.intro}</p>}
 
+            {item.img_2_url && <img alt='' src={item.img_2_url} className='blog_img'/>}
+            {item.img_2_captions && <p>{item.img_2_captions}</p>}
 
             <div className='blog_paragraph_top'>
               {item.body_img_1 && <img alt='' src={item.body_img_1} className='body_img_1'/>}

@@ -1,6 +1,5 @@
 .Partners{
     height: auto;
-    margin-top: 15vh;
     padding-top: 5vh;
     width: 100vw;
     background-image: linear-gradient(#DBBA4BCF 40%, #4BA7DBCF , #DB4BD5CF) ;
@@ -28,9 +27,8 @@
 }
 .partners_welcome h1{
     color: #4FA673;
-    font-size: 30pt;
+    font-size: 26pt;
     font-weight: 700;
-
 }
 .partners_welcome p{
     padding: 1.5vw;
@@ -57,7 +55,7 @@
 }
 .partners_body_top h1{
     color:  #DBBA4B;
-    font-size: 30pt;
+    font-size: 26pt;
     font-weight: 700;
     padding: 2rem;
 }
@@ -99,7 +97,7 @@
     align-self: center;
     color:  #DBBA4B;;
     font-weight: 600;
-    font-size: 30pt;
+    font-size: 22pt;
     padding: 5vh;
 }
 
@@ -122,6 +120,9 @@
 }
 .partner_logos{
     width: 12vw;
+}
+.partners_conclusion{
+    width: auto;
 }
 
 }

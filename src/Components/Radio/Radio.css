@@ -1,6 +1,5 @@
 .Radio{
     height: auto;
-    margin-top: 11vh;
     padding-top: 5vh;
     width: 100vw;
     background-image: linear-gradient(#95562E, #DB4B4Ba8, #15F6C0a8  ) ;
@@ -33,7 +32,7 @@
     color: #4FA673;
     font-size: 60pt;
     font-weight: 700;
-    text-align: left;
+
 }
 .radio_body_main{
     background-image: linear-gradient( #9f4a38, #6f5d53, #209276);
@@ -61,26 +60,14 @@
    font-size: 20pt;  
    font-weight: 700;
 }
-
-
 .radio_body_top{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.radio_mic{
-    display: flex;
-    align-self: center;
-    height: auto;
-    width: 20vw;
-}
-
-
-
 .radio_body_mid{
     display: flex;
-    
     justify-content: center;
     padding: 1rem;
     padding-top: 10rem;
@@ -130,19 +117,37 @@
     align-self: center;
     border-radius: 20px;
 }
-
+.pic_mic{
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+    border: #4FA673 4px solid;
+    border-radius: 20px;
+}
 .radio_rick{
-   height: 20vw;
-   width: 25vw;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+   height: 25vw;
+   width: 30vw;
    object-fit: cover;
    border-radius: 20px;
    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
-   margin-bottom: 2rem;
 }
+.radio_mic{
+    margin-top: 5rem;
+    display: flex;
+    align-self: center;
+    height: auto;
+    width: 35vw;
+}
+
 .rbm_section p{
     margin: 0 7rem;
 padding: 3rem 5rem;
 }
+
+
 
 
 
@@ -157,9 +162,7 @@ padding: 3rem 5rem;
 
 @media screen and (max-width: 1200px),
 screen and (max-height: 650px){
-.Radio{
-    margin-top: 20vh;
-}
+
 .rbm_section p{
     margin: 0 5rem;
 padding: 3rem 5rem;
@@ -180,9 +183,7 @@ margin-bottom: 4rem;
 }
 
 @media (max-width: 650px){
-.Radio{
-    margin-top: 15vh;
-}
+
 .radio_body_main{
     width: 92vw;
 }
@@ -209,11 +210,15 @@ margin-bottom: 4rem;
     height: 70vw;
     width: 75vw ;
 }
+.radio_body_mid{
+    padding-top: 2rem;
+}
 .radio_body_mid p{
     font-size: 12pt;
 }
 .rbm_section p{
     padding: 0;
+    margin: 0;
 }
 .kkob_banner{
     width: 75vw;
@@ -224,6 +229,7 @@ margin-bottom: 4rem;
 }
 .radio_body_bottom span{
   margin: 0;
+  padding-top: 2rem;
 }
 .radio_body_bottom button{
 font-size: 12pt;
