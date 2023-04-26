@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import './Blog.css'
-import { NavLink, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
-import {BlogData} from './BlogData.js'
+
 import axios from "axios";
 
 
@@ -30,10 +30,7 @@ function Blog() {
 
     const [blogsToShow, setBlogsToShow] = useState(3);
 
-
-    // const blogsToMap = BlogData.slice(0, blogsToShow);
     const blogsToMap = blogData.slice(0, blogsToShow);
-
 
     const hanldeScrollTop = () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });

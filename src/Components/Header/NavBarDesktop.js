@@ -37,7 +37,7 @@ function New() {
 
 
       <ul className="navbar__dropdownMenu_green">
-          <NavLink to='/newthisweek'>
+          <NavLink to='/sales'>
             <li className="navbar__dropdownItem">This Week's Specials</li>
           </NavLink>
             <li className="navbar__dropdownItem">Promotions</li>

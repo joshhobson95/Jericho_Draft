@@ -1,0 +1,81 @@
+.sales{
+    height: auto;
+    padding-top: 5vh;
+    width: 100vw;
+    background-image: linear-gradient(#4FA673, #DBBA4BA8 , #FB492C87 ) ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+    color: white;
+}
+
+.sales_welcome{
+    margin: 5vh;
+    background-color: #242424;
+    height: auto;
+    width: 60vw;
+    border-radius: 12px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    align-self: center;
+    color: #4FA673;
+    font-weight: 500;
+    font-size: 12pt;
+    padding: 5vh;
+}
+.sales_welcome h1{
+    color: #DBBA4B;
+    font-size: 26pt;
+    font-weight: 700;
+}
+.sales_welcome p{
+    padding: 1.5vw;
+}
+.sales_body{
+    background-color: #24242433;
+    width: 85vw;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+.sales_card{
+    background-color: #1a2136;
+    border: 2px solid #e0e0e0;
+    padding: 1rem;
+    margin: 2rem;
+    box-sizing: border-box;
+    border-radius: 12px;
+-webkit-box-shadow:0px 0px 19px 11px rgba(189,189,107,0.18);
+-moz-box-shadow: 0px 0px 19px 11px rgba(189,189,107,0.18);
+box-shadow: 0px 0px 19px 11px rgba(189,189,107,0.18);
+
+}
+.sales_card h1{
+    font-size: 18pt;
+    font-weight: 800;
+    padding: 0.5rem;
+    text-decoration: underline;
+}
+.sales_card h2{
+    color: #DBBA4B;
+    padding: 0.5rem;
+}
+.sales_card span{
+    font-size: 8pt;
+    color: #b1b1b1;
+}
+.sales_card_top{
+    display: flex;
+    justify-content: center;
+}
+.sales_card_img{
+    height: 35vh;
+    width: 60vw;
+    object-fit: cover;
+    border-radius: 12px;
+    padding: 0.5rem;
+}

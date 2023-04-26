@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import AuthContext from './store/authContext';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import Sales from './components/Sales/Sales';
 import NewThisWeek from './components/New This Week/NewThisWeek';
 import FFC from './components/FFC/FFC';
 import GardeningCalendar from './components/GardeningCalendar/GardeningCalendar';
@@ -33,7 +34,7 @@ function App() {
       <Header />   
       <Routes>
        <Route path='/' element={<Home />}/>
-       <Route path='/newthisweek' element={<NewThisWeek />}/>
+       <Route path='/sales' element={<Sales />}/>
        <Route path='/ffc' element={<FFC />}/>
        <Route path='/gardeningcalendar' element={<GardeningCalendar/>}/>
        <Route path='/gardenresources' element={<GardenResources/>}/>
