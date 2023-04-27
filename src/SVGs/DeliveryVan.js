@@ -10,8 +10,8 @@ function DeliveryVan() {
       strokeLinejoin="round"
       strokeMiterlimit="10"
       clipRule="evenodd"
-      width="300" 
       viewBox="0 0 3370.82 2384.24"
+      id="delivery_van_icon"
     >
       <defs>
         <linearGradient
