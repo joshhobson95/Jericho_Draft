@@ -22,7 +22,7 @@ function Sales() {
         <div className='sales_welcome'>
         <h1>This Week's Specials </h1>
         <br></br>
-        <h6>For the Week:</h6>
+        <p>For the Week:</p>
         <p>( {currentWeekRange} )</p>
         </div>
 
@@ -31,7 +31,7 @@ function Sales() {
             <h1>This week's Specials revolve around the theme of: ______</h1>
         </div>
 
-        <div className='sales_cards_container'> 
+        <div className='sales_card_container'> 
         {salesData.map((item) => (
 <div className='sales_card'> 
                     <div className='sales_card_top'>

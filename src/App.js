@@ -4,8 +4,8 @@ import AuthContext from './store/authContext';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Sales from './components/Sales/Sales';
-import NewThisWeek from './components/New This Week/NewThisWeek';
 import FFC from './components/FFC/FFC';
+import Delivery from './components/Delivery/Delivery';
 import GardeningCalendar from './components/GardeningCalendar/GardeningCalendar';
 import GardenResources from './components/GardenResources/GardenResources';
 import GiftCard from './components/GiftCard/GiftCard';
@@ -36,6 +36,7 @@ function App() {
        <Route path='/' element={<Home />}/>
        <Route path='/sales' element={<Sales />}/>
        <Route path='/ffc' element={<FFC />}/>
+       <Route path='/delivery' element={<Delivery />}/>
        <Route path='/gardeningcalendar' element={<GardeningCalendar/>}/>
        <Route path='/gardenresources' element={<GardenResources/>}/>
        <Route path='/giftcard' element={<GiftCard />}/>

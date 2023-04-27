@@ -34,6 +34,8 @@
     padding: 1.5vw;
 }
 .sales_body{
+    margin: 2rem;
+    padding-top: 2rem;
     background-color: #24242433;
     width: 85vw;
     border-radius: 12px;
@@ -44,7 +46,7 @@
 }
 .sales_card{
     background-color: #1a2136;
-    border: 2px solid #e0e0e0;
+    border: 3px solid #e0e0e0;
     padding: 1rem;
     margin: 2rem;
     box-sizing: border-box;
@@ -78,4 +80,72 @@ box-shadow: 0px 0px 19px 11px rgba(189,189,107,0.18);
     object-fit: cover;
     border-radius: 12px;
     padding: 0.5rem;
+}
+
+
+@media (min-width:1025px) { 
+    .sales{
+        font-size: 18pt;
+    }
+    .sales_welcome{
+        width: 40vw;
+        border-radius: 20px;
+    }
+.sales_welcome h1{
+    font-size: 60pt;
+}
+.sales_welcome p{
+    padding: 0.5vw;
+    font-size: 18pt;
+}
+.sales_body_header{
+    padding: 4rem;
+}
+.sales_body_header h1{
+    font-size: 22pt;
+}
+.sales_body{
+    margin-bottom: 6rem;
+    padding-bottom: 4rem;
+}
+.sales_card h1{
+    font-size: 32pt;
+    padding: 2rem;
+}
+.sales_card_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sales_card{
+    height: auto;
+    width: 55vw;
+    align-self: center;
+    border-radius: 20px;
+    border: 4px solid #e0e0e0;
+}
+.sales_card_img{
+    height: 30vh;
+    width: 50vw;
+    border-radius: 20px;
+}
+}
+
+@media (min-width:2025px) {
+.sales_card{
+    height: auto;
+    width: 45vw;
+}
+.sales_body{
+    width: 65vw;
+}
+.sales_card_img{
+    height: 60vh;
+    width: 40vw;
+    border-radius: 20px;
+}
+.sales_welcome p{
+    padding: 0.5vw;
+}
+
 }

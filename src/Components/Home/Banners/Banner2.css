@@ -95,8 +95,6 @@
 
   .decoy{
    height: 200px;
-
-   
   }
   .inner_decoy{
     display: flex;
@@ -190,8 +188,7 @@
     .banner2 button{
         padding: 1.25rem 1.5rem;
         font-size: 18pt;
-        margin-left: 8vw;
-        margin-top: 5rem;
+       
         border-radius: 20px;
     }
     .van{

@@ -57,7 +57,7 @@ function Seminars() {
                 <div className="reveal-container">
       <div
         ref={revealRef}
-        className={`reveal-content ${isVisible ? "visible" : ""}`}
+        className={`seminar_reveal-content ${isVisible ? "seminar_visible" : ""}`}
       >
         <div className="sized_svg">
 <SeminarIcon />

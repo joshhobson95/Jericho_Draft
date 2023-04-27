@@ -42,7 +42,9 @@ function New() {
           </NavLink>
             <li className="navbar__dropdownItem">Promotions</li>
             <li className="navbar__dropdownItem">Brands we Carry</li>
+            <NavLink to='/delivery'>
             <li className="navbar__dropdownItem">Delivery and Planting</li>
+            </NavLink>
         </ul>
       </li>
 
@@ -52,7 +54,7 @@ function New() {
          <div className='nav_svg'>
          <GiftCardIcon />
          </div>
-            <p>About</p>
+            <p>Giftcard</p>
           </div>
 
             <ul className="navbar__dropdownMenu_brown">

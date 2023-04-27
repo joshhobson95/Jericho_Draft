@@ -66,7 +66,6 @@ function Banner2() {
 </div>
         </div>
         <div   ref={revealRef}>
-
         </div>
     </div>
   )

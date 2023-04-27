@@ -4,7 +4,7 @@ export const salesData= [
         name: 'Prickly Pear',
         img_url: `https://www.jerichonursery.com/wp-content/uploads/2023/04/PRICKLYPEAR.png`,
         description: 'Multiple different bloom colors --seetag',
-        price: 29.99,
+        price: `$29.99`,
         discount: '',
         tagline: ``,
         start_date: '4/26/2023',

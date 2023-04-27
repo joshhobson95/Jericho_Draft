@@ -1,0 +1,123 @@
+.delivery{
+    height: auto;
+    padding-top: 5vh;
+    width: 100vw;
+    background-image: linear-gradient(#DBBA4BCF 40%, #4BA7DBCF , #DB4BD5CF) ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.delivery_welcome{
+    margin: 5vh;
+    background-color: #242424;
+    height: auto;
+    width: 65vw;
+    border-radius: 12px;
+    box-shadow: 11px 13px 10px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    align-self: center;
+    color:  white;
+    font-weight: 500;
+    font-size: 12pt;
+    padding: 5vh;
+}
+.delivery_welcome h1{
+    color: #4FA673;
+    font-size: 26pt;
+    font-weight: 700;
+
+}
+.delivery_welcome p{
+    padding: 1.5vw;
+}
+.delivery_body{
+    background-image: linear-gradient(#b19c4a, #7271b7) ;
+    height: auto;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    border-radius: 12px;
+    color:white;
+}
+.delivery_body h1{
+    font-size: 20pt;
+    font-weight: 800;
+    text-decoration: underline;
+    padding: 1.5rem;
+    color:#95562e;
+}
+.delivery_body h2{
+    font-size: 18pt;
+    font-weight: 800;
+    padding: 0.5rem;
+}
+.delivery_body p{
+    padding: 0.5rem 1rem;
+}
+.delivery_img_container{
+    display: flex;
+    justify-content: center;
+}
+.delivery_img{
+   width: 80vw;
+    border-radius: 12px;
+    margin: 2rem;
+    -webkit-box-shadow:0px 0px 19px 11px rgba(189,189,107,0.18);
+-moz-box-shadow: 0px 0px 19px 11px rgba(189,189,107,0.18);
+box-shadow: 0px 0px 19px 11px rgba(189,189,107,0.18);
+}
+
+.delivery button{
+    height: auto;
+    width: auto;
+    padding: 1rem 1.25rem;
+    background-color: #4FA673;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Raleway';
+    font-size: 12pt;
+    font-weight: 600;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+    margin: 1rem;
+}
+.delivery button:hover{
+    background-color: #ffffff;
+    color: #4FA673;
+    transition: 1s
+}
+
+.visible {
+    display: block;
+    transform: translateY(0);
+    height: 200px;
+    opacity: 0.1;
+    animation-name: fade-in !important; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  .decoy{
+   height: 200px;
+  }
+
+  @keyframes fade-in{
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width:1025px) { }
+
+
+  
