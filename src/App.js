@@ -16,6 +16,7 @@ import Partners from './components/Partners/Partners';
 import Aboutus from './components/Aboutuspage/Aboutus';
 import Seminars from './components/Seminar/Seminars';
 import Clubs from './components/Clubs/Clubs';
+import ContactUs from './components/ContactUs/ContactUs';
 import AdminHome from './components/AdminPortal/AdminHome/AdminHome';
 import NewBlogPost from './components/AdminPortal/BlogPosts/NewBlogPost/NewBlogPost';
 import EditBlogPost from './components/AdminPortal/BlogPosts/EditBlogPost/EditBlogPost'
@@ -47,6 +48,7 @@ function App() {
        <Route path='/aboutus' element={<Aboutus />}/>
        <Route path='/seminars' element={<Seminars />}/>
        <Route path='/clubs' element={<Clubs />}/>
+       <Route path='/contact' element={<ContactUs />}/>
         <Route path='/adminhome' element={authCtx.token ? <AdminHome /> : <Navigate to='/login'/>}/>
         <Route path='/newblogpost' element={authCtx.token ? <NewBlogPost /> : <Navigate to='/login'/>}/>
         <Route path='/editpost' element={authCtx.token ? <EditBlogPost /> : <Navigate to='/login'/>}/>
