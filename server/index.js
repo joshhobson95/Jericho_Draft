@@ -32,16 +32,17 @@ app.post('/login', login)
 app.post('/register', register)
 
 
+app.get('/blog/:blogtableid', getBlogTable)
 
 app.get('/blog', getBlogTable)
 app.post('/newblogpost', addNewBlogPost)
 app.delete('/newblogpost/:blogtableid', deleteBlogPost)
 app.put('/editblogpost/:blogtableid', editBlogPost)
 
-app.get('/blog', getSalesTable)
-app.post('/newblogpost', addNewSalesPost)
-app.delete('/newblogpost/:blogtableid', deleteSalesPost)
-app.put('/editblogpost/:blogtableid', editSalesPost)
+app.get('/sales', getSalesTable)
+app.post('/newsalespost', addNewSalesPost)
+app.delete('/newsalespost/:salestableid', deleteSalesPost)
+app.put('/editsalespost/:salestableid', editSalesPost)
 
 
 
