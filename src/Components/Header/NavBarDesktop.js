@@ -40,7 +40,6 @@ function New() {
           <NavLink to='/sales'>
             <li className="navbar__dropdownItem">This Week's Specials</li>
           </NavLink>
-            <li className="navbar__dropdownItem">Promotions</li>
             <li className="navbar__dropdownItem">Brands we Carry</li>
             <NavLink to='/delivery'>
             <li className="navbar__dropdownItem">Delivery and Planting</li>
@@ -110,7 +109,6 @@ function New() {
         <NavLink to='/clubs'>
          <li className="navbar__dropdownItem">Clubs around Abq</li>
         </NavLink>
-         <li className="navbar__dropdownItem">The Birds!</li>
           </ul>
         </li>
 
@@ -141,12 +139,13 @@ function New() {
           </div>
 
           <ul className="navbar__dropdownMenu_yellow">
-               <NavLink to='/aboutus'>
+      <NavLink to='/contact'>
+        <li>Contact Info</li>
+      </NavLink>
+      <NavLink to='/aboutus'>
         <li>About Us</li>
       </NavLink>
-        <li>Contact Info</li>
         <li>Why Work Here</li>
-        <li>Phone Number</li>
         <li>Nursery Map</li>
           </ul>
         </li>

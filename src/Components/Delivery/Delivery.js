@@ -1,7 +1,10 @@
 import React, {useState, useEffect, useRef} from 'react'
 import './Delivery.css'
 import plantbox from '../../Assets/plantbox.jpg'
+
 import DeliveryVan from '../../SVGs/DeliveryVan'
+import ffc3 from '../../Assets/ffc3.png'
+
 
 function Delivery() {
 
@@ -47,21 +50,39 @@ function Delivery() {
 
         <h1>Jericho's Delivery Options</h1>
 
+        <div className={isAnimated ? "" : "delivery_decoy"}></div>
+        <div className={isAnimated ? "delivery_visible" : "reveal-content"}>
+          <div className='delivery_ffc'>
+          <img src={ffc3} alt='' className='delivery_ffc_small5'/>
+              <img src={ffc3} alt='' className='delivery_ffc_small3'/>
+              <img src={ffc3} alt='' className='delivery_ffc_small'/>
+              <img src={ffc3} alt='' className='delivery_ffc_small2'/>
+              <img src={ffc3} alt='' className='delivery_ffc_small4'/>
+          </div>
+          <div className='delivery_van_size'>
+          <DeliveryVan />
+          </div>    
+          </div>
 
-        <div className={isAnimated ? "" : "decoy"}></div>
-        <div className={isAnimated ? "visible" : "reveal-content"}><DeliveryVan className='van'/></div>
-  
 
 
 
-        <h2>Delivery Range</h2>
-        <p>We delivery to Albuquerque and the Greater Albuqueruque Area including Four Hills, the South Valley, West Mesa, Rio Rancho, Bernallop, Placitas, East Mountains, Los Lunas and Belen. Please ask about delivery options for areas like Snata Fe, Grants or Socorro.</p>
-        <h2>Pricing</h2>
-        <p>Pricing for delivery ranges from $75-$150 for most areas excluding large loads.</p>
-        <h2>Planting</h2>
+<div className='delivery_container'>
         <div   ref={revealRef}>
         </div>
-        <p>Planting is included in the price of your delivery. Don't forget to order soil and root stimulator with your order so our gardening angels can set your plants up right!</p>
+        <h2>Delivery Range</h2>
+        <p>We delivery to Albuquerque and the Greater Albuqueruque Area including Four Hills, the South Valley, West Mesa, Rio Rancho, Bernallio, Placitas, East Mountains, Los Lunas and Belen. Please ask about delivery options for areas like Santa Fe, Grants or Socorro.</p>
+</div>
+<div className='delivery_container'>
+        <h2>Pricing</h2>
+        <p>Pricing for delivery ranges from $75-$150 for most areas excluding large loads.</p>
+</div>
+<div className='delivery_container'>
+        <h2>Planting</h2>
+        <p>
+          Planting is not included in the delivery charge but we do offer it. Contact us for more information.
+        </p>
+        </div>
 
 
 

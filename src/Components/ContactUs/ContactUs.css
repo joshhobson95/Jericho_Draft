@@ -125,3 +125,28 @@
     transition: 1s
 }
 
+
+@media (min-width:1025px) { 
+
+    .contact_us_body{
+        width: 80vw;
+    }
+    .contact_us_welcome{
+        font-size: 18pt;
+    }
+    .contact_us_welcome h1 {
+        font-size: 60pt;
+    }
+    .contact_us_body{
+        font-size: 18pt;
+    }
+    .contact_us_body h1{
+        font-size: 40pt;
+        padding: 3rem 2rem;
+    }
+    .contact_us_body button{
+        font-size: 18pt;
+    }
+
+
+}

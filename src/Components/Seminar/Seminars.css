@@ -134,7 +134,6 @@ width: 100%;
     animation: fadeIn;
     transition: 1s;
     height: auto;
-
   }
 
 @media (min-width:1025px) { 

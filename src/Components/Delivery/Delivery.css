@@ -7,6 +7,7 @@
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
+    line-height: 1.4;
 }
 .delivery_welcome{
     margin: 5vh;
@@ -94,8 +95,10 @@ box-shadow: 0px 0px 19px 11px rgba(189,189,107,0.18);
     transition: 1s
 }
 
-.visible {
-    display: block;
+
+.delivery_visible {
+    display: flex;
+    justify-content: center;
     transform: translateY(0);
     height: 200px;
     opacity: 0.1;
@@ -104,9 +107,95 @@ box-shadow: 0px 0px 19px 11px rgba(189,189,107,0.18);
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  .decoy{
+  .delivery_decoy{
    height: 200px;
   }
+  .delivery_container{
+    margin-top: 1rem;
+    border: #DBBA4B 4px solid;
+    width: 80vw;
+    align-self: center;
+    border-radius: 12px;
+  }
+  .delivery_van_icon{
+    width: 100%;
+  }
+  .delivery_van_size{
+    width: 70vw;
+    margin-right: 1rem;
+    z-index: 3;
+  }
+  .planting{
+    width: 30vw;
+    object-fit: cover;
+    border-radius: 12px;
+    -webkit-box-shadow:0px 0px 19px 11px rgba(189,189,107,0.18);
+    -moz-box-shadow: 0px 0px 19px 11px rgba(189,189,107,0.18);
+    box-shadow: 0px 0px 19px 11px rgba(189,189,107,0.18);
+  }
+  .delivery_ffc{
+    height: 20vh ;
+    width: 70vw;
+    position: absolute;
+    overflow: hidden;
+  }
+  .delivery_ffc_small{
+    margin-top: -1rem;
+    width: 30vw;
+    rotate: 10deg;
+    animation: leaf-fall 6s ease-in-out ;
+  }
+  .delivery_ffc_small2{
+    width: 20vw;
+    rotate: 170deg;
+    position: absolute;
+    z-index: 0;
+    animation: leaf-fall 6s ease-in-out ;
+  }
+  .delivery_ffc_small3{
+    margin-top: 4rem;
+    margin-left: -6rem;
+    width: 15vw;
+    rotate: 140deg;
+    position: absolute;
+    animation: leaf-fall 6s ease-in-out ;
+  }
+  .delivery_ffc_small4{
+    margin-top: 5rem;
+    margin-left: 0rem;
+    width: 25vw;
+    rotate: 230deg;
+    position: absolute;
+    animation: leaf-fall 6s ease-in-out ;
+  }
+  .delivery_ffc_small5{
+    margin-top: 8rem;
+    margin-left: -7rem;
+    width: 25vw;
+    rotate: 230deg;
+    position: absolute;
+    animation: leaf-fall 6s ease-in-out ;
+  }
+
+  @keyframes leaf-fall {
+    0% {
+      transform: translate(0, -20px) rotate(0deg);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(5px, 20px) rotate(10deg);
+      opacity: 1;
+    }
+    90% {
+      transform: translate(10px, 40px) rotate(-10deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  
 
   @keyframes fade-in{
     from {
@@ -117,7 +206,149 @@ box-shadow: 0px 0px 19px 11px rgba(189,189,107,0.18);
     }
   }
 
-  @media (min-width:1025px) { }
+  @media (min-width:1025px) { 
+    .delivery_welcome{
+        font-size: 18pt;
+    }
+    .delivery_welcome h1 {
+        font-size: 60pt;
+    }
+    .delivery_body{
+        font-size: 18pt;
+    }
+    .delivery_body h1{
+        font-size: 40pt;
+        padding: 3rem 2rem;
+    }
+    .delivery_body h2{
+        font-size: 32pt;
+        font-weight: 800;
+        padding: 1rem;
+    }
+    .delivery_container{
+        margin: 3rem;
+    }
+    .delivery_decoy{
+        height: 300px;
+    }
+    .delivery_visible{
+        height: 300px;
+    }
+      .delivery_van_size{
+        width: 40vw;
+        margin-right: 4rem;
+      }
+      .delivery_ffc{
+        height: 24rem;
+        width: 80vw;
+        position: absolute;
+        overflow: hidden;
+      }
+      .delivery_ffc_small{
+        margin-top: -1rem;
+
+      }
+      .delivery_ffc_small2{
+        width: 20vw;
+        rotate: 170deg;
+      }
+      .delivery_ffc_small3{
+        margin-top: 2rem;
+        margin-left: -14rem;
+      }
+      .delivery_ffc_small4{
+        margin-top: 14rem;
+        margin-left: 0rem;
+      }
+      .delivery_ffc_small5{
+        margin-top: 12rem;
+        margin-left: -13rem;
+        rotate: 200deg;
+      }
+    
+  }
+  @media (min-width: 456px) { 
+    .delivery_decoy{
+        height: 250px;
+    }
+    .delivery_visible{
+        height: 250px;
+    }
+}
+  @media (min-width: 700px) { 
+    .delivery_decoy{
+        height: 350px;
+    }
+    .delivery_visible{
+        height: 350px;
+    }
+    .delivery button{
+        font-size: 18pt;
+    }
+  }
+
+  @media (min-width:1325px) { 
+    .delivery_body{
+        width: 80vw;
+    }
+    .delivery_decoy{
+        height: 450px;
+    }
+    .delivery_visible{
+        height: 450px;
+    }
+    .delivery_van_size{
+        width: 35vw;
+    }
+  }
+
+  @media (min-width:2025px) { 
+    .delivery_body{
+        width: 80vw;
+    }
+    .delivery_container{
+        width: 65vw;
+    }
+    .delivery_decoy{
+        height: 650px;
+    }
+    .delivery_img{
+        height: 30vh;
+        object-fit: cover;
+        width: 55vw;
+    }
+    .delivery_visible{
+        height: 650px;
+    }
+    .delivery_van_size{
+        width: 35vw;
+    }
+    .delivery_ffc{
+        height: 40rem;
+        width: 80vw;
+        position: absolute;
+        overflow: hidden;
+      }
+      .delivery_ffc_small{
+        margin-top: -1rem;
+      }
+      .delivery_ffc_small2{
+        margin-left: -12rem;
+      }
+      .delivery_ffc_small3{
+        margin-top: 2rem;
+        margin-left: -24rem;
+      }
+      .delivery_ffc_small4{
+        margin-top: 18rem;
+        margin-left: 0rem;
+      }
+      .delivery_ffc_small5{
+        margin-top: 25rem;
+        margin-left: -32rem;
+        rotate: 200deg;
+      }
+  }
 
 
   
