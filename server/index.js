@@ -32,7 +32,7 @@ app.post('/login', login)
 app.post('/register', register)
 
 
-app.get('/blog/:blogtableid', getBlogTable)
+// app.get('/blog/:blogtableid', getBlogTable)
 
 app.get('/blog', getBlogTable)
 app.post('/newblogpost', addNewBlogPost)
