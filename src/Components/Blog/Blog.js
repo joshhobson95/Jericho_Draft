@@ -12,34 +12,26 @@ import axios from "axios";
 function Blog() {
 
   const [blogData, setBlogData] = useState([])
+  const [offset, setOffset] = useState(0);
+
+useEffect(() => {
+  axios
+    .get(`/blog/${offset}`)
+    .then((res) => {
+      setBlogData([res.data]);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}, [offset]);
 
 
-  useEffect(() => {
-    axios
-      .get("/blog")
-      .then((res) => {
-        setBlogData(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-
-
-    const { id } = useParams()
-
-    const [blogsToShow, setBlogsToShow] = useState(3);
-
-    const blogsToMap = blogData.slice(0, blogsToShow);
+  const { id } = useParams()
 
     const hanldeScrollTop = () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    const handleSeeMore = () => {
-      setBlogsToShow(blogsToShow + 3);
-    };
-    
 
 
 
@@ -51,18 +43,17 @@ function Blog() {
         <p>Welcome Statement:  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat pariatur. </p>
       </div>
 
+      <button onClick={() => setOffset(() => + 5)}>Next</button>
+      <button onClick={() => setOffset(() =>  0)}>Prev</button>
 
 
 
- 
 
-
-{blogsToMap.filter(item => item.id === 1).map((item) => (
+{/* {blogData.map((item) => (
     <div className='big_blog_card'> 
         <div className='big_blog_card_top'>
             <h1>Latest Post</h1>
-            {/* icon */}
-            <img src="https://drive.google.com/uc?export=view&id=1RzWZax_MPf3Oqzuxz54nzQ_eZ3t952e7" alt="drive" className='big_blog_photo'/>                             
+                          
         </div>
         <div className='big_blog_card_bottom'>
             <h3>{item.title}</h3>
@@ -77,15 +68,20 @@ function Blog() {
             </div>
         </div>
     </div>
-))}
+))} */}
 
 
 
 {/* ======================================== */}
 
-
-
-            {blogsToMap.map((item) => (
+<div>
+    {blogData && blogData[0] && blogData[0].rows && blogData[0].rows.map((blogPost) => (
+     <div>
+      {blogPost.title}
+      </div>
+    ))}
+  </div>
+            {/* {blogData.map((item) => (
                     <div className='small_blog_card'> 
                     <div className='small_blog_card_top'>
                     <img src={item.img_1_url} className='small_blog_photo'/>
@@ -109,13 +105,17 @@ function Blog() {
                     </div>
                     </div>
                     </div>
-            ))}
+            ))} */}
 
 
 <div className='blog_snav_buttons'>
   
               <button onClick={hanldeScrollTop}> Back to Top</button>
-              <button onClick={handleSeeMore}> See More </button>
+              <button> Does Nothing </button>
+
+          
+
+
 </div>
 
 
@@ -125,4 +125,4 @@ function Blog() {
   )
 }
 
-export default Blog
+export default Blog;

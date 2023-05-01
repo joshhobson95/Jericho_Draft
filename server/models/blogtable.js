@@ -1,8 +1,6 @@
 const {DataTypes} = require('sequelize')
 const {sequelize} = require('../util/database')
 
-
-
 module.exports = {
     BlogTable : sequelize.define('blogtable', {
         blogtableid: {
@@ -58,3 +56,4 @@ module.exports = {
         }
     })
 }
+

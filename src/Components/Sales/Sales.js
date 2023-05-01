@@ -1,11 +1,23 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './Sales.css'
-import { salesData } from './salesData';
+import axios from 'axios';
+
 
 function Sales() {
 
+const [salesData, setSalesData] = useState([])
 
-
+    useEffect(() => {
+      axios
+        .get("/sales")
+        .then((res) => {
+          setSalesData(res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }, []);
+  
     function getCurrentWeekRange() {
         const today = new Date();
         const firstDayOfWeek = new Date(today.setDate(today.getDate() - today.getDay() + (today.getDay() === 0 ? -6 : 1)));

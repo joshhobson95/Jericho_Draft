@@ -6,8 +6,10 @@ const {BlogTable} = require('../models/blogtable')
 module.exports = {
     getBlogTable: async (req, res) => {
         try {
-            const blogtable = await BlogTable.findAll({             
-        limit: 50,
+            const { offset } = req.params;
+            const blogtable = await BlogTable.findAndCountAll({             
+        limit: 5,
+        offset: offset,
         order: [
             ["blogtableid", "DESC"]
            ],                      
@@ -19,6 +21,7 @@ module.exports = {
             res.sendStatus(400)
         }
     }, 
+
     addNewBlogPost: async (req, res) => {
         try {
           const {

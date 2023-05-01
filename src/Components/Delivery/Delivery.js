@@ -9,11 +9,11 @@ import ffc3 from '../../Assets/ffc3.png'
 function Delivery() {
 
 
-  const revealRef = useRef(null); 
+  const revealRef2 = useRef(null); 
   const [isAnimated, setIsAnimated] = useState(false); 
 
   const handleScroll = () => {
-    const revealElement = revealRef.current; 
+    const revealElement = revealRef2.current; 
     if (revealElement) {
       const revealTop = revealElement.getBoundingClientRect().top; 
       const windowHeight = window.innerHeight; 
@@ -68,7 +68,7 @@ function Delivery() {
 
 
 <div className='delivery_container'>
-        <div   ref={revealRef}>
+        <div   ref={revealRef2}>
         </div>
         <h2>Delivery Range</h2>
         <p>We delivery to Albuquerque and the Greater Albuqueruque Area including Four Hills, the South Valley, West Mesa, Rio Rancho, Bernallio, Placitas, East Mountains, Los Lunas and Belen. Please ask about delivery options for areas like Santa Fe, Grants or Socorro.</p>

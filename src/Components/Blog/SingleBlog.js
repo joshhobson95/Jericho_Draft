@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import './SingleBlog.css'
-import {BlogData} from './BlogData.js'
 import { useParams, useNavigate } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import axios from 'axios'
@@ -11,8 +10,6 @@ function SingleBlog() {
 
 
   const [blogData, setBlogData] = useState([])
-
-
   useEffect(() => {
     axios
       .get("/blog")
@@ -68,6 +65,7 @@ function SingleBlog() {
 <div key={item.id} className='blog_body_main'> 
     <div className='blog_body_top'>
             <h1 className='blog_title'>{item.title}</h1>
+            <span className='date'>{item.date}</span>
 
             {item.img_1_url && <img alt=''  src={item.img_1_url} className='blog_img'/>}
             {item.img_1_captions && <p>{item.img_1_captions}</p>}
@@ -140,11 +138,6 @@ function SingleBlog() {
   </div>
 </div>
 
-{/* //////////////////////////////////////////////////////////////////////////////////////// */}
-
-
-
-<p>Overflow Gallery Placeholder</p>
 
 
 <div className='blog_body_bottom'>
@@ -171,7 +164,7 @@ function SingleBlog() {
       <p>{item.body_4}</p>
     )}
     {item.icon3 && (
-      <h6>{item.icon3}</h6>
+       <img alt='' src={item.icon3} className='icon3'/> 
     )}
     {item.link3 && (
       <p>{item.link3}</p>
@@ -190,11 +183,6 @@ function SingleBlog() {
   )}
 
 
-  {item.icon4 && (
-    <div className='blog_icon_3'>
-    <img alt='' src={item.icon4}/>
-    </div>
-  )}
 </div>
 
     </div>
@@ -209,4 +197,3 @@ function SingleBlog() {
 export default SingleBlog;
 
 
-// **if even style sheet one if odd style sheet two**

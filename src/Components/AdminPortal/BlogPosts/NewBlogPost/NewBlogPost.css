@@ -1,16 +1,29 @@
 .newBlog{
     height: auto;
     background-color: #242424;
-    margin-top: 15vh;
     padding-top: 15vh;
     color: white;
     font-weight: 600;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
-
+.newBlog_header{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    padding: 4rem;
+}
+.newBlog_header h1{
+font-size: 28pt;
+padding: 2rem;
+}
 .newBlog form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.newBlog textarea{
+    height: 15vh;
+    width: 45vw;
 }

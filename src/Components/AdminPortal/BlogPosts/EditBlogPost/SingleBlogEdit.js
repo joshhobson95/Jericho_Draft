@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import './SingleBlogEdit.css'
 import axios from 'axios';
@@ -11,50 +11,31 @@ import Swal from 'sweetalert2';
 
 function SingleBlogEdit({match}) {
 
-    const { id } = useParams();
+
+  const { id } = useParams();
+  const [formData, setFormData] = useState([]);
 
 
-    
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`/blog${id}`);
+        setFormData(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchData();
+  }, [id]);
 
-  const [formData, setFormData] = useState({
-    title: ``,
-    title2: ``,
-    date: ``,
-    img_1_url: ``,
-    img_2_url: ``,
-    img_3_url: ``,
-    img_4_url: ``,
-    img_5_url: ``,
-    img_6_url: ``,
-    img_7_url: ``,
-    img_8_url: ``,
-    img_9_url: ``,
-    img_10_url: ``,
-    img_1_captions: ``,
-    img_2_captions:  ``,
-    img_3_captions:   ``,
-    img_4_captions:  ``,
-    img_5_captions: ``,
-    img_6_captions: ``,
-    img_7_captions: ``,
-    img_8_captions: ``,
-    img_9_captions: ``,
-    img_10_captions: ``,
-    link:  ``,
-    link2:  ``,
-    icon:  ``,
-    icon2: ``,
-    icon3: ``,
-    intro:  ``,
-    body_1:  ``,
-    body_2:  ``,
-    body_3:  ``,
-    body_4:  ``,
-    conclusion:  ``,
-    span_green:  ``,
-    span_yellow:  ``,
-    span_brown:  ``,
-  });
+  if (!formData) {
+    return <div>Loading...</div>;
+  }
+
+
+
+
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -63,7 +44,7 @@ function SingleBlogEdit({match}) {
       .put(`/editblogpost/${id}`, formData)
       .then((response) => {
         Swal.fire({
-          title: "Blog Posted",
+          title: "Blog Edited",
           confirmButtonColor: "rgb(210, 161, 12)",
           customClass: "buttonalert",
           confirmButtonText: "Ok"
@@ -72,7 +53,7 @@ function SingleBlogEdit({match}) {
       .catch((error) => {
         console.log(error);
         Swal.fire({
-          title: "Error creating post",
+          title: "Error editing blog post",
           confirmButtonColor: "orange",
           customClass: "buttonalert",
           confirmButtonText: "Ok"
@@ -95,22 +76,13 @@ function SingleBlogEdit({match}) {
   
    
         <div>
-    <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
       <label>
         Title
         <input
           type="text"
           name="title"
           value={formData.title}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Title 2
-        <input
-          type="text"
-          name="title2"
-          value={formData.title2}
           onChange={handleChange}
           />
       </label>
@@ -133,191 +105,11 @@ function SingleBlogEdit({match}) {
           />
       </label>
       <label>
-        Image 2
-        <input
-          type="text"
-          name="img_2_url"
-          value={formData.img_2_url}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 3
-        <input
-          type="text"
-          name="img_3_url"
-          value={formData.img_3_url}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 4
-        <input
-          type="text"
-          name="img_4_url"
-          value={formData.img_4_url}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 5
-        <input
-          type="text"
-          name="img_5_url"
-          value={formData.img_5_url}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 6
-        <input
-          type="text"
-          name="img_6_url"
-          value={formData.img_6_url}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 7
-        <input
-          type="text"
-          name="img_7_url"
-          value={formData.img_7_url}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 8
-        <input
-          type="text"
-          name="img_8_url"
-          value={formData.img_8_url}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 9
-        <input
-          type="text"
-          name="img_9_url"
-          value={formData.img_9_url}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 10
-        <input
-          type="text"
-          name="img_10_url"
-          value={formData.img_10_url}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
         Image 1 Caption
         <input
           type="text"
           name="img_1_captions"
           value={formData.img_1_captions}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 2 Caption
-        <input
-          type="text"
-          name="img_2_captions"
-          value={formData.img_2_captions}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 3 Caption
-        <input
-          type="text"
-          name="img_3_captions"
-          value={formData.img_3_captions}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 4 Caption
-        <input
-          type="text"
-          name="img_4_captions"
-          value={formData.img_4_captions}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 5 Caption
-        <input
-          type="text"
-          name="img_5_captions"
-          value={formData.img_5_captions}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 6 Caption
-        <input
-          type="text"
-          name="img_6_captions"
-          value={formData.img_6_captions}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 7 Caption
-        <input
-          type="text"
-          name="img_7_captions"
-          value={formData.img_7_captions}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 8 Caption
-        <input
-          type="text"
-          name="img_8_captions"
-          value={formData.img_8_captions}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 9 Caption
-        <input
-          type="text"
-          name="img_9_captions"
-          value={formData.img_9_captions}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Image 10 Caption
-        <input
-          type="text"
-          name="img_10_captions"
-          value={formData.img_10_captions}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Link
-        <input
-          type="text"
-          name="link"
-          value={formData.link}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Link 2
-        <input
-          type="text"
-          name="link2"
-          value={formData.link2}
           onChange={handleChange}
           />
       </label>
@@ -331,26 +123,8 @@ function SingleBlogEdit({match}) {
           />
       </label>
       <label>
-        Icon 2
-        <input
-          type="text"
-          name="icon2"
-          value={formData.icon2}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-        Icon 3
-        <input
-          type="text"
-          name="icon3"
-          value={formData.icon3}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
        Intro
-        <input
+        <textarea
           type="text"
           name="intro"
           value={formData.intro}
@@ -358,47 +132,20 @@ function SingleBlogEdit({match}) {
           />
       </label>
       <label>
-       Body 1
+        Image 2
         <input
           type="text"
-          name="body_1"
-          value={formData.body_1}
+          name="img_2_url"
+          value={formData.img_2_url}
           onChange={handleChange}
           />
       </label>
       <label>
-       Body 2
+        Image 2 Caption
         <input
           type="text"
-          name="body_2"
-          value={formData.body_2}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-       Body 3
-        <input
-          type="text"
-          name="body_3"
-          value={formData.body_3}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-       Body 4
-        <input
-          type="text"
-          name="body_4"
-          value={formData.body_4}
-          onChange={handleChange}
-          />
-      </label>
-      <label>
-      Conclusion
-        <input
-          type="text"
-          name="conclusion"
-          value={formData.conclusion}
+          name="img_2_captions"
+          value={formData.img_2_captions}
           onChange={handleChange}
           />
       </label>
@@ -412,6 +159,87 @@ function SingleBlogEdit({match}) {
           />
       </label>
       <label>
+       Body 1
+        <textarea
+          type="text"
+          name="body_1"
+          value={formData.body_1}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Link
+        <input
+          type="text"
+          name="link"
+          value={formData.link}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Title 2
+        <input
+          type="text"
+          name="title2"
+          value={formData.title2}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 3
+        <input
+          type="text"
+          name="img_3_url"
+          value={formData.img_3_url}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 3 Caption
+        <input
+          type="text"
+          name="img_3_captions"
+          value={formData.img_3_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 4
+        <input
+          type="text"
+          name="img_4_url"
+          value={formData.img_4_url}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 4 Caption
+        <input
+          type="text"
+          name="img_4_captions"
+          value={formData.img_4_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Icon 2
+        <input
+          type="text"
+          name="icon2"
+          value={formData.icon2}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+       Body 2
+        <textarea
+          type="text"
+          name="body_2"
+          value={formData.body_2}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
      Green Span
         <input
           type="text"
@@ -421,11 +249,165 @@ function SingleBlogEdit({match}) {
           />
       </label>
       <label>
+        Image 5
+        <input
+          type="text"
+          name="img_5_url"
+          value={formData.img_5_url}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 5 Caption
+        <input
+          type="text"
+          name="img_5_captions"
+          value={formData.img_5_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+       Body 3
+        <textarea
+          type="text"
+          name="body_3"
+          value={formData.body_3}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Link 2
+        <input
+          type="text"
+          name="link2"
+          value={formData.link2}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 6
+        <input
+          type="text"
+          name="img_6_url"
+          value={formData.img_6_url}
+          onChange={handleChange}
+          />
+      </label> 
+      <label>
+        Image 6 Caption
+        <input
+          type="text"
+          name="img_6_captions"
+          value={formData.img_6_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 7
+        <input
+          type="text"
+          name="img_7_url"
+          value={formData.img_7_url}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 7 Caption
+        <input
+          type="text"
+          name="img_7_captions"
+          value={formData.img_7_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 8
+        <input
+          type="text"
+          name="img_8_url"
+          value={formData.img_8_url}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 8 Caption
+        <input
+          type="text"
+          name="img_8_captions"
+          value={formData.img_8_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 9
+        <input
+          type="text"
+          name="img_9_url"
+          value={formData.img_9_url}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 9 Caption
+        <input
+          type="text"
+          name="img_9_captions"
+          value={formData.img_9_captions}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
      Brown Span
         <input
           type="text"
           name="span_brown"
           value={formData.span_brown}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+       Body 4
+        <textarea
+          type="text"
+          name="body_4"
+          value={formData.body_4}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Icon 3
+        <input
+          type="text"
+          name="icon3"
+          value={formData.icon3}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 10
+        <input
+          type="text"
+          name="img_10_url"
+          value={formData.img_10_url}
+          onChange={handleChange}
+          />
+      </label>
+      <label>
+        Image 10 Caption
+        <input
+          type="text"
+          name="img_10_captions"
+          value={formData.img_10_captions}
+          onChange={handleChange}
+          />
+      </label>
+
+      <label>
+      Conclusion
+        <textarea
+          type="text"
+          name="conclusion"
+          value={formData.conclusion}
           onChange={handleChange}
           />
       </label>

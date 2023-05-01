@@ -32,9 +32,8 @@ app.post('/login', login)
 app.post('/register', register)
 
 
-// app.get('/blog/:blogtableid', getBlogTable)
 
-app.get('/blog', getBlogTable)
+app.get('/blog/:offset', getBlogTable)
 app.post('/newblogpost', addNewBlogPost)
 app.delete('/newblogpost/:blogtableid', deleteBlogPost)
 app.put('/editblogpost/:blogtableid', editBlogPost)

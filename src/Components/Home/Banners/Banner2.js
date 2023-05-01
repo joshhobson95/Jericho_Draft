@@ -58,7 +58,9 @@ function Banner2() {
 <div className='inner_decoy'>
             <div className='decoy'>
             </div>
+            <div id='movingDiv'>
     <div className={isAnimated ? "visible" : "reveal-content"}><DeliveryVan /></div>
+            </div>
     </div>
     <button>Learn More</button>
 </div>

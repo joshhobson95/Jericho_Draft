@@ -29,11 +29,17 @@ function AdminHome() {
 
       <div className='admin_options'>
 
-      <NavLink to='/editpost'>
-      <button>Edit/Delete  a Blog Post</button>
-      </NavLink>
       <NavLink to='/newblogpost'>
       <button>Create a New Blog Post</button>
+      </NavLink>
+      <NavLink to='/editpost'>
+      <button>Edit/Delete a Blog Post</button>
+      </NavLink>
+      <NavLink to='/newsalespost'>
+      <button>Create a Sales Post</button>
+      </NavLink>
+      <NavLink to='/editsalespost'>
+      <button>Edit a Sales Post</button>
       </NavLink>
 
       </div>
