@@ -21,7 +21,35 @@ module.exports = {
             res.sendStatus(400)
         }
     }, 
-
+    getAllBlogTable: async (req, res) => {
+        try {
+            const blogtableall = await BlogTable.findAll({             
+        order: [
+            ["blogtableid", "DESC"]
+           ],                      
+            })
+            res.status(200).send(blogtableall)
+        } catch (error) {
+            console.log('ERROR IN getBlogTable')
+            console.log(error)
+            res.sendStatus(400)
+        }
+    }, 
+    getSingleBlogTable: async (req, res) => {
+      try {
+          const { id } = req.params;
+          const singleblogtable = await BlogTable.findByPk(id);
+          if (!singleblogtable) {
+              res.status(404).send("Blog table not found");
+              return;
+          }
+          res.status(200).send(singleblogtable);
+      } catch (error) {
+          console.log('ERROR IN getBlogTable')
+          console.log(error)
+          res.sendStatus(400)
+      }
+  },
     addNewBlogPost: async (req, res) => {
         try {
           const {

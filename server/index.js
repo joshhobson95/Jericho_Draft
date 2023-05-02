@@ -16,7 +16,7 @@ const cors = require('cors')
 
 const {register, login} = require('./controllers/auth')
 const {isAuthenticated} = require('./middleware/isAuthenticated')
-const {getBlogTable, addNewBlogPost, deleteBlogPost, editBlogPost} = require('./controllers/blogtable')
+const {getBlogTable, getAllBlogTable, getSingleBlogTable, addNewBlogPost, deleteBlogPost, editBlogPost} = require('./controllers/blogtable')
 const {getSalesTable, addNewSalesPost, deleteSalesPost, editSalesPost} = require('./controllers/salestable')
 
 
@@ -33,7 +33,9 @@ app.post('/register', register)
 
 
 
+app.get('/blog', getAllBlogTable)
 app.get('/blog/:offset', getBlogTable)
+app.get('/singleblog/:id', getSingleBlogTable)
 app.post('/newblogpost', addNewBlogPost)
 app.delete('/newblogpost/:blogtableid', deleteBlogPost)
 app.put('/editblogpost/:blogtableid', editBlogPost)
