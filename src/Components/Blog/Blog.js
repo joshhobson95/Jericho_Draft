@@ -11,14 +11,28 @@ import axios from "axios";
 
 function Blog() {
 
+  const { id } = useParams()
   const [blogData, setBlogData] = useState([])
   const [offset, setOffset] = useState(0);
+  const [count, setCount] = useState(0)
+  const [pages, setPages] = useState(0)
+
+  
+
+
 
 useEffect(() => {
   axios
     .get(`/blog/${offset}`)
     .then((res) => {
       setBlogData([res.data]);
+
+      if([res.data]){
+        setCount([res.data][0].count)
+      }
+       
+
+    
     })
     .catch((err) => {
       console.log(err);
@@ -26,14 +40,28 @@ useEffect(() => {
 }, [offset]);
 
 
-  const { id } = useParams()
 
-    const hanldeScrollTop = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
+useEffect(() => {
+mapPages()
+}, [blogData])
+
+const mapPages = () => {
+  setPages(() => (count / 5.05))
+  console.log(pages)
+}
+
+function mapButtons(count) {
+  const buttons = [];
+  for (let i = 1; i <= count; i++) {
+    buttons.push(<button key={i} onClick={() => setOffset(i * 5)}>{i+1}</button>);
+  }
+  return buttons;
+}
 
 
-
+const hanldeScrollTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
   return (
     <div className='Blog'>
@@ -43,8 +71,10 @@ useEffect(() => {
         <p>Welcome Statement:  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat pariatur. </p>
       </div>
 
-      <button onClick={() => setOffset(() => + 5)}>Next</button>
-      <button onClick={() => setOffset(() =>  0)}>Prev</button>
+
+
+      <button onClick={() => setOffset(() =>  0)}>1</button> 
+      {mapButtons(pages)}
 
 
 
