@@ -6,7 +6,7 @@ import EditBlogPost from '../EditBlogPost';
 function EditBlogMain() {
 
 
-  const [isMobile, setIsMobile] = useState()
+  const [isMobile, setIsMobile] = useState(false)
 
 
   useEffect(() => {

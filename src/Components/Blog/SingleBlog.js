@@ -1,44 +1,30 @@
 import React, {useState, useEffect} from 'react'
 import './SingleBlog.css'
-import { useParams, useNavigate } from 'react-router-dom'
-import { NavLink } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
 
 
 function SingleBlog() {
-
-
   const [blogData, setBlogData] = useState([])
-  useEffect(() => {
-    axios
-      .get("/blog")
-      .then((res) => {
-        setBlogData(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-
-
-
-  const navigate = useNavigate()
   const { blogid } = useParams();
   const [blogIdNum, setBlogIdNum] = useState(+blogid)
 
 
-  const handlePrevious = () => {
-    const previousBlogId = blogIdNum - 1;
-    setBlogIdNum((prevBlogId) => prevBlogId - 1);
-    navigate(`/singleblog/${previousBlogId}`);
-  };
 
-  const handleNext = () => {
-    const nextBlogId = blogIdNum + 1;
-    setBlogIdNum((prevBlogId) => prevBlogId + 1);
-    navigate(`/singleblog/${nextBlogId}`);
-  };
+
+  useEffect(() => {
+    axios.get(`/singleblog/${blogIdNum}`)
+    .then((response) => {
+  
+      setBlogData([response.data])
+      console.log(response.data)
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+  }, [blogIdNum])
+  
 
 
 
@@ -46,28 +32,19 @@ function SingleBlog() {
     <div className='Single_Blog_Post'>
 
       <div className='blog_welcome'>
-          {blogData.filter(item => item.blogtableid === blogIdNum).map((item) =>(
-            <div>
-              <h1>Blog Post:</h1>
-              <h2> Selected: {item.title}</h2>
-              
-              <button onClick={handlePrevious}>previous</button>
-
-           
-              <button onClick={handleNext}>next</button>
-    
-            </div>
-          ))}
+        <h1>Currently Reading:</h1>
+        {blogData && blogData.map((item) => (
+              <h2>{item.title}</h2>
+        ))}
       </div>
 
-
-      {blogData.filter(item => item.blogtableid === blogIdNum).map((item) => (
+      {blogData && blogData.map((item) => (
 <div key={item.id} className='blog_body_main'> 
     <div className='blog_body_top'>
             <h1 className='blog_title'>{item.title}</h1>
             <span className='date'>{item.date}</span>
-
-            {item.img_1_url && <img alt=''  src={item.img_1_url} className='blog_img'/>}
+           
+            {item.img_1_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_1_url}`} className='blog_img' alt=''/>}
             {item.img_1_captions && <p>{item.img_1_captions}</p>}
 
 
@@ -75,36 +52,31 @@ function SingleBlog() {
 
             <div className='blog_icon_1'>
               {item.icon && <img alt='' src={item.icon}/> }
+           
             </div>   
             {item.intro && <p>{item.intro}</p>}
 
-            {item.img_2_url && <img alt='' src={item.img_2_url} className='blog_img'/>}
+            {item.img_2_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_2_url}`} className='blog_img' alt=''/>}
             {item.img_2_captions && <p>{item.img_2_captions}</p>}
 
             <div className='blog_paragraph_top'>
               {item.body_img_1 && <img alt='' src={item.body_img_1} className='body_img_1'/>}
               {item.span_yellow && <span className='span_yellow'>{item.span_yellow}</span>}
               {item.body_1 && <p>{item.body_1}</p>}
-              {item.link && <h6>{item.link}</h6>}
-              {item.a_tag_1 && (
-                <NavLink to={item.a_tag_1}>
-                  <button>{item.button1_name}</button>
-                </NavLink>
-              )}
+              {item.link && <a href={item.link}  target="_blank" rel="noreferrer">
+             <button>Link</button> 
+               </a>}
             </div>
 
       </div>
-
-{/* 
-      //////////////////////////////////////////////////////////////////////////////////////// */}
 
 
 
 <div className='blog_body_mid'>
   <h1>{item.title2}</h1>
-  {item.img_3_url && <img alt='' src={item.img_3_url} className='blog_img'/>}
+  {item.img_3_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_3_url}`} className='blog_img' alt=''/>}
   {item.img_3_captions && <p>{item.img_3_captions}</p>}
-  {item.img_4_url && <img alt='' src={item.img_4_url} className='blog_img'/>}
+  {item.img_4_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_4_url}`} className='blog_img' alt=''/>}
   {item.img_4_captions && <p>{item.img_4_captions}</p>}
 
   <div className='blog_icon_2'>
@@ -112,28 +84,25 @@ function SingleBlog() {
   </div>   
 
   <div className='blog_paragraph_mid'>
-    {item.body_img_2 && <img alt='' src={item.body_img_2} className='body_img_2'/>}
+  
     {item.body_2 && <p>{item.body_2}</p>}
     {item.span_green && <span className='span_green'>{item.span_green}</span>}
 
-    {item.img_5_url && <img alt='' src={item.img_5_url} className='blog_img'/>}
+    {item.img_5_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_5_url}`} className='blog_img' alt=''/>}
     {item.img_5_captions && <p>{item.img_5_captions}</p>}
 
-    {item.body_img_3 && <img alt='' src={item.body_img_3} className='body_img_3'/>}
+  
     {item.body_3 && <p>{item.body_3}</p>}
 
-    <h6>{item.link2}</h6>
-    {item.a_tag_2 && (
-                <NavLink to={item.a_tag_2}>
-                  <button>{item.button2_name}</button>
-                </NavLink>
-              )}
+          {item.link2 && <a href={item.link2}  target="_blank" rel="noreferrer">
+             <button>Link</button> 
+               </a>}
   </div>   
 
   <div className='extra_content'>
-    {item.img_6_url && <img alt='' src={item.img_6_url} className='blog_img'/>}
+    {item.img_6_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_6_url}`} className='blog_img' alt=''/>}
     {item.img_6_captions && <p>{item.img_6_captions}</p>}
-    {item.img_7_url && <img alt='' src={item.img_7_url} className='blog_img'/>}
+    {item.img_7_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_7_url}`} className='blog_img' alt=''/>}
     {item.img_7_captions && <p>{item.img_7_captions}</p>}
   </div>
 </div>
@@ -143,13 +112,13 @@ function SingleBlog() {
 <div className='blog_body_bottom'>
   {item.img_8_url && (
     <div>
-      <img alt='' src={item.img_8_url} className='blog_img'/>
+      <img src={`https://drive.google.com/uc?export=view&id=${item.img_8_url}`} className='blog_img' alt=''/>
       <p>{item.img_8_captions}</p>
     </div>
   )}
   {item.img_9_url && (
     <div>
-      <img alt='' src={item.img_9_url} className='blog_img'/>
+      <img src={`https://drive.google.com/uc?export=view&id=${item.img_9_url}`} className='blog_img' alt=''/>
       <p>{item.img_9_captions}</p>
     </div>
   )}
@@ -163,17 +132,16 @@ function SingleBlog() {
     {item.body_4 && (
       <p>{item.body_4}</p>
     )}
+    <div className='blog_icon_3'>
     {item.icon3 && (
        <img alt='' src={item.icon3} className='icon3'/> 
     )}
-    {item.link3 && (
-      <p>{item.link3}</p>
-    )}
+    </div>
   </div>   
 
   {item.img_10_url && (
     <>
-      <img alt='' src={item.img_10_url} className='blog_img'/>
+     <img src={`https://drive.google.com/uc?export=view&id=${item.img_10_url}`} className='blog_img' alt=''/>
       <p>{item.img_10_captions}</p>
     </>
   )}

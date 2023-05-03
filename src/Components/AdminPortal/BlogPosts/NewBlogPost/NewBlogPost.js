@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import axios from "axios";
 import './NewBlogPost.css'
 import Swal from "sweetalert2";
-
-
-
-
-
+import blog1 from '../../../../Assets/blogexample/BlogExample_page-0001.jpg'
+import blog2 from '../../../../Assets/blogexample/BlogExample_page-0002.jpg'
+import blog3 from '../../../../Assets/blogexample/BlogExample_page-0003.jpg'
+import blog4 from '../../../../Assets/blogexample/BlogExample_page-0004.jpg'
+import blog5 from '../../../../Assets/blogexample/BlogExample_page-0005.jpg'
+import blog6 from '../../../../Assets/blogexample/BlogExample_page-0006.jpg'
+import blog7 from '../../../../Assets/blogexample/BlogExample_page-0007.jpg'
+import blog8 from '../../../../Assets/blogexample/BlogExample_page-0008.jpg'
+import blog9 from '../../../../Assets/blogexample/BlogExample_page-0009.jpg'
 
 const NewBlogPost = () => {
-
-
   const [formData, setFormData] = useState({
     title: ``,
     title2: ``,
@@ -88,7 +90,32 @@ const NewBlogPost = () => {
 <h1>Admin Portal</h1>
 <h1>Create new Blog Post</h1>
 </div>
-<div>
+
+
+
+<div className="side_by_side">
+<div className="newBlog_model">
+
+  <h1>Example Placement</h1>
+  <img alt="" src={blog1}/>
+  <img alt="" src={blog2}/>
+  <img alt="" src={blog3}/>
+  <img alt="" src={blog4}/>
+  <img alt="" src={blog5}/>
+  <img alt="" src={blog6}/>
+  <img alt="" src={blog7}/>
+  <img alt="" src={blog8}/>
+  <img alt="" src={blog9}/>
+
+
+</div>
+
+
+
+
+
+
+<div className="newBlog_form">
     <form onSubmit={handleSubmit}>
       <label>
         Title
@@ -163,7 +190,7 @@ const NewBlogPost = () => {
           />
       </label>
       <label>
-     Yellow Span
+     Yellow Text
         <input
           type="text"
           name="span_yellow"
@@ -253,7 +280,7 @@ const NewBlogPost = () => {
           />
       </label>
       <label>
-     Green Span
+     Green Text
         <input
           type="text"
           name="span_green"
@@ -370,7 +397,7 @@ const NewBlogPost = () => {
           />
       </label>
       <label>
-     Brown Span
+     Brown Text
         <input
           type="text"
           name="span_brown"
@@ -425,8 +452,9 @@ const NewBlogPost = () => {
           />
       </label>
 
-      <button type="submit">Send</button>
+      <button type="submit">Add Blog Post</button>
     </form>
+</div>
 </div>
 
 

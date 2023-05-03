@@ -11,19 +11,20 @@ import AuthContext from '../../../../store/authContext';
 function EditBlogPost() {
 
 const [blogData, setBlogData] = useState([])
-
+const [offset, setOffset] = useState(0)
 const { token } = useContext(AuthContext);
 
-    useEffect(() => {
-        axios
-          .get("/blog")
-          .then((res) => {
-            setBlogData(res.data);
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      }, []);
+useEffect(() => {
+  axios
+    .get(`/blog`)
+    .then((res) => {
+      setBlogData(res.data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}, [offset]);
+
 
       const deleteBlogPost = (blogtableid) => {
         axios
@@ -81,8 +82,6 @@ const { token } = useContext(AuthContext);
         ))}
       </tbody>
     </table>
-
-
     </div>
   )
 }

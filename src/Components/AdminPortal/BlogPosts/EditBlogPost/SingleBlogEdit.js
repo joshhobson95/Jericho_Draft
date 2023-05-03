@@ -14,32 +14,23 @@ function SingleBlogEdit({match}) {
 
   const { id } = useParams();
   const [formData, setFormData] = useState([]);
+  const [blogData, setBlogData] =useState([]);
 
+useEffect(() => {
+  axios.get(`/singleblog/${id}`)
+  .then((response) => {
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(`/blog${id}`);
-        setFormData(response.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchData();
-  }, [id]);
-
-  if (!formData) {
-    return <div>Loading...</div>;
-  }
-
-
-
+    setBlogData(response.data)
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+}, [])
 
 
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
     axios
       .put(`/editblogpost/${id}`, formData)
       .then((response) => {
@@ -70,6 +61,7 @@ function SingleBlogEdit({match}) {
 
 
 
+
   return (
     <div className='single_blog_edit'>
         <h1>Edit Single Blog {id}</h1>
@@ -83,6 +75,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="title"
           value={formData.title}
+          placeholder={blogData.title}
           onChange={handleChange}
           />
       </label>
@@ -92,6 +85,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="date"
           value={formData.date}
+          placeholder={blogData.date}
           onChange={handleChange}
           />
       </label>
@@ -101,6 +95,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_1_url"
           value={formData.img_1_url}
+          placeholder={blogData.img_1_url}
           onChange={handleChange}
           />
       </label>
@@ -110,6 +105,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_1_captions"
           value={formData.img_1_captions}
+          placeholder={blogData.img_1_captions}
           onChange={handleChange}
           />
       </label>
@@ -119,6 +115,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="icon"
           value={formData.icon}
+          placeholder={blogData.icon}
           onChange={handleChange}
           />
       </label>
@@ -128,6 +125,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="intro"
           value={formData.intro}
+          placeholder={blogData.intro}
           onChange={handleChange}
           />
       </label>
@@ -137,6 +135,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_2_url"
           value={formData.img_2_url}
+          placeholder={blogData.img_2_url}
           onChange={handleChange}
           />
       </label>
@@ -146,6 +145,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_2_captions"
           value={formData.img_2_captions}
+          placeholder={blogData.img_2_captions}
           onChange={handleChange}
           />
       </label>
@@ -155,6 +155,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="span_yellow"
           value={formData.span_yellow}
+          placeholder={blogData.span_yellow}
           onChange={handleChange}
           />
       </label>
@@ -164,6 +165,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="body_1"
           value={formData.body_1}
+          placeholder={blogData.body_1}
           onChange={handleChange}
           />
       </label>
@@ -173,6 +175,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="link"
           value={formData.link}
+          placeholder={blogData.link}
           onChange={handleChange}
           />
       </label>
@@ -182,6 +185,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="title2"
           value={formData.title2}
+          placeholder={blogData.title2}
           onChange={handleChange}
           />
       </label>
@@ -191,6 +195,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_3_url"
           value={formData.img_3_url}
+          placeholder={blogData.img_3_url}
           onChange={handleChange}
           />
       </label>
@@ -200,6 +205,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_3_captions"
           value={formData.img_3_captions}
+          placeholder={blogData.img_3_captions}
           onChange={handleChange}
           />
       </label>
@@ -209,6 +215,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_4_url"
           value={formData.img_4_url}
+          placeholder={blogData.img_4_url}
           onChange={handleChange}
           />
       </label>
@@ -218,6 +225,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_4_captions"
           value={formData.img_4_captions}
+          placeholder={blogData.img_4_captions}
           onChange={handleChange}
           />
       </label>
@@ -227,6 +235,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="icon2"
           value={formData.icon2}
+          placeholder={blogData.icon2}
           onChange={handleChange}
           />
       </label>
@@ -236,6 +245,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="body_2"
           value={formData.body_2}
+          placeholder={blogData.body_2}
           onChange={handleChange}
           />
       </label>
@@ -245,6 +255,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="span_green"
           value={formData.span_green}
+          placeholder={blogData.span_green}
           onChange={handleChange}
           />
       </label>
@@ -254,6 +265,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_5_url"
           value={formData.img_5_url}
+          placeholder={blogData.img_5_url}
           onChange={handleChange}
           />
       </label>
@@ -263,6 +275,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_5_captions"
           value={formData.img_5_captions}
+          placeholder={blogData.img_5_captions}
           onChange={handleChange}
           />
       </label>
@@ -272,6 +285,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="body_3"
           value={formData.body_3}
+          placeholder={blogData.body_3}
           onChange={handleChange}
           />
       </label>
@@ -281,6 +295,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="link2"
           value={formData.link2}
+          placeholder={blogData.link2}
           onChange={handleChange}
           />
       </label>
@@ -290,6 +305,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_6_url"
           value={formData.img_6_url}
+          placeholder={blogData.img_6_url}
           onChange={handleChange}
           />
       </label> 
@@ -299,6 +315,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_6_captions"
           value={formData.img_6_captions}
+          placeholder={blogData.img_6_captions}
           onChange={handleChange}
           />
       </label>
@@ -308,6 +325,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_7_url"
           value={formData.img_7_url}
+          placeholder={blogData.img_7_url}
           onChange={handleChange}
           />
       </label>
@@ -317,6 +335,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_7_captions"
           value={formData.img_7_captions}
+          placeholder={blogData.img_7_captions}
           onChange={handleChange}
           />
       </label>
@@ -326,6 +345,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_8_url"
           value={formData.img_8_url}
+          placeholder={blogData.img_8_url}
           onChange={handleChange}
           />
       </label>
@@ -335,6 +355,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_8_captions"
           value={formData.img_8_captions}
+          placeholder={blogData.img_8_captions}
           onChange={handleChange}
           />
       </label>
@@ -344,6 +365,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_9_url"
           value={formData.img_9_url}
+          placeholder={blogData.img_9_url}
           onChange={handleChange}
           />
       </label>
@@ -353,6 +375,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_9_captions"
           value={formData.img_9_captions}
+          placeholder={blogData.img_9_captions}
           onChange={handleChange}
           />
       </label>
@@ -362,6 +385,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="span_brown"
           value={formData.span_brown}
+          placeholder={blogData.span_brown}
           onChange={handleChange}
           />
       </label>
@@ -371,6 +395,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="body_4"
           value={formData.body_4}
+          placeholder={blogData.body_4}
           onChange={handleChange}
           />
       </label>
@@ -380,6 +405,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="icon3"
           value={formData.icon3}
+          placeholder={blogData.icon3}
           onChange={handleChange}
           />
       </label>
@@ -389,6 +415,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_10_url"
           value={formData.img_10_url}
+          placeholder={blogData.img_10_url}
           onChange={handleChange}
           />
       </label>
@@ -398,6 +425,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="img_10_captions"
           value={formData.img_10_captions}
+          placeholder={blogData.img_10_captions}
           onChange={handleChange}
           />
       </label>
@@ -408,6 +436,7 @@ function SingleBlogEdit({match}) {
           type="text"
           name="conclusion"
           value={formData.conclusion}
+          placeholder={blogData.conclusion}
           onChange={handleChange}
           />
       </label>

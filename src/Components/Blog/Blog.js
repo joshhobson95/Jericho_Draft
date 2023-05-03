@@ -9,6 +9,8 @@ import axios from "axios";
 // Public Photos on Drive
 // https://stackoverflow.com/questions/67344372/how-do-i-display-images-from-google-drive-on-a-react-front-end-website
 
+
+
 function Blog() {
 
   const { id } = useParams()
@@ -16,8 +18,7 @@ function Blog() {
   const [offset, setOffset] = useState(0);
   const [count, setCount] = useState(0)
   const [pages, setPages] = useState(0)
-
-  
+  const [active, setActive] = useState(0);
 
 
 
@@ -30,9 +31,6 @@ useEffect(() => {
       if([res.data]){
         setCount([res.data][0].count)
       }
-       
-
-    
     })
     .catch((err) => {
       console.log(err);
@@ -53,7 +51,14 @@ const mapPages = () => {
 function mapButtons(count) {
   const buttons = [];
   for (let i = 1; i <= count; i++) {
-    buttons.push(<button key={i} onClick={() => setOffset(i * 5)}>{i+1}</button>);
+    buttons.push(<button
+      key={i}
+      onClick={() => {
+        setOffset(i * 5);
+        setActive(i);
+      }}
+      className={active === i ? 'active_button' : ''}
+    >{i + 1}</button>);
   }
   return buttons;
 }
@@ -71,10 +76,6 @@ const hanldeScrollTop = () => {
         <p>Welcome Statement:  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat pariatur. </p>
       </div>
 
-
-
-      <button onClick={() => setOffset(() =>  0)}>1</button> 
-      {mapButtons(pages)}
 
 
 
@@ -104,13 +105,36 @@ const hanldeScrollTop = () => {
 
 {/* ======================================== */}
 
-<div>
+
     {blogData && blogData[0] && blogData[0].rows && blogData[0].rows.map((blogPost) => (
-     <div>
-      {blogPost.title}
-      </div>
+  
+      <div className='small_blog_card'> 
+                    <div className='small_blog_card_top'>
+                    
+                    <img src={`https://drive.google.com/uc?export=view&id=${blogPost.img_1_url}`} className='small_blog_photo' alt=''/>
+                    </div>
+                    <div className='small_blog_card_bottom'>
+                    <h3>{blogPost.title}</h3>
+                    <div className='text_overflow'>
+                    <p>{blogPost.intro}</p>
+                     </div>
+                     <div className='small_blog_card_button'>
+
+
+               <Link to={`/singleblog/${blogPost.blogtableid}`}>
+                    <button>Read More</button>
+               </Link>
+       
+                    <p>{blogPost.id}</p>
+                    </div>
+                    <div className='small_blog_card_span'>
+                    <span>{blogPost.date}</span>
+                    </div>
+                    </div>
+                    </div>
+ 
     ))}
-  </div>
+ 
             {/* {blogData.map((item) => (
                     <div className='small_blog_card'> 
                     <div className='small_blog_card_top'>
@@ -141,11 +165,17 @@ const hanldeScrollTop = () => {
 <div className='blog_snav_buttons'>
   
               <button onClick={hanldeScrollTop}> Back to Top</button>
-              <button> Does Nothing </button>
+</div>
+<div className='page_numbers'>
 
-          
-
-
+<button onClick={() => {
+        setOffset(0);
+        setActive(0);
+      }}
+      className={active === 0 ? 'active_button' : ''}
+      
+      >1</button> 
+{mapButtons(pages)}
 </div>
 
 
