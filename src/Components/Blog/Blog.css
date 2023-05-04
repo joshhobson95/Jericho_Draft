@@ -187,17 +187,19 @@ margin-bottom: 6vh;
 
     }
     .blog_snav_buttons button{
-        height: 5vh;
-        width: 15vh;
+        height: auto;
+        width: auto;
+        padding: 1rem 1.25rem;
         background-color: #242424 ;
         border: none;
         border-radius: 12px;
         font-family: 'Raleway';
-        font-size: 18pt;
+        font-size: 12pt;
         font-weight: 600;
         color: white;
         margin: 1vw;
         cursor: pointer;
+        box-sizing: border-box;
     }
     .blog_snav_buttons button:hover{
     color: #242424;
@@ -206,15 +208,16 @@ margin-bottom: 6vh;
     } 
 
     .page_numbers{
+        display: flex;
         background-color: #242424;
-        width: 30vw;
+        width: auto;
         align-self: center;
         padding: 1rem;
         border-radius: 20px;
         margin: 1rem;
     }
     .page_numbers button{
-        font-size: 18pt;
+        font-size: 12pt;
         font-weight: 700;
         margin: 1rem;
         width: 3rem;
@@ -232,12 +235,6 @@ margin-bottom: 6vh;
         justify-content: center;
         flex-direction: column;
     }
-
-
-
-
-
-
 
 
 
@@ -304,8 +301,12 @@ margin-bottom: 6vh;
     font-size: 18pt;
     padding: 0 4rem;
 }
-  
-
+.blog_snav_buttons button{ 
+    font-size: 18pt;
+}
+.page_numbers button{
+    font-size: 18pt;
+}
 }
 
 

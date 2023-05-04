@@ -66,7 +66,7 @@ function SingleBlog() {
             {item.intro && <p>{item.intro}</p>}
 
             {item.img_2_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_2_url}`} className='blog_img' alt=''/>}
-            {item.img_2_captions && <p>{item.img_2_captions}</p>}
+            {item.img_2_captions && <p className='blog_bold'>{item.img_2_captions}</p>}
 
             <div className='blog_paragraph_top'>
               {item.body_img_1 && <img alt='' src={item.body_img_1} className='body_img_1'/>}
@@ -86,7 +86,7 @@ function SingleBlog() {
   {item.img_3_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_3_url}`} className='blog_img' alt=''/>}
   {item.img_3_captions && <p>{item.img_3_captions}</p>}
   {item.img_4_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_4_url}`} className='blog_img' alt=''/>}
-  {item.img_4_captions && <p>{item.img_4_captions}</p>}
+  {item.img_4_captions && <p className='blog_bold'>{item.img_4_captions}</p>}
 
   <div className='blog_icon_2'>
     {item.icon2 && <img alt='' src={item.icon2}/> }
@@ -110,7 +110,7 @@ function SingleBlog() {
 
   <div className='extra_content'>
     {item.img_6_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_6_url}`} className='blog_img' alt=''/>}
-    {item.img_6_captions && <p>{item.img_6_captions}</p>}
+    {item.img_6_captions && <p className='blog_bold'>{item.img_6_captions}</p>}
     {item.img_7_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_7_url}`} className='blog_img' alt=''/>}
     {item.img_7_captions && <p>{item.img_7_captions}</p>}
   </div>
@@ -120,13 +120,13 @@ function SingleBlog() {
 
 <div className='blog_body_bottom'>
   {item.img_8_url && (
-    <div>
+    <div className='left_8'>
       <img src={`https://drive.google.com/uc?export=view&id=${item.img_8_url}`} className='blog_img' alt=''/>
       <p>{item.img_8_captions}</p>
     </div>
   )}
   {item.img_9_url && (
-    <div>
+    <div className='right_9'>
       <img src={`https://drive.google.com/uc?export=view&id=${item.img_9_url}`} className='blog_img' alt=''/>
       <p>{item.img_9_captions}</p>
     </div>
@@ -134,9 +134,6 @@ function SingleBlog() {
   <div className='blog_paragraph_bottom'>
     {item.span_brown && (
       <span className='span_brown'>{item.span_brown}</span>
-    )}
-    {item.body_img_4 && (
-      <img alt='' src={item.body_img_4} className='body_img_4'/> 
     )}
     {item.body_4 && (
       <p>{item.body_4}</p>

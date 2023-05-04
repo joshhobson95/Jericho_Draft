@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import axios from "axios";
 import './NewBlogPost.css'
 import Swal from "sweetalert2";
-import blog1 from '../../../../Assets/blogexample/BlogExample_page-0001.jpg'
-import blog2 from '../../../../Assets/blogexample/BlogExample_page-0002.jpg'
-import blog3 from '../../../../Assets/blogexample/BlogExample_page-0003.jpg'
-import blog4 from '../../../../Assets/blogexample/BlogExample_page-0004.jpg'
-import blog5 from '../../../../Assets/blogexample/BlogExample_page-0005.jpg'
-import blog6 from '../../../../Assets/blogexample/BlogExample_page-0006.jpg'
-import blog7 from '../../../../Assets/blogexample/BlogExample_page-0007.jpg'
-import blog8 from '../../../../Assets/blogexample/BlogExample_page-0008.jpg'
-import blog9 from '../../../../Assets/blogexample/BlogExample_page-0009.jpg'
+import blog1 from '../../../../Assets/blogexample/b1.jpg'
+import blog2 from '../../../../Assets/blogexample/b2.jpg'
+import blog3 from '../../../../Assets/blogexample/b3.jpg'
+import blog4 from '../../../../Assets/blogexample/b4.jpg'
+import blog5 from '../../../../Assets/blogexample/b5.jpg'
+import blog6 from '../../../../Assets/blogexample/b6.jpg'
+import blog7 from '../../../../Assets/blogexample/b7.jpg'
+import blog8 from '../../../../Assets/blogexample/b8.jpg'
+import blog9 from '../../../../Assets/blogexample/b9.jpg'
+import blog10 from '../../../../Assets/blogexample/b10.jpg'
+import blog11 from '../../../../Assets/blogexample/b11.jpg'
 
 const NewBlogPost = () => {
   const [formData, setFormData] = useState({
@@ -104,8 +106,12 @@ const NewBlogPost = () => {
   <img alt="" src={blog5}/>
   <img alt="" src={blog6}/>
   <img alt="" src={blog7}/>
+  <p>Img 8 will actually apear on the left side of the screen with caption on the right</p>
   <img alt="" src={blog8}/>
+  <p>Img  9 will do the same but with text on the left and image on the right</p>
   <img alt="" src={blog9}/>
+  <img alt="" src={blog10}/>
+  <img alt="" src={blog11}/>
 
 
 </div>

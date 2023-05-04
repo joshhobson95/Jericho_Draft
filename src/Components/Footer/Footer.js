@@ -8,35 +8,32 @@ function Footer() {
     <div className='f_1'>
         <div className='f_products'>
             <h4>Products</h4>
-            <li>New This Week</li>
+            <li>This Week's Specials</li>
             <li>Brands We Carry</li>
-            <li>SouthWest Plant Directory</li>
-            <li>Partners of Jericho</li>
+            <li>Delivery and Planting</li>
         </div>
         <div className='f_gardening'>
-            <h4>Gardening Resources</h4>
-            <li>Fresh Ideas</li>
-            <li>Monthly Gardening Calendar</li>
-            <li>Seminars</li>
-            <li>Plant Care</li>
-            <li>Garden Blog</li>
+            <h4>Blog and Gallery</h4>
+            <li>Blog and Gallery</li>
+            <li>Gardening Calendar</li>
+            <li>Garden Resources</li>
+            <li>Admin Login</li>
+
         </div>
         <div className='f_services'>
-            <h4>Services and Delivery</h4>
-            <li>Planting and Delivery</li>
-            <li>Superior Service</li>
-            <li>Pest Control</li>
-            <li>Consultations</li>
-            <li>Landscaping Partners</li>
+            <h4>Community</h4>
+            <li>Partners</li>
+            <li>Radio Show</li>
+            <li>Seminars</li>
+            <li>Clubs around ABQ</li>
+
         </div>
         <div className='f_about'>
-            <h4>About Us</h4>
-            <li>Our History</li>
-            <li>Vision and Mission</li>
-            <li>Through the Years</li>
-            <li>Where we Grow</li>
-            <li>Meet the Team</li>
-            <li>Emplyment Oppurtunities</li>
+            <h4>Contact Us</h4>
+            <li>Contact Info</li>
+            <li>About Us</li>
+            <li>Why Work Here</li>
+            <li>Nursery map</li>
         </div>
     </div>
 
