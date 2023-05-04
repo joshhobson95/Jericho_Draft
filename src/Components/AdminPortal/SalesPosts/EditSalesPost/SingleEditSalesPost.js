@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import './SingleEditSalesPost.css'
 import axios from 'axios';
@@ -6,11 +6,10 @@ import Swal from 'sweetalert2';
 
 
 
-
-
-
-function SingleBlogEdit({match}) {
+function SingleEditSalesPost({match}) {
     const { id } = useParams();
+    const [salesData, setSalesData] = useState([])
+    const [thisData, setThisData] =useState('')
     const [salesFormData, setSalesFormData] = useState({
         name: ``,
         img_url: ``,
@@ -22,9 +21,22 @@ function SingleBlogEdit({match}) {
         expiration: ``
       });
 
+
+      useEffect(() => {
+        axios
+          .get(`/sales`)
+          .then((res) => {
+            setSalesData(res.data);
+   
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      }, []);
+  
+
   const handleSubmit = (event) => {
     event.preventDefault();
-
     axios
       .put(`/editsalespost/${id}`, salesFormData)
       .then((response) => {
@@ -54,6 +66,8 @@ function SingleBlogEdit({match}) {
   };
 
 
+  const matchingObject = salesData.find((item) => item.salestableid === +id);
+
 
   return (
     <div className='single_sale_item_edit'>
@@ -66,6 +80,7 @@ function SingleBlogEdit({match}) {
         <input
           type="text"
           name="name"
+          placeholder={matchingObject && matchingObject.name}
           value={salesFormData.name}
           onChange={handleChange}
           />
@@ -75,6 +90,7 @@ function SingleBlogEdit({match}) {
         <input
           type="text"
           name="img_url"
+          placeholder={matchingObject && matchingObject.img_url}
           value={salesFormData.img_url}
           onChange={handleChange}
           />
@@ -84,6 +100,7 @@ function SingleBlogEdit({match}) {
         <input
           type="text"
           name="description"
+          placeholder={matchingObject && matchingObject.description}
           value={salesFormData.description}
           onChange={handleChange}
           />
@@ -93,6 +110,7 @@ function SingleBlogEdit({match}) {
         <input
           type="text"
           name="price"
+          placeholder={matchingObject && matchingObject.price}
           value={salesFormData.price}
           onChange={handleChange}
           />
@@ -102,6 +120,7 @@ function SingleBlogEdit({match}) {
         <input
           type="text"
           name="discount"
+          placeholder={matchingObject && matchingObject.discount}
           value={salesFormData.discount}
           onChange={handleChange}
           />
@@ -111,6 +130,7 @@ function SingleBlogEdit({match}) {
         <input
           type="text"
           name="tagline"
+          placeholder={matchingObject && matchingObject.tagline}
           value={salesFormData.tagline}
           onChange={handleChange}
           />
@@ -120,6 +140,7 @@ function SingleBlogEdit({match}) {
         <input
           type="text"
           name="start_date"
+          placeholder={matchingObject && matchingObject.start_date}
           value={salesFormData.start_date}
           onChange={handleChange}
           />
@@ -130,6 +151,7 @@ function SingleBlogEdit({match}) {
         <input
           type="text"
           name="expiration"
+          placeholder={matchingObject && matchingObject.expiration}
           value={salesFormData.expiration}
           onChange={handleChange}
           />
@@ -151,4 +173,4 @@ function SingleBlogEdit({match}) {
   )
 }
 
-export default SingleBlogEdit
+export default SingleEditSalesPost

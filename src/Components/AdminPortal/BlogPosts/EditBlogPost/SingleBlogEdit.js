@@ -19,7 +19,6 @@ function SingleBlogEdit({match}) {
 useEffect(() => {
   axios.get(`/singleblog/${id}`)
   .then((response) => {
-
     setBlogData(response.data)
   })
   .catch((error) => {

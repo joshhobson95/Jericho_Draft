@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './Blog.css'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
+import Loading from '../../SVGs/Loading'
 
 import axios from "axios";
 
@@ -19,19 +20,23 @@ function Blog() {
   const [count, setCount] = useState(0)
   const [pages, setPages] = useState(0)
   const [active, setActive] = useState(0);
+  const [loading, setLoading] = useState(true)
 
 
 
 useEffect(() => {
+  setLoading(true)
+  //idk if this will be a problem
   axios
     .get(`/blog/${offset}`)
     .then((res) => {
       setBlogData([res.data]);
-
+      setLoading(false)
       if([res.data]){
         setCount([res.data][0].count)
       }
     })
+ 
     .catch((err) => {
       console.log(err);
     });
@@ -78,34 +83,13 @@ const hanldeScrollTop = () => {
 
 
 
-
-
-{/* {blogData.map((item) => (
-    <div className='big_blog_card'> 
-        <div className='big_blog_card_top'>
-            <h1>Latest Post</h1>
-                          
-        </div>
-        <div className='big_blog_card_bottom'>
-            <h3>{item.title}</h3>
-            <p>{item.intro}</p>    
-            <div className='big_blog_button'>
-            <Link to={`/singleblog/${item.blogtableid}`}>
-            <button>Read More</button>         
-              </Link>
-            </div>
-            <div className='big_blog_span'>
-            <span>{item.date}</span>
-            </div>
-        </div>
-    </div>
-))} */}
+{loading ? (<div className='loading_anim'> <Loading /> </div>) : (
 
 
 
-{/* ======================================== */}
 
 
+<div className='card_container'>
     {blogData && blogData[0] && blogData[0].rows && blogData[0].rows.map((blogPost) => (
   
       <div className='small_blog_card'> 
@@ -134,32 +118,8 @@ const hanldeScrollTop = () => {
                     </div>
  
     ))}
- 
-            {/* {blogData.map((item) => (
-                    <div className='small_blog_card'> 
-                    <div className='small_blog_card_top'>
-                    <img src={item.img_1_url} className='small_blog_photo'/>
-                    </div>
-                    <div className='small_blog_card_bottom'>
-                    <h3>{item.title}</h3>
-                    <div className='text_overflow'>
-                    <p>{item.intro}</p>
-                     </div>
-                     <div className='small_blog_card_button'>
-
-
-               <Link to={`/singleblog/${item.blogtableid}`}>
-                    <button>Read More</button>
-               </Link>
-       
-                    <p>{item.id}</p>
-                    </div>
-                    <div className='small_blog_card_span'>
-                    <span>{item.date}</span>
-                    </div>
-                    </div>
-                    </div>
-            ))} */}
+ </div>
+)}
 
 
 <div className='blog_snav_buttons'>
@@ -177,7 +137,6 @@ const hanldeScrollTop = () => {
       >1</button> 
 {mapButtons(pages)}
 </div>
-
 
 
 

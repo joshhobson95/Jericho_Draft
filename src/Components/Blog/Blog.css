@@ -227,6 +227,11 @@ margin-bottom: 6vh;
         background-color: #4FA673;
 
     }
+    .card_container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 
 
 

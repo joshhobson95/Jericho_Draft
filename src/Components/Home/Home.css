@@ -1,5 +1,4 @@
 .home{
-
     padding-top: 5vh;
     width: 100vw;
     background-image: linear-gradient(#4FA673, #DBBA4BA8 , #FB492C87) ;
@@ -8,6 +7,7 @@
     justify-content: center;
     flex-direction: column;
 }
+
 .welcome{
     height: auto;
     width: 92vw;

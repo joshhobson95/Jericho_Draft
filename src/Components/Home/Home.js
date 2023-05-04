@@ -14,6 +14,7 @@ import MoreAboutJericho from './MoreAboutJericho/MoreAboutJericho'
 
 
 
+
 function Home() {
 
 
@@ -25,6 +26,8 @@ function Home() {
 
   return (
     <div className='home'>
+
+
 
       <div className='welcome'>
 <div className='w'>

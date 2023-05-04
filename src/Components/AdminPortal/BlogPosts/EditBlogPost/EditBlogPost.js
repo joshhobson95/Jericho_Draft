@@ -67,7 +67,6 @@ useEffect(() => {
       <tbody>
         {blogData.map((item) => (
           <tr key={item.blogtableid}>
-
           <td>{item.blogtableid}</td>
           <td>{item.title}</td>
           <td>{item.date}</td>

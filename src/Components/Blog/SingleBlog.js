@@ -2,13 +2,15 @@ import React, {useState, useEffect} from 'react'
 import './SingleBlog.css'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import Loading from '../../SVGs/Loading'
 
 
 
 function SingleBlog() {
-  const [blogData, setBlogData] = useState([])
   const { blogid } = useParams();
+  const [blogData, setBlogData] = useState([])
   const [blogIdNum, setBlogIdNum] = useState(+blogid)
+  const [loading, setLoading] = useState(true)
 
 
 
@@ -18,7 +20,7 @@ function SingleBlog() {
     .then((response) => {
   
       setBlogData([response.data])
-      console.log(response.data)
+      setLoading(false)
     })
     .catch((error) => {
       console.error(error);
@@ -38,6 +40,13 @@ function SingleBlog() {
         ))}
       </div>
 
+      {loading ? (<div className='loading_anim'> <Loading /> </div>) : ( 
+
+
+
+  
+      
+<div className='card_container'>
       {blogData && blogData.map((item) => (
 <div key={item.id} className='blog_body_main'> 
     <div className='blog_body_top'>
@@ -155,6 +164,8 @@ function SingleBlog() {
 
     </div>
 ))}
+</div>
+      )}
 
   
         </div>
