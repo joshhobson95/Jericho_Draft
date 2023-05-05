@@ -20,7 +20,7 @@ function Banner() {
         data-aos-duration="500"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-once="true"
         >
             <div className='b_2'>
             <h4 className='b_h4'>Let us help you make you yard and Oasis in the SouthWest</h4>

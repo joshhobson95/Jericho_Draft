@@ -1,6 +1,5 @@
 import React from 'react';
 import './NavBarDesktop.css';
-
 import { NavLink } from 'react-router-dom'
 import balloons from '../../Assets/Cropped_balloons.jpg'
 import logo from '../../Assets/Logo.png'
@@ -27,7 +26,6 @@ function New() {
 
       <ul className="navbar__menu">
       <li className="navbar__menuItem navbar__menuItem--hasDropdown">
-        
 <div className='nav_svg_and_p'>
         <div className='nav_svg'>
       <ProductsIcon /> 

@@ -45,7 +45,7 @@ function Banner2() {
                data-aos-duration="500"
                data-aos-easing="ease-in-out"
                data-aos-mirror="true"
-               data-aos-once="false"
+               data-aos-once="true"
 
                 >
             <div className='b2_2'>

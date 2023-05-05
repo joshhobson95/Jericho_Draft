@@ -31,7 +31,7 @@ function NewintheBlog() {
                         </p>
                         <p>Dynamically output the first lines of post here</p>
                         <NavLink to='/blog'>
-                        <button className='nb_button'>Learn More</button>
+                        <button className='nb_button'>Take me to Blog</button>
                         </NavLink>
                     </div>
                     </div>

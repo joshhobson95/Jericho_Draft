@@ -51,7 +51,7 @@ function Home() {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-once="true"
         data-aos-anchor-placement="top-center"
     
     >
@@ -63,7 +63,7 @@ function Home() {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-once="true"
         data-aos-anchor-placement="top-center"
     >
     <NewThisWeek />
@@ -74,7 +74,7 @@ function Home() {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-once="true"
         data-aos-anchor-placement="top-center"
     >
           <GardeningCalendar />
@@ -85,7 +85,7 @@ function Home() {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-once="true"
         data-aos-anchor-placement="top-center"
     >
           <JerichoMap />

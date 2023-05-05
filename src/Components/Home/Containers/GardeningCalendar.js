@@ -56,7 +56,7 @@ function GardeningCalendar() {
                         Did you know Jericho offers a Gardening Calendar? Click below to get advice from the Gardening Angels on exactly what you should be doing this month to keep up with your garden's wants and needs.
                         </p>
                         <NavLink to='/gardeningcalendar'>
-                        <button className='gc_button'>Learn More</button>
+                        <button className='gc_button'>Check It Out</button>
                         </NavLink>
                     </div>
                     </div>

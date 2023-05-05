@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './NavBarMobile.css'
+import './NavBarMobile2.css'
 import { NavLink } from 'react-router-dom'
 import ContactUsIcon from '../../SVGs/ContactUsIcon'
 import ProductsIcon from '../../SVGs/ProductsIcon'

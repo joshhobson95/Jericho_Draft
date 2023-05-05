@@ -15,6 +15,7 @@ function GiftCard() {
 
         <div className='gc_main_body'>
             <h2> GiftCard checkout</h2>
+            <p>The issue is now I am not sure what code is being added and what isnt, I am making small tweaks as I go and i can't see anything about it</p>
         </div>
     
 

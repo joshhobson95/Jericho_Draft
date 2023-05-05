@@ -2,6 +2,7 @@ import React from 'react'
 import ffc3 from '../../Assets/ffc3.png'
 import arches from '../../Assets/arch.jpg'
 import FFC_Form from './Form/FFC_Form'
+
 import './FFC.css'
 
 function FFC() {
@@ -57,8 +58,8 @@ customers. It’s free to join.
                     <h3>Fill out all infromation below to join!</h3>
                 </div>
             </div>
-                <div className='f_f'>                   
-                     <FFC_Form />                
+                <div className='f_f'>     
+                                <p>This will not be updated</p>
                 </div>
 </div>
     </div>

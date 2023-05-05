@@ -1,5 +1,6 @@
 import React from 'react'
 import './ThisWeek.css'
+import { NavLink } from 'react-router-dom'
 import icon1 from '../../../Assets/Transparent2.png'
 import banner from '../../../Assets/succulent_banner.jpg'
 
@@ -28,8 +29,9 @@ function NewThisWeek() {
                     <p>
                     Ready to sprout your garden dreams? See what's on sale this week for unbeatable nursery promotions on a wide variety of plants, flowers, hardgoods and more. Get your green thumb on!
                     </p>
-
-                            <button className='hc_button'>Learn More</button>
+                            <NavLink to='/sales'>
+                            <button className='hc_button'>Shop Specials This Week</button>
+                            </NavLink>
                 </div>
                 </div>
         </div>
