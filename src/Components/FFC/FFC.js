@@ -1,7 +1,6 @@
 import React from 'react'
 import ffc3 from '../../Assets/ffc3.png'
 import arches from '../../Assets/arch.jpg'
-import FFC_Form from './Form/FFC_Form'
 
 import './FFC.css'
 

@@ -1,11 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import NavBarDesktop from './NavBarDesktop'
-import NavBarMobile2 from './NavBarMobile2'
+import NavBarMobile from './NavBarMobile'
 import './Header.css'
+import { NavLink } from 'react-router-dom'
+import banner from '../../Assets/Cropped_balloons.jpg'
+import logo from '../../Assets/Logo.png'
 
 function Header() {
   const [isMobile, setIsMobile] = useState(false)
-  const [state, setState] = useState('cool github glitch')
+
 
 
   useEffect(() => {
@@ -16,7 +19,18 @@ function Header() {
   return (
     <div>
     {isMobile ? (
-      <NavBarMobile2 />
+
+      <div>
+              <NavBarMobile />
+     <div className='photo_banner'>
+    <img className='mobile_banner' src={banner} alt='ballons'/>
+      <NavLink to='/'>
+        <div className='logo_div'>
+            <img className='mobile_banner_logo' src={logo} alt='logo'/>
+        </div>
+      </NavLink>
+    </div>
+      </div>
     ) : (
       <NavBarDesktop />
     )}

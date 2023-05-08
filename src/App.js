@@ -1,6 +1,7 @@
 import {Routes, Route, Navigate} from 'react-router-dom'
 import { useContext } from 'react';
 import AuthContext from './store/authContext';
+
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Sales from './components/Sales/Sales';
@@ -60,7 +61,6 @@ function App() {
         <Route path='/editsalespost' element={authCtx.token ? <EditSalesPost /> : <Navigate to='/login'/>}/>
         <Route path='editsalespost/singlesaleedit/:id' element={authCtx.token ? <SingleEditSalesPost /> : <Navigate to='/login'/>}/>
         <Route path='/login' element={!authCtx.token ? <LoginPage /> : <Navigate to='/adminhome'/>} />
-
       </Routes>
       <Footer />
     </div>

@@ -10,16 +10,7 @@ function SingleEditSalesPost({match}) {
     const { id } = useParams();
     const [salesData, setSalesData] = useState([])
     const [thisData, setThisData] =useState('')
-    const [salesFormData, setSalesFormData] = useState({
-        name: ``,
-        img_url: ``,
-        description: ``,
-        price: ``,
-        discount: ``,
-        tagline: ``,
-        start_date: ``,
-        expiration: ``
-      });
+    const [salesFormData, setSalesFormData] = useState([]);
 
 
       useEffect(() => {

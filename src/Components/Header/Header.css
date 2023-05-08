@@ -15,5 +15,24 @@
       height: 22vh;
       width: auto;
       margin: 2rem;
-  
+  }
+
+
+  .mobile_banner_logo{
+    position: relative;
+    height: 12vh;
+    width: auto;
+    padding: 0.5rem;
+    z-index: 2;
+  }
+
+  .mobile_banner{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    height: 17vh;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 5rem;
   }
