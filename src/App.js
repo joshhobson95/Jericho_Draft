@@ -22,9 +22,9 @@ import AdminHome from './components/AdminPortal/AdminHome/AdminHome';
 import NewBlogPost from './components/AdminPortal/BlogPosts/NewBlogPost/NewBlogPost';
 import LoginPage from './components/AdminPortal/LoginPage/LoginPage'
 import EditBlogMain from './components/AdminPortal/BlogPosts/EditBlogPost/Main/EditBlogMain';
+import EditSalesMain from './components/AdminPortal/SalesPosts/EditSalesPost/Main/EditSalesMain';
 import SingleBlogEdit from './components/AdminPortal/BlogPosts/EditBlogPost/SingleBlogEdit';
 import NewSalesPost from './components/AdminPortal/SalesPosts/NewSalesPost/NewSalesPost';
-import EditSalesPost from './components/AdminPortal/SalesPosts/EditSalesPost/EditSalesPost';
 import SingleEditSalesPost from './components/AdminPortal/SalesPosts/EditSalesPost/SingleEditSalesPost'
 import Footer from './components/Footer/Footer';
 
@@ -58,7 +58,7 @@ function App() {
         <Route path='/editpost' element={authCtx.token ? <EditBlogMain/> : <Navigate to='/login'/>}/>
         <Route path='editpost/singleblogedit/:id' element={authCtx.token ? <SingleBlogEdit /> : <Navigate to='/login'/>}/>
         <Route path='/newsalespost' element={authCtx.token ? <NewSalesPost /> : <Navigate to='/login'/>}/>
-        <Route path='/editsalespost' element={authCtx.token ? <EditSalesPost /> : <Navigate to='/login'/>}/>
+        <Route path='/editsalespost' element={authCtx.token ? <EditSalesMain/> : <Navigate to='/login'/>}/>
         <Route path='editsalespost/singlesaleedit/:id' element={authCtx.token ? <SingleEditSalesPost /> : <Navigate to='/login'/>}/>
         <Route path='/login' element={!authCtx.token ? <LoginPage /> : <Navigate to='/adminhome'/>} />
       </Routes>
