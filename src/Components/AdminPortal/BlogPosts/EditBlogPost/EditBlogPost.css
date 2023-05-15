@@ -7,21 +7,32 @@
     display: flex;
     justify-content: center;
 }
-table {
+.edit_post table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 1em;
   }
-  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
+  }
   th, td {
     border: 10px solid black;
     padding: 8px;
     text-align: center;
   }
-  
-  th {
-    background-color: #331f1f;
-    font-weight: bold;
+  .mobile_edit_post{
+    height: auto;
+    background-color: #242424;
+    padding-top: 15vh;
+    color: white;
+    font-size: 12pt;
+    display: flex;
+    justify-content: center;
+  }
+  .mobile_edit_post td{
+    border: 1px solid rgb(126, 38, 38);
   }
   
   @media (min-width: 768px) {

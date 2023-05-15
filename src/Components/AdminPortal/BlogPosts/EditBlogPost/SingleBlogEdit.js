@@ -24,7 +24,7 @@ useEffect(() => {
   .catch((error) => {
     console.error(error);
   });
-}, [])
+}, [id])
 
 
 
@@ -440,7 +440,7 @@ useEffect(() => {
           />
       </label>
 
-      <button type="submit">Send</button>
+      <button type="submit">Make Edit</button>
     </form>
 </div>
      

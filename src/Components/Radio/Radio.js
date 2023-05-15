@@ -57,16 +57,21 @@ function Radio() {
                 KKOB | 96.3 FM | 770 AM 
             </h2>
 </div>
+
+<div className='pic_mic_outer'>
 <div className='pic_mic'>
 <div
         ref={revealRef}
-        className={`reveal-content ${isVisible ? "visible" : ""}`}
-      >
+        className={`reveal-content ${isVisible ? "radio_visible" : ""}`}
+        >
      <div className='radio_mic'>
                 <RadioMic />
             </div>
             </div>
+            <div className='radio_rick_container'>
         <img alt='' src={radiorick} className='radio_rick'/>
+            </div>
+</div>
 </div>
 
      <div className='radio_body_mid'>
@@ -78,13 +83,30 @@ function Radio() {
 </div>
      </div>
 <div className='radio_body_bottom'>
+  <div className='rbb_left'>
+    <div className='rbb_pic'>
+            <img className='kkob_banner' src='https://express-images.franklymedia.com/6616/sites/124/2020/12/14121100/GARDENTALK-768x180.jpg' alt=''/>
+    </div>
+            <span>You can listen to Garden Talk over the internet by visiting KKOB.com. Click the "Listen LIVE " button below to tune in</span>
 
-            <img className='kkob_banner' src='https://express-images.franklymedia.com/6616/sites/124/2020/12/14121100/GARDENTALK-768x180.jpg'/>
-            <span>You can listen to Garden Talk over the internet by visiting KKOB.com. Click the |Listen at KKOB.com| button below to tune in</span>
-
-            <a target="_blank" href="https://www.newsradiokkob.com/new-mexico-garden-talk/">
-            <button>Listen at KKOB.com</button>
+            <a target="_blank" rel='noreferrer' href="https://www.newsradiokkob.com/new-mexico-garden-talk/">
+            <button>Listen LIVE </button>
             </a>
+  </div>
+  <div className='rbb_right'>
+    <div className='rbb_pic'>
+        <img className='gardentalk' src='https://www.omnycontent.com/d/programs/a7b0bd27-d748-4fbe-ab3b-a6fa0049bcf6/fdd9f235-b300-4ebc-93c5-afe200dfddf2/image.jpg?t=1681320560&size=small' alt=''/>
+    </div>
+
+    <span>You can also listen to past boardcasts on our podcast, Garden Talk. Click the 'Podcast Link' button below to listen</span>
+
+    <a target="_blank" rel='noreferrer' href="https://omny.fm/shows/garden-talk-new-mexico">
+            <button>Podcast Link</button>
+            </a>
+
+
+  </div>
+
 
 </div>
 

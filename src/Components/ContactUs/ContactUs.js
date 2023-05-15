@@ -2,10 +2,13 @@ import React from 'react'
 import './ContactUs.css'
 import MapButton from './MapButton'
 import EmailButton from './EmailButton'
+import cashhouse from '../../Assets/CashHouse.jpg'
 
 function ContactUs() {
   return (
     <div className='contact_us'>
+
+
 
         <div className='contact_us_welcome'>
                 <h1>Contact Us</h1>
@@ -13,6 +16,13 @@ function ContactUs() {
         </div>
 
         <div className='contact_us_body'>
+
+        <div className='contact_pic_container'>
+        <img alt='' src={cashhouse} className='contact_pic'/>
+        </div>
+
+
+
             <h1>Phone</h1>
             <p>+1 (505) 899-7555</p>
             <button href='tel:15058997555'>Call Now</button>
@@ -30,17 +40,6 @@ function ContactUs() {
             <div className='email_button'>
             <EmailButton />
             </div>
-
-
-
-     
-            <h1>Social Media</h1>
-
-            <h2>Facebook:</h2>
-            <h2>Instagram:</h2>
-            <h2>Youtube:</h2>
-
-
         </div>
 
 

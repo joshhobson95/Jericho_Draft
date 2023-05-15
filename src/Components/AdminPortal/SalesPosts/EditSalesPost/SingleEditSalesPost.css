@@ -8,17 +8,23 @@
     justify-content: center;
     flex-direction: column;
 }
-.single_sale_item_edit input{
-    margin: 1rem;
-}
 .single_sale_item_edit form{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.single_sale_item_edit textarea{
-    height: 15vh;
-    width: 45vw;
+
+.single_sale_item_edit h1{
+    font-size: 20pt;
+    text-decoration: underline;
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+.single_sale_item_edit input{
+    margin: 1rem;
+    border-radius: 12px;
+    border: 0;
+    padding: 1rem;
 }
 
 .single_sale_item_edit button{
@@ -36,10 +42,25 @@
     margin-top: 1rem;
     margin-bottom: 3vh;
     cursor: pointer;
-
 }
 .single_sale_item_edit button:hover{
     background-color: #ffffff;
     color: #2a4c80;
     transition: 1s;
 }
+
+@media (min-width:1025px) { 
+    .single_sale_item_edit {
+        font-size: 18pt;
+    }
+    .single_sale_item_edit input{
+        font-size: 18pt;
+    }
+    .single_sale_item_edit h1{
+        font-size: 30pt;
+    }
+    .single_sale_item_edit button{
+        font-size: 26pt;
+    }
+
+    }

@@ -51,7 +51,7 @@ useEffect(() => {
 
 
   return (
-    <div className='edit_post'>
+    <div className='mobile_edit_post'>
 
     <table>
       <thead>
@@ -85,6 +85,6 @@ useEffect(() => {
   )
 }
 
-export default MobileEditBlogPost
+export default MobileEditBlogPost;
 
 

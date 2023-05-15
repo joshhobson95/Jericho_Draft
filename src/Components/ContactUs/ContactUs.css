@@ -124,6 +124,16 @@
     color: #95562e;
     transition: 1s
 }
+.contact_pic_container{
+    display: flex;
+    justify-content: center;
+}
+.contact_pic{
+    object-fit: cover;
+    width: 80vw;
+    margin: 2rem;
+    border-radius: 12px;
+}
 
 
 @media (min-width:1025px) { 
@@ -146,6 +156,10 @@
     }
     .contact_us_body button{
         font-size: 18pt;
+    }
+    .contact_pic{
+        margin-top: 4rem;
+        width: 60vw;
     }
 
 

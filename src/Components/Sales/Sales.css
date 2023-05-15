@@ -147,5 +147,19 @@ box-shadow: 0px 0px 19px 11px rgba(189,189,107,0.18);
 .sales_welcome p{
     padding: 0.5vw;
 }
+}
+
+@media screen 
+  and (min-width: 1200px) 
+  and (max-height: 900px)  { 
+
+.sales_card_img{
+    height: 50vh;
+ 
+    border-radius: 20px;
+
+}
+
+
 
 }

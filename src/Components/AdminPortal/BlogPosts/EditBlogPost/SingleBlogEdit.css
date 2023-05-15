@@ -8,17 +8,28 @@
     justify-content: center;
     flex-direction: column;
 }
-.single_blog_edit input{
-    margin: 1rem;
-}
 .single_blog_edit form{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+.single_blog_edit h1{
+    font-size: 20pt;
+    text-decoration: underline;
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+.single_blog_edit input{
+    margin: 1rem;
+    border-radius: 12px;
+    border: 0;
+    padding: 1rem;
+}
 .single_blog_edit textarea{
-    height: 15vh;
-    width: 45vw;
+    height: 25vh;
+    width: 65vw;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .single_blog_edit button{
@@ -42,4 +53,21 @@
     background-color: #ffffff;
     color: #2a4c80;
     transition: 1s;
+}
+
+
+@media (min-width:1025px) { 
+.single_blog_edit {
+    font-size: 18pt;
+}
+.single_blog_edit input{
+    font-size: 18pt;
+}
+.single_blog_edit h1{
+    font-size: 30pt;
+}
+.single_blog_edit button{
+    font-size: 26pt;
+}
+
 }

@@ -70,7 +70,8 @@
     display: flex;
     justify-content: center;
     padding: 1rem;
-    padding-top: 10rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 .radio_body_mid p{
     font-size: 18pt;
@@ -79,13 +80,24 @@
 .radio_body_bottom{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-
 }
+.rbb_left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+}
+.rbb_right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+}
+
 .radio_body_bottom span{
     padding: 1rem;
     text-align: center;
-    margin: 0 40rem;
+    margin: 0 10rem;
 }
 .radio_body_bottom button {
     height: 5vh;
@@ -117,6 +129,17 @@
     align-self: center;
     border-radius: 20px;
 }
+.gardentalk{
+   width: 10vw;
+   align-self: center;
+   padding: 1rem;
+   border-radius: 20px;
+}
+.rbb_pic{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+}
 .pic_mic{
     display: flex;
     justify-content: space-around;
@@ -136,10 +159,9 @@
 }
 .radio_mic{
     margin-top: 5rem;
-    display: flex;
-    align-self: center;
-    height: auto;
     width: 35vw;
+    height: 50vh;
+
 }
 
 .rbm_section p{
@@ -147,8 +169,17 @@
 padding: 3rem 5rem;
 }
 
+.radio_visible {
+    display: flex;
+    justify-content: center;
+    transform: translateY(0);
 
-
+    opacity: 0.1;
+    animation-name: fade-in !important; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
 
 
 @media (max-width: 2000px){
@@ -170,6 +201,7 @@ padding: 3rem 5rem;
 .kkob_banner{
     width: 35vw;
     border-radius: 20px;
+
 }
 .radio_body_bottom button{
 height: auto;
@@ -179,11 +211,9 @@ margin-left: -2.5rem;
 margin-bottom: 4rem;
     }
 
-
 }
 
-@media (max-width: 650px){
-
+@media (max-width: 950px){
 .radio_body_main{
     width: 92vw;
 }
@@ -205,6 +235,7 @@ margin-bottom: 4rem;
 }
 .radio_mic{
     width: 70vw;
+    height: auto;
 }
 .radio_rick{
     height: 70vw;
@@ -226,6 +257,16 @@ margin-bottom: 4rem;
 }
 .radio_body_bottom{
     padding: 0;
+flex-direction: column;
+}
+.rbb_left{
+    width: auto;
+}
+.rbb_right{
+    width: auto;
+}
+.gardentalk{
+    width: 30vw;
 }
 .radio_body_bottom span{
   margin: 0;
@@ -234,12 +275,32 @@ margin-bottom: 4rem;
 .radio_body_bottom button{
 font-size: 12pt;
 border-radius: 10px;
-margin: 4rem;
 margin-left: 0;
 }
 .rbm_section h2{
     font-size: 22pt;
     padding-bottom: 1rem;
+}
+.pic_mic{
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    margin: 0;
+    margin-bottom: 5rem;
+}
+.pic_mic_outer{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.radio_visible{
+    margin-top: 0;
+}
+.radio_rick{
+    margin: 0;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    align-self: center;
 }
 
 }

@@ -9,7 +9,6 @@ import Swal from 'sweetalert2';
 function SingleEditSalesPost({match}) {
     const { id } = useParams();
     const [salesData, setSalesData] = useState([])
-    const [thisData, setThisData] =useState('')
     const [salesFormData, setSalesFormData] = useState([]);
 
 
@@ -149,7 +148,7 @@ function SingleEditSalesPost({match}) {
       </label>
     
 
-      <button type="submit">Send</button>
+      <button type="submit">Make Edit</button>
     </form>
  
 
