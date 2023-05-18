@@ -93,7 +93,6 @@ function Home() {
 
     <Banner2 />
     <Gallery />
-    <Gallery />
     <MoreAboutJericho />
 
 

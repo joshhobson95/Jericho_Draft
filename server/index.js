@@ -18,7 +18,7 @@ const {register, login} = require('./controllers/auth')
 const {isAuthenticated} = require('./middleware/isAuthenticated')
 const {getBlogTable, getAllBlogTable, getSingleBlogTable, addNewBlogPost, deleteBlogPost, editBlogPost} = require('./controllers/blogtable')
 const {getSalesTable, addNewSalesPost, deleteSalesPost, editSalesPost} = require('./controllers/salestable')
-
+const {getGalleryTable, addNewGalleryImg, deleteGalleryImg} = require('./controllers/gallerytable')
 
 const app = express();
 app.use(express.json())
@@ -46,6 +46,9 @@ app.delete('/newsalespost/:salestableid', deleteSalesPost)
 app.put('/editsalespost/:salestableid', editSalesPost)
 
 
+app.get('/gallery', getGalleryTable)
+app.post('/newgalleryimg', addNewGalleryImg)
+app.delete('/deletegalleryimg', deleteGalleryImg)
 
 
 

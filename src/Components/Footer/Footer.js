@@ -68,7 +68,9 @@ function Footer() {
             <li>About Us</li>
             </NavLink>
             <li>Why Work Here</li>
+            <NavLink to='/map'>
             <li>Nursery map</li>
+            </NavLink>
             </ul>
         </div>
     </div>

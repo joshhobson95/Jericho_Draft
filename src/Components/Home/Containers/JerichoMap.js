@@ -2,6 +2,7 @@ import React from 'react'
 import './JerichoMap.css'
 import MapIcon from '../../../Assets/MapIcon.png'
 import banner from '../../../Assets/plants_banner.jpg'
+import { NavLink } from 'react-router-dom'
 
 function JerichoMap() {
     return (
@@ -9,7 +10,7 @@ function JerichoMap() {
             <div className='jm_container'>
             <div className='home_container_header'>
                     <div className='map_icon'>
-                        <img  src={MapIcon} className="c_icon"/>
+                        <img  src={MapIcon} className="c_icon"alt=''/>
                     </div>
                     <div className='home_container_header_text'>
                         <h3>Garden Center Map</h3>
@@ -25,7 +26,9 @@ function JerichoMap() {
                         <p>
                 Need some help finding what you are looking for? Click below to see a full map of Jericho Nursery.
                         </p>
-                        <button className='jm_button'>Learn More</button>
+                        <NavLink to='/map'>
+                        <button className='jm_button'>Go to the Map</button>
+                        </NavLink>
                     </div>
                     </div>
             </div>

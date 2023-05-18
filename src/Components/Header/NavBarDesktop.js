@@ -144,7 +144,9 @@ function New() {
         <li>About Us</li>
       </NavLink>
         <li>Why Work Here</li>
+        <NavLink to='/map'>
         <li>Nursery Map</li>
+        </NavLink>
           </ul>
         </li>
 

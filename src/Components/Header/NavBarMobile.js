@@ -177,7 +177,9 @@ function NavBarMobile() {
             <li className="navbar__dropdownItem_mobile">About Us</li>
             </NavLink>
             <li className="navbar__dropdownItem_mobile">Why Work Here</li>
+            <NavLink to-='/map'>
             <li className="navbar__dropdownItem_mobile">Nursery Map</li>
+            </NavLink>
                 </ul>
       ) : null}
 

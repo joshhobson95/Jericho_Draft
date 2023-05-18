@@ -41,6 +41,9 @@ function AdminHome() {
       <NavLink to='/editsalespost'>
       <button>Edit a Sales Post</button>
       </NavLink>
+      <NavLink to='/newgalleryimg'>
+      <button>Add Galley Img</button>
+      </NavLink>
 
       </div>
 

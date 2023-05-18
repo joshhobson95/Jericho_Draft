@@ -1,18 +1,37 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Gallery.css'
-import { GalleryData } from './GalleryData'
+import axios from 'axios';
 
 
 
 function Gallery() {
 
+  const [galleryData, setGalleryData] = useState([])
+
+
+  useEffect(() => {
+    axios
+      .get(`/gallery`)
+      .then((res) => {
+        setGalleryData(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+
+console.log(galleryData)
+  
+
+
     const settings = {
         className: "center",
         centerMode: true,
-        infinite: true,
+        infinite: false,
         centerPadding: "300px",
         slidesToShow: 3,
         speed: 500
@@ -24,13 +43,11 @@ function Gallery() {
   return (
     <div className='h_carousel'>
         <Slider {...settings}>
-            {GalleryData.map((item) => (
+            {galleryData.map((item) => (
                     <div className='home_gallery_card'> 
-
              <div className='home_photo_gallery_container'>
-                <img alt='' className='home_gallery_photo' src={item.img} />
+             <img src={`https://drive.google.com/uc?export=view&id=${item.img_url}`} className='gallery_photo' alt=''/>
              </div>
-
                     </div>
             ))}
 

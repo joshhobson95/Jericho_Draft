@@ -26,7 +26,6 @@ function Blog() {
 
 useEffect(() => {
   setLoading(true)
-  //idk if this will be a problem
   axios
     .get(`/blog/${offset}`)
     .then((res) => {

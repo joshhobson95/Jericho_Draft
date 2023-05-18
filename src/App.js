@@ -17,6 +17,7 @@ import Partners from './components/Partners/Partners';
 import Aboutus from './components/Aboutuspage/Aboutus';
 import Seminars from './components/Seminar/Seminars';
 import Clubs from './components/Clubs/Clubs';
+import Map from './components/Map/Map';
 import ContactUs from './components/ContactUs/ContactUs';
 import AdminHome from './components/AdminPortal/AdminHome/AdminHome';
 import NewBlogPost from './components/AdminPortal/BlogPosts/NewBlogPost/NewBlogPost';
@@ -26,6 +27,7 @@ import EditSalesMain from './components/AdminPortal/SalesPosts/EditSalesPost/Mai
 import SingleBlogEdit from './components/AdminPortal/BlogPosts/EditBlogPost/SingleBlogEdit';
 import NewSalesPost from './components/AdminPortal/SalesPosts/NewSalesPost/NewSalesPost';
 import SingleEditSalesPost from './components/AdminPortal/SalesPosts/EditSalesPost/SingleEditSalesPost'
+import NewGalleryImg from './components/AdminPortal/HomeGallery/NewGalleryImg';
 import Footer from './components/Footer/Footer';
 
 import './App.css';
@@ -47,6 +49,7 @@ function App() {
        <Route path='/giftcard' element={<GiftCard />}/>
        <Route path='/radio' element={<Radio />}/>
        <Route path='/blog' element={<Blog />}/>
+       <Route path='/map'  element={<Map />}/>
        <Route path='/singleblog/:blogid' element={<SingleBlog />}/>
        <Route path='/partners' element={<Partners />}/>
        <Route path='/aboutus' element={<Aboutus />}/>
@@ -58,6 +61,7 @@ function App() {
         <Route path='/editpost' element={authCtx.token ? <EditBlogMain/> : <Navigate to='/login'/>}/>
         <Route path='editpost/singleblogedit/:id' element={authCtx.token ? <SingleBlogEdit /> : <Navigate to='/login'/>}/>
         <Route path='/newsalespost' element={authCtx.token ? <NewSalesPost /> : <Navigate to='/login'/>}/>
+        <Route path='/newgalleryimg' element={authCtx.token ? <NewGalleryImg /> : <Navigate to='/login'/>}/>
         <Route path='/editsalespost' element={authCtx.token ? <EditSalesMain/> : <Navigate to='/login'/>}/>
         <Route path='editsalespost/singlesaleedit/:id' element={authCtx.token ? <SingleEditSalesPost /> : <Navigate to='/login'/>}/>
         <Route path='/login' element={!authCtx.token ? <LoginPage /> : <Navigate to='/adminhome'/>} />
