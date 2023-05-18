@@ -39,10 +39,13 @@ function AdminHome() {
       <button>Create a Sales Post</button>
       </NavLink>
       <NavLink to='/editsalespost'>
-      <button>Edit a Sales Post</button>
+      <button>Edit/Delete/Wipe Sales Posts</button>
       </NavLink>
       <NavLink to='/newgalleryimg'>
       <button>Add Galley Img</button>
+      </NavLink>
+      <NavLink to='/deletegalleryimg'>
+        <button>Delete Gallery Img</button>
       </NavLink>
 
       </div>

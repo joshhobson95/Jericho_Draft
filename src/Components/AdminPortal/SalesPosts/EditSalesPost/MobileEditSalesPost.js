@@ -44,6 +44,27 @@ const { token } = useContext(AuthContext);
             console.log(err);
           });
       };
+      
+      const deleteAllSalesPost = () => {
+        axios
+          .delete(`/deleteallsales`, {
+            headers: {
+              authorization: token,
+            },
+          })
+          .then(() => {
+            Swal.fire({
+              title: "All Sale Items have been Deleted",
+              confirmButtonColor: "rgb(210, 161, 12)",
+              customClass: "buttonalert",
+              confirmButtonText: "OK", 
+            })
+            .finally(()=>window.location.reload(false))
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      };
     
     
 
@@ -75,6 +96,9 @@ const { token } = useContext(AuthContext);
       </tbody>
     </table>
 
+    <div>
+<button onClick={() => deleteAllSalesPost()}>Delete all Sales Posts</button>
+</div>
 
     </div>
   )

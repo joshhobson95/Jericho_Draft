@@ -7,7 +7,7 @@ module.exports = {
     getGalleryTable: async (req, res) => {
         try {
             const gallerytable = await GalleryTable.findAll({             
-        limit: 50,
+        limit: 200,
         order: [
             ["gallerytableid", "DESC"]
            ],                      

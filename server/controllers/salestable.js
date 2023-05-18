@@ -61,6 +61,15 @@ module.exports = {
             res.sendStatus(400)
         }
     },
+      deleteAllSalesPost: async (req, res) => {
+        try {
+          await SalesTable.destroy({ truncate: true, restartIdentity: true }); // Delete all rows and reset auto-increment IDs
+          res.status(200).json({ message: 'Sales Table content deleted successfully.' });
+        } catch (error) {
+          console.error('Error deleting sales table content:', error);
+          res.status(500).json({ error: 'Internal server error.' });
+        }
+      },
     editSalesPost: async (req, res) => {
       try {
         const { salestableid } = req.params;

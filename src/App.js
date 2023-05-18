@@ -28,6 +28,7 @@ import SingleBlogEdit from './components/AdminPortal/BlogPosts/EditBlogPost/Sing
 import NewSalesPost from './components/AdminPortal/SalesPosts/NewSalesPost/NewSalesPost';
 import SingleEditSalesPost from './components/AdminPortal/SalesPosts/EditSalesPost/SingleEditSalesPost'
 import NewGalleryImg from './components/AdminPortal/HomeGallery/NewGalleryImg';
+import DeleteGalleryImg from './components/AdminPortal/HomeGallery/DeleteGalleryImg';
 import Footer from './components/Footer/Footer';
 
 import './App.css';
@@ -62,6 +63,7 @@ function App() {
         <Route path='editpost/singleblogedit/:id' element={authCtx.token ? <SingleBlogEdit /> : <Navigate to='/login'/>}/>
         <Route path='/newsalespost' element={authCtx.token ? <NewSalesPost /> : <Navigate to='/login'/>}/>
         <Route path='/newgalleryimg' element={authCtx.token ? <NewGalleryImg /> : <Navigate to='/login'/>}/>
+        <Route path='/deletegalleryimg' element={authCtx.token ? <DeleteGalleryImg/> : <Navigate to='/login'/>}/>
         <Route path='/editsalespost' element={authCtx.token ? <EditSalesMain/> : <Navigate to='/login'/>}/>
         <Route path='editsalespost/singlesaleedit/:id' element={authCtx.token ? <SingleEditSalesPost /> : <Navigate to='/login'/>}/>
         <Route path='/login' element={!authCtx.token ? <LoginPage /> : <Navigate to='/adminhome'/>} />

@@ -53,7 +53,7 @@ function SingleBlog() {
             <h1 className='blog_title'>{item.title}</h1>
             <span className='date'>{item.date}</span>
            
-            {item.img_1_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_1_url}`} className='blog_img' alt=''/>}
+            {item.img_1_url && <img src={`https://drive.google.com/uc?export=view&id=${item.img_1_url}`} className='blog_img_1' alt=''/>}
             {item.img_1_captions && <p>{item.img_1_captions}</p>}
 
 
