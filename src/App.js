@@ -19,6 +19,7 @@ import Seminars from './components/Seminar/Seminars';
 import Clubs from './components/Clubs/Clubs';
 import Map from './components/Map/Map';
 import ContactUs from './components/ContactUs/ContactUs';
+import Brands from './components/Brands/Brands';
 import AdminHome from './components/AdminPortal/AdminHome/AdminHome';
 import NewBlogPost from './components/AdminPortal/BlogPosts/NewBlogPost/NewBlogPost';
 import LoginPage from './components/AdminPortal/LoginPage/LoginPage'
@@ -57,6 +58,7 @@ function App() {
        <Route path='/seminars' element={<Seminars />}/>
        <Route path='/clubs' element={<Clubs />}/>
        <Route path='/contact' element={<ContactUs />}/>
+       <Route path='/brands' element={<Brands />}/>
         <Route path='/adminhome' element={authCtx.token ? <AdminHome /> : <Navigate to='/login'/>}/>
         <Route path='/newblogpost' element={authCtx.token ? <NewBlogPost /> : <Navigate to='/login'/>}/>
         <Route path='/editpost' element={authCtx.token ? <EditBlogMain/> : <Navigate to='/login'/>}/>
