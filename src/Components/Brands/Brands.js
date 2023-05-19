@@ -21,8 +21,8 @@ function Brands() {
         {
           id: 3,
           title: 'Bonide',
-          description: `"We offer weed, Insect, disease and animal controls in a variety of formulations and applications to meet any gardener’s needs. Sold in national, regional and local home centers, hardware stores, mass merchants and garden centers across America BONIDE is a recognized and respected industry leader. We are very proud of our heritage and excited about our future."`,
-          img: 'https://mma.prnewswire.com/media/1077298/bonide_larger_Logo.jpg?p=facebook',
+          description: `"We offer weed, Insect, disease and animal controls in a variety of formulations and applications to meet any gardener’s needs. Sold in national, regional and local home centers, hardware stores, mass merchants and garden centers across America BONIDE is a recognized and respected industry leader."`,
+          img: 'https://149502146.v2.pressablecdn.com/wp-content/uploads/2013/08/bonide-logo.jpg',
         },
     
       ];

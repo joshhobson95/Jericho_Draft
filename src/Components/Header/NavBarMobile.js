@@ -78,6 +78,7 @@ function NavBarMobile() {
     <div className='mobile_logo_container'>
       <NavLink to='/'>
   <img src={logo} alt='' className='mobile_logo'/>
+
       </NavLink>
     </div>
             <div className='left_side_mobile_nav'>
@@ -154,7 +155,7 @@ function NavBarMobile() {
 <li className="navbar__dropdownItem_mobile">Radio Show</li>
 </NavLink>
 <NavLink to='/seminars'>
-<li className="navbar__dropdownItem_mobile">Seminars</li>
+<li className="navbar__dropdownItem_mobile">Workshops</li>
 </NavLink>
 <NavLink to='/clubs'>
 <li className="navbar__dropdownItem_mobile">Clubs around Abq</li>

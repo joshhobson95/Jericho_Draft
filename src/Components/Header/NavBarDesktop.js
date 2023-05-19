@@ -11,7 +11,7 @@ import CommunityIcon from '../../SVGs/CommunityIcon'
 import FFCIcon from '../../SVGs/FFCIcon'
 
 
-function New() {
+function NavBarDesktop() {
   return (
 <div className='header'>
     <div className='photo_banner'>
@@ -38,7 +38,9 @@ function New() {
           <NavLink to='/sales'>
             <li className="navbar__dropdownItem">This Week's Specials</li>
           </NavLink>
+          <NavLink to='/brands'>
             <li className="navbar__dropdownItem">Brands we Carry</li>
+          </NavLink>
             <NavLink to='/delivery'>
             <li className="navbar__dropdownItem">Delivery and Planting</li>
             </NavLink>
@@ -102,7 +104,7 @@ function New() {
          <li className="navbar__dropdownItem">Radio Show</li>
         </NavLink>
         <NavLink to='/seminars'>
-         <li className="navbar__dropdownItem">Seminars</li>
+         <li className="navbar__dropdownItem">Workshops</li>
         </NavLink>
         <NavLink to='/clubs'>
          <li className="navbar__dropdownItem">Clubs around Abq</li>
@@ -120,7 +122,7 @@ function New() {
             <p>Frequent Flower Club</p>
           </div>
 
-            <ul className="navbar__dropdownMenu_brown">
+            <ul className="navbar__dropdownMenu_brown_ffc">
             <NavLink to='/ffc'>
         <li>Join the Frequent Flower Club </li>
         </NavLink>
@@ -157,4 +159,4 @@ function New() {
   );
 }
 
-export default New;
+export default NavBarDesktop;

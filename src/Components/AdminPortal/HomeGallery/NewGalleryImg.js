@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
+import './NewGalleryImg.css'
 
 
 const NewGalleryImg = () => {
@@ -41,10 +42,10 @@ const NewGalleryImg = () => {
   };
 
   return (
-    <div className="newGallleryImg">
+    <div className="newGalleryImg">
 <div className="new_gallery_img">
 <h1>Admin Portal</h1>
-<h1>Add new Photo</h1>
+<h2>Add new Photo</h2>
 </div>
 
 

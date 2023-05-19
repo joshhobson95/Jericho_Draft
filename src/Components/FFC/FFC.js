@@ -1,6 +1,7 @@
 import React from 'react'
 import ffc3 from '../../Assets/ffc3.png'
 import arches from '../../Assets/arch.jpg'
+import Ffc_Form from './Form/Ffc_Form'
 
 import './FFC.css'
 
@@ -58,11 +59,11 @@ customers. It’s free to join.
                 </div>
             </div>
                 <div className='f_f'>     
-                                <p>This will not be updated</p>
+               <Ffc_Form />
                 </div>
 </div>
     </div>
   )
 }
 
-export default FFC
+export default FFC;

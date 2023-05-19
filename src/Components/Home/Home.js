@@ -4,6 +4,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'; 
 import Banner from './Banners/Banner'
 import Banner2 from './Banners/Banner2'
+import Banner3 from './Banners/Banner3';
 import NewThisWeek from '../Home/Containers/ThisWeek'
 import JerichoMap from './Containers/JerichoMap'
 import GardeningCalendar from './Containers/GardeningCalendar'
@@ -94,7 +95,8 @@ function Home() {
     <Banner2 />
     <Gallery />
     <MoreAboutJericho />
-
+    <Banner3 />
+    
 
 
 

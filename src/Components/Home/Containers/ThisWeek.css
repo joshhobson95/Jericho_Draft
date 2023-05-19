@@ -55,6 +55,7 @@
     background-color: #ffffff;
     color: #DBBA4B ;
     transition: 1s;
+    
 }
 
 
@@ -70,6 +71,7 @@
 }
 .c_image{
     width: 60vw;
+    height: 50vh;
 }
 .hc_button{
     font-size: 18pt;

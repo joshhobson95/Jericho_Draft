@@ -279,8 +279,8 @@ margin-bottom: 6vh;
     width: 65vw;
  }
 .small_blog_photo{
-    height: 45vh;
-    width: 55vw;
+    height: 50vh;
+    width: 60vw;
     object-fit: cover;
     margin-top: 4rem;
 }

@@ -40,14 +40,14 @@ function Seminars() {
   return (
     <div className='Seminars'>
         <div className='seminars_welcome'>
-            <h1>Seminars</h1>
+            <h1>Workshops</h1>
         <p>
         Welcome Statement:  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </p>
         </div>
         <div className='seminars_body_main'>
             <div className='seminars_body_top'>
-                <h1>This Year's Seminars</h1>
+                <h1>This Year's Workshops</h1>
                 <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 </p>
@@ -67,7 +67,7 @@ function Seminars() {
 
            <div className='seminars_list'>
                 <ul>
-                    <h3>No Seminars Scheduled Currently</h3>
+                    <h3>No Workshops Scheduled Currently</h3>
                     <p>They will resume after Spring</p>
                 </ul>
             </div>
@@ -81,7 +81,7 @@ function Seminars() {
 </div>
             <img alt='' src={seminar_pic} className='seminar_pic'/>
             <div className='seminars_body_bottom'>
-                <h1> Sign Up For the Next Seminar Here</h1>
+                <h1> Sign Up For the Next Workshop Here</h1>
         <div className='seminar_form'>
         <SeminarForm />
         </div>

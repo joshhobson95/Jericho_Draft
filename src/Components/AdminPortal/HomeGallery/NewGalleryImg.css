@@ -1,19 +1,21 @@
-.create_sale_item{
-    height: auto;
+.newGalleryImg{
     background-color: #242424;
-    padding: 10rem 4rem;
     color: white;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    padding: 2rem 10rem;
 }
-.sale_item_form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.newGalleryImg h1{
+font-size: 24pt;
+font-weight: 700;
 }
-.sale_item_form button{
+.newGalleryImg h2{
+font-size: 20pt;
+font-weight: 600;
+color: #6b83a8;
+padding: 2rem;
+text-decoration: underline;
+}
+
+.newGalleryImg button{
     height: auto;
     width: auto;
     padding: 0.5rem 1.25rem;
@@ -31,7 +33,7 @@
 }
 
 
-.sale_item_form button:hover{
+.newGalleryImg button:hover{
     background-color: #ffffff;
     color: #2a4c80;
     transition: 1s;

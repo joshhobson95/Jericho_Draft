@@ -218,16 +218,7 @@
         height: 20rem;
         margin-right: 35rem;
       }
-    #movingDiv{
-        margin-left: 0;
-        animation-name: moveRight;
-        animation-delay: 2s;
-        animation-duration: 2s;
-        animation-timing-function: linear;
-      }
+
       
-      @keyframes moveRight {
-        from {margin-left: 0;}
-        to {margin-left: calc(100% - 50px);}
-      }
+
   }

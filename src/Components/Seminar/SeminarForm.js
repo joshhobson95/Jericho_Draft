@@ -4,7 +4,7 @@ import './SeminarForm.css'
 function SeminarForm() {
   return (
     <div className='seminar_form_body'>
-      <h2>Seminar Sign Up</h2>
+      <h2>Workshop Sign Up</h2>
     <form>
       <div className="seminar_form_container">
         <div className='seminar_form_header'>

@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+  padding-bottom: 5rem;
 }
 .brands_welcome{
     height: auto;
@@ -36,7 +37,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    background-color: #24242467;
+    background-color: #242424;
     padding: 10px;
     border-radius: 12px;
     border: #4FA673 2px solid;
@@ -47,7 +48,7 @@
   }
   
   .card img {
-    width: 100px; /* Adjust the width as per your preference */
+    width: 200px; 
     height: auto; 
     margin-right: 10px;
   }
@@ -105,4 +106,12 @@
         font-size: 18pt;
 
     }
+}
+
+@media screen 
+  and (min-width: 900px) 
+  and (max-height: 900px)  { 
+.card{
+  height: 50vh;
+}
 }

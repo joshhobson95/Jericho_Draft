@@ -1,11 +1,11 @@
 import React from 'react';
-import './FFC_Form.css';
+import './Ffc_Form.css';
 
-function FFC_Form() {
+function Ffc_Form() {
   return (
     <div className='ffc_form_body'>
       <h2>Frequent Flower Club</h2>
-    <form>
+    <form action="https://link.lightworkdigital.com/widget/form/cU7aGRQlf1PU7rGutp41"  method='POST'>
       <div className="ffc_form_container">
         <div className='ffc_form_header'>
         </div>
@@ -30,11 +30,10 @@ function FFC_Form() {
           <input type="text" id="input8" name="input8" />
         </div>
       </div>
-      <button>Join</button>
+      <button type='submit'>Join</button>
     </form>
     </div>
   );
 }
 
-
-export default FFC_Form;
+export default Ffc_Form;

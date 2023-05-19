@@ -7,10 +7,6 @@ import Loading from '../../SVGs/Loading'
 import axios from "axios";
 
 
-// Public Photos on Drive
-// https://stackoverflow.com/questions/67344372/how-do-i-display-images-from-google-drive-on-a-react-front-end-website
-
-
 
 function Blog() {
 
@@ -42,7 +38,7 @@ useEffect(() => {
 }, [offset]);
 
 
-
+console.log(offset)
 useEffect(() => {
 mapPages()
 }, [blogData])
@@ -92,8 +88,7 @@ const hanldeScrollTop = () => {
     {blogData && blogData[0] && blogData[0].rows && blogData[0].rows.map((blogPost) => (
   
       <div className='small_blog_card'> 
-                    <div className='small_blog_card_top'>
-                    
+                    <div className='small_blog_card_top'>        
                     <img src={`https://drive.google.com/uc?export=view&id=${blogPost.img_1_url}`} className='small_blog_photo' alt=''/>
                     </div>
                     <div className='small_blog_card_bottom'>

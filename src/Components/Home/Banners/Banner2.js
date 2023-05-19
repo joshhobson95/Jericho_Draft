@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef} from 'react'
 import DeliveryVan from '../../../SVGs/DeliveryVan'
 import './Banner2.css'
 import AOS from 'aos';
+import { NavLink } from 'react-router-dom';
 
 
 function Banner2() {
@@ -62,7 +63,9 @@ function Banner2() {
     <div className={isAnimated ? "visible" : "reveal-content"}><DeliveryVan /></div>
             </div>
     </div>
+    <NavLink to='/delivery'>
     <button>Learn More</button>
+    </NavLink>
 </div>
 
 </div>

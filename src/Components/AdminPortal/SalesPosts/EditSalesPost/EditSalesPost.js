@@ -102,7 +102,7 @@ const { token } = useContext(AuthContext);
     </table>
 
 <div>
-<button onClick={() => deleteAllSalesPost()}>Delete all Sales Posts</button>
+<button onClick={() => deleteAllSalesPost()} className='delete_all'>Delete all Sales Posts</button>
 </div>
 
     </div>

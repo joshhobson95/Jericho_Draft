@@ -6,6 +6,7 @@
     font-size: 12pt;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 table {
     border-collapse: collapse;
@@ -35,6 +36,31 @@ table {
     background-color: #331f1f;
     font-weight: bold;
   }
+
+  .delete_all{
+    height: auto;
+    width: auto;
+    padding: 0.5rem 1.25rem;
+   background-color: #802a2a;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Raleway';
+    font-size: 18pt;
+    font-weight: 600;
+    color: white;
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 3vh;
+    cursor: pointer;
+}
+
+
+.delete_all:hover{
+    background-color: #ffffff;
+    color: #802a2a;
+    transition: 1s;
+}
+
   
   @media (min-width: 768px) {
     table {

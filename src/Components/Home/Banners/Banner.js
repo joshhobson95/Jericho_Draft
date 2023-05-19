@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import './Banner.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'; 
+import { NavLink } from 'react-router-dom';
 
 
 function Banner() {
@@ -27,7 +28,9 @@ function Banner() {
             <h1>Spring has Sprung</h1>
             <h4 className='b_h4g'> See what's come in this week</h4>
             </div>
+            <NavLink to='/sales'>
             <button>Browse Now</button>
+            </NavLink>
         </div>
         </div>
     </div>

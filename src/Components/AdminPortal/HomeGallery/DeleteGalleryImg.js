@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useContext} from 'react'
-
+import './DeleteGalleryImg.css'
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import AuthContext from '../../../store/authContext';

@@ -58,10 +58,9 @@ const NewSalesPost = () => {
 
   return (
     <div className="create_sale_item">
- 
 
-<div>
-    <form onSubmit={handleSubmit}>
+<div className="create_sale_item_body">
+    <form onSubmit={handleSubmit} className="sale_item_form">
       <label>
         Name
         <input
