@@ -34,13 +34,13 @@ const [salesData, setSalesData] = useState([])
         <div className='sales_welcome'>
         <h1>This Week's Specials </h1>
         <br></br>
-        <p>For the Week:</p>
+        <p>For the Week</p>
         <p>( {currentWeekRange} )</p>
         </div>
 
         <div className='sales_body'>
         <div className='sales_body_header'>
-            <h1>This week's Specials revolve around the theme of: ______</h1>
+      <h1>Sales this week</h1>
         </div>
 
         <div className='sales_card_container'> 

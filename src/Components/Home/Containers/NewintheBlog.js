@@ -64,15 +64,16 @@ function NewintheBlog() {
                     </div>
                     <div className='hc_paragraph'>
                      
+                        <p className='abc'>
+                     Read this Week's newest Blog Post:
+                        </p>
+                        <br></br>
                         {blogData && blogData[0] && blogData[0].rows && (
   <div>
     <span className='blog_name'>{blogData[0].rows[0].title}</span>
   </div>
 )}
-   <br></br>
-                        <p>
-                     Read this Week's newest Blog Post..
-                        </p>
+
                    <NavLink to='/blog'>
                         <button className='nb_button'>Take me to Blog</button>
                         </NavLink>

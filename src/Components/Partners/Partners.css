@@ -20,8 +20,8 @@
     flex-direction: column;
     padding-bottom: 2rem;
     align-self: center;
-    color: white;
-    font-weight: 500;
+    color: #DBBA4B;
+    font-weight: 600;
     font-size: 12pt;
     padding: 5vh;
 }
@@ -122,13 +122,13 @@
     font-size: 18pt;
 }
 .partners_welcome h1{
-    font-size: 50pt;
+    font-size: 60pt;
 }
 .partners_body p{
     font-size: 18pt;
 }
 .partners_body_top h1{
-    font-size: 50pt;
+    font-size: 60pt;
 }
 .gts_pics{
     flex-direction: row;

@@ -1,7 +1,6 @@
 import {Routes, Route, Navigate} from 'react-router-dom'
 import { useContext } from 'react';
 import AuthContext from './store/authContext';
-
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Sales from './components/Sales/Sales';

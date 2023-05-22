@@ -55,7 +55,19 @@
   }
 
 
-  
+  .navbar__menuItem--hasDropdown:hover::before,
+.navbar__menuItem--hasDropdown:focus::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Adjust this value to increase or decrease the hover area vertically */
+  left: -10px; /* Adjust this value to increase or decrease the hover area horizontally */
+  width: calc(100% + 20px); /* Adjust this value to increase or decrease the hover area width */
+  height: calc(100% + 20px); /* Adjust this value to increase or decrease the hover area height */
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.2s;
+  /* Pseudo-element styles for hover area overlay */
+}
   .navbar__menuItem--hasDropdown:hover .navbar__dropdownMenu_yellow {
     display: block;  
   }

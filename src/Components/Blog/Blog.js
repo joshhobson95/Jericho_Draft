@@ -73,7 +73,7 @@ const hanldeScrollTop = () => {
 
       <div className='blog_welcome'>
         <h1>Blog and Gallery</h1>
-        <p>Welcome Statement:  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat pariatur. </p>
+        <p>Level up your gardening skills with Jericho Nursey's blog. Get expert tips and techniques for a thriving garden that will impress all. Don't miss out on this valuable resource to unlock your green thumb's true potential.</p>
       </div>
 
 

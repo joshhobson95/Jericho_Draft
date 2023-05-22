@@ -19,6 +19,7 @@
     align-self: center;
     color: #4FA673;
     font-size: 12pt;
+    font-weight: 600;
     padding: 5vh;
 }
 .brands_welcome h1{
@@ -48,7 +49,7 @@
   }
   
   .card img {
-    width: 200px; 
+    width: 100px; 
     height: auto; 
     margin-right: 10px;
   }
@@ -93,6 +94,7 @@
     }
     .brands_welcome p{
         padding: 0.5rem;
+
     }
     .card{
         width: 60vw;
@@ -104,8 +106,11 @@
     .card-description{
         margin: 1rem 3rem;
         font-size: 18pt;
-
     }
+    .card img {
+      width: 200px; 
+    }
+    
 }
 
 @media screen 
